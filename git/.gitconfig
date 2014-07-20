@@ -1,0 +1,12 @@
+[user]
+	name = Stefan Zweifel
+	email = hello@stefanzweifel.io
+[push]
+	default = matching
+[core]
+	editor = nano
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+[mergetool]
+	keepBackup = true
