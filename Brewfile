@@ -15,6 +15,8 @@ install phpunit
 install php55
 install php55-mcrypt
 install php55-xdebug
+install archey
+install node
 
 # Install Brew Cask
 install caskroom/cask/brew-cask
