@@ -71,7 +71,8 @@ cask install sketch-toolbox
 # link dir into Alfred
 cask alfred link
 
+# Misc
+cask install liteicon
+
 # cleanup
 cask cleanup
-
-# cleanup homebrew
