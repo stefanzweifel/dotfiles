@@ -55,6 +55,7 @@ brew cask install sketch-toolbox
 
 # Misc
 brew cask install liteicon
+brew cask install keepingyouawake
 
 # link dir into Alfred
 brew cask alfred link
