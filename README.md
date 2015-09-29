@@ -1,22 +1,15 @@
 # Stefan's dotfiles
 
-## Setup
+## Installation
 
 Clone Repo, install homebrew, apps and tools. Add homestead-box to vagrant.
 
 ```
-git clone https://github.com/stefanzweifel/dotfiles.git ~/.dotfiles
+git clone --recursive https://github.com/stefanzweifel/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
-sh scripts/setup.sh
+sh ./make.sh
 ```
 
-## OSX Settings
-
-Set default OSX Settings.
-
-```
-~/.dotfiles/.osx
-```
 
 ## Symlinking settings
 

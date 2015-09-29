@@ -3,11 +3,21 @@
 	email = hello@stefanzweifel.io
 [push]
 	default = matching
+[help]
+    	autocorrect = 1
+[color]
+	ui = true
+[github]
+    	user = stefanzweifel
 [core]
-	editor = nano
+	editor = vim
 [filter "media"]
 	required = true
 	clean = git media clean %f
 	smudge = git media smudge %f
 [mergetool]
 	keepBackup = true
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true

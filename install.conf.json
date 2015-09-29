@@ -1,0 +1,23 @@
+[
+    {
+        "clean": [
+            "~",
+            "~/.cache",
+            "~/.zshrc"
+        ]
+    },
+    {
+        "link": {
+            "~/.gitconfig": "git/.gitconfig",
+            "~/.gitattributes": "git/.gitattributes",
+            "~/.zshrc": "zsh/.zshrc",
+            "~/.tmux.conf": "tmux/tmux.conf",
+            "~/Library/Application Support/Sublime Text 3/Packages/User": "sublime/user"
+        }
+    },
+    {
+        "shell": [
+            ["git submodule update --init --recursive", "Installing submodules"],
+        ]
+    }
+]
