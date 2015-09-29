@@ -2,23 +2,27 @@
 
 ## Installation
 
-Clone Repo, install homebrew, apps and tools. Add homestead-box to vagrant.
+Installation is simple. Just copy and paste the following script into your terminal. The script should do the rest. A wizard will walk you through the installation process. If you setup a new machine, you should proably execute all sections (homebrew + code environment + mac settings).
 
 ```
-git clone --recursive https://github.com/stefanzweifel/dotfiles.git ~/.dotfiles
+git clone https://github.com/holman/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
-sh ./make.sh
+./install
 ```
 
+## Contains
 
-## Symlinking settings
+- git
+- fonts
+    - FiraCode
+- composer
+- iterm (soon)
+- sublime text
+- tmux (soon)
+- zsh
+- homebrew
+- os-x settings
 
-Some of my personal dotfiles. I use `stow` to manage the symlinks, so first `brew install stow`.
+## LICENSE
 
-```
-$ git clone git@github.com:stefanzweifel/dotfiles.git ~/.dotfiles
-$ cd ~/.dotfiles
-$ stow bash
-$ stow zsh
-$ stow git
-```
+MIT
