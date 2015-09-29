@@ -1,0 +1,8 @@
+{
+    "require": {
+        "laravel/installer": "~1.1",
+        "franzl/studio": "^0.9.5",
+        "phpunit/phpunit": "4.8.*",
+        "phploc/phploc": "*"
+    }
+}
