@@ -26,7 +26,7 @@
 		".tmp",
 		".sass-cache"
 	],
-	"font_face": "Hack",
+	"font_face": "Fira Code",
 	"font_options":
 	[
 		"no_round",
@@ -37,14 +37,10 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"AngularJS",
-		"Colorsublime",
-		"DashDoc",
-		"Dayle Rees Color Schemes",
 		"Vintage"
 	],
-	"line_padding_bottom": 3,
-	"line_padding_top": 3,
+	"line_padding_bottom": 2,
+	"line_padding_top": 2,
 	"remember_open_files": true,
 	"remember_open_folders": true,
 	"rulers":
@@ -55,8 +51,7 @@
 	"scroll_past_end": true,
 	"scroll_speed": 8,
 	"show_full_path": false,
-	"show_tab_close_buttons": true,
-	"status_bar_brighter": true,
+	"show_tab_close_buttons": false,
 	"tab_size": 4,
 	"theme": "Material-Theme.sublime-theme",
 	"translate_tabs_to_spaces": true,
