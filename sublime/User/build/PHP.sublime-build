@@ -1,0 +1,3 @@
+{
+    "shell_cmd": "php-cs-fixer fix $file --level=psr2"
+}

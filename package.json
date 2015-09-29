@@ -1,0 +1,19 @@
+{
+  "name": "dotfiles",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stefanzweifel/dotfiles.git"
+  },
+  "dependencies": {
+    "bower": "*",
+    "coffee-script": "*",
+    "grunt": "*",
+    "grunt-cli": "*",
+    "gulp": "*",
+    "psi": "*",
+    "postcss-cli": "*",
+    "vtop": "*",
+    "speed-test": "*"
+  }
+}
