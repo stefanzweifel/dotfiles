@@ -1,0 +1,48 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AdvancedNewFile",
+		"Alignment",
+		"All Autocomplete",
+		"ApacheConf.tmLanguage",
+		"Blade Snippets",
+		"BracketHighlighter",
+		"CoffeeAngular Syntax",
+		"Comment-Snippets",
+		"DocBlockr",
+		"Dotfiles Syntax Highlighting",
+		"EditorConfig",
+		"Emmet",
+		"GitGutter",
+		"Handlebars",
+		"HTML Snippets",
+		"jQuery",
+		"JSX",
+		"Laravel 4 Snippets",
+		"Laravel Blade Highlighter",
+		"Material Theme",
+		"Origami",
+		"Package Control",
+		"PackageResourceViewer",
+		"PHP Companion",
+		"PHP Completions Kit",
+		"Pretty JSON",
+		"React Templates",
+		"ReactJS Snippets",
+		"Sass",
+		"sublime-snippet-library",
+		"SublimeLinter",
+		"SublimeLinter-jshint",
+		"SublimeLinter-php",
+		"Syntax Highlighting for Sass",
+		"Themr"
+	],
+	"repositories":
+	[
+		"https://github.com/stefanzweifel/sublime-snippet-library"
+	]
+}
