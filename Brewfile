@@ -96,7 +96,6 @@ brew 'vim --override-system-vi'
 brew 'caskroom/cask/brew-cask'
 brew 'homebrew/completions/grunt-completion'
 brew 'homebrew/dupes/zlib'
-brew 'homebrew/php/phpunit'
 brew 'homebrew/versions/bash-completion2'
 brew 'tobli/browsertime/browsertime'
 
