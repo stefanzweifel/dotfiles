@@ -48,29 +48,7 @@ if [[ $a == "N" || $a == "n" ]]; then
   exit;
 else
   printf "\n${grn}You're the boss. Here we go. (Password may be required now.)${end}\n\n"
-  sleep 1
 fi
-
-#==============================
-# Dotfiles management
-#==============================
-
-msg "Setup dotfiles with dotbot..."
-
-set -e
-
-CONFIG="install.conf.json"
-DOTBOT_DIR="dotbot"
-
-DOTBOT_BIN="bin/dotbot"
-BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-
-cd "${BASEDIR}"
-git submodule update --init --recursive "${DOTBOT_DIR}"
-
-"${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
-
-don
 
 #==============================
 # Homebrew
@@ -81,7 +59,7 @@ don
 
 if [[ `uname` == "Darwin" ]]; then
 
-    printf "Should I install your homebrew bundle?? [Y/N]"
+    printf "Install Homebrew and install bundle? [Y/N]"
     read a
 
     if [[ $a == "N" || $a == "n" ]]; then
@@ -102,7 +80,7 @@ fi
 # NPM
 #==============================
 
-printf "Should I install your global npm packages? [Y/N]"
+printf "Install global npm packages? [Y/N]"
 read a
 
 if [[ $a == "N" || $a == "n" ]]; then
@@ -110,7 +88,7 @@ if [[ $a == "N" || $a == "n" ]]; then
 else
     printf "\n${grn}Install ...${end}\n\n"
     msg "Installing npm packages..."
-    npm install -g
+    sudo npm install -g
     don
 fi
 
@@ -120,7 +98,7 @@ fi
 #
 #==============================
 
-printf "Should I install setup your code environment (~/Code and Homestead)? [Y/N]"
+printf "Setup Code environment and install Homestead? [Y/N]"
 read a
 
 if [[ $a == "N" || $a == "n" ]]; then
@@ -150,6 +128,27 @@ else
 fi
 
 #==============================
+# Dotfiles management
+#==============================
+
+msg "Setup dotfiles ..."
+
+set -e
+
+CONFIG="install.conf.json"
+DOTBOT_DIR="dotbot"
+
+DOTBOT_BIN="bin/dotbot"
+BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+cd "${BASEDIR}"
+git submodule update --init --recursive "${DOTBOT_DIR}"
+
+"${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
+
+don
+
+#==============================
 #
 # OS X Stuff
 #
@@ -162,7 +161,7 @@ if [[ $a == "N" || $a == "n" ]]; then
   printf "${pur}Okay. I skipped this part.${end}\n\n"
 else
   printf "\n${grn}Apply settings ...${end}\n\n"
-  sh .osx
+  sh osx/.osx
 fi
 
 #==============================
