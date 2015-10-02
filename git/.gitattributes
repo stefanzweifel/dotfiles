@@ -3,3 +3,6 @@
 *.psd  binary -delta
 *.gz  binary -delta
 *.bz2  binary -delta
+
+
+git lfs track "*.psd"
