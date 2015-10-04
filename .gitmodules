@@ -4,3 +4,6 @@
 [submodule "fonts/FiraCode"]
 	path = fonts/FiraCode
 	url = git@github.com:tonsky/FiraCode.git
+[submodule "iterm/themes/seti-theme"]
+	path = iterm/themes/seti-theme
+	url = git@github.com:philduffy/seti-iterm.git
