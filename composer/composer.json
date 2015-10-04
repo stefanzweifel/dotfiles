@@ -4,5 +4,8 @@
         "franzl/studio": "^0.9.5",
         "phpunit/phpunit": "4.8.*",
         "phploc/phploc": "*"
+    },
+    "require-dev": {
+        "apigen/apigen": "~4.1"
     }
 }
