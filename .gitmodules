@@ -7,3 +7,6 @@
 [submodule "iterm/themes/seti-theme"]
 	path = iterm/themes/seti-theme
 	url = git@github.com:philduffy/seti-iterm.git
+[submodule "iterm/themes/material-theme"]
+	path = iterm/themes/material-theme
+	url = git@github.com:stoeffel/material-iterm.git
