@@ -14,6 +14,7 @@
     "psi": "*",
     "postcss-cli": "*",
     "vtop": "*",
-    "speed-test": "*"
+    "speed-test": "*",
+    "jscs": "*"
   }
 }
