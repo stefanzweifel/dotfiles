@@ -3,9 +3,3 @@
 .Trashes
 zsh/.zsh/histfile
 zsh/.zsh/cache
-
-Package Control.last-run
-Package Control.merged-ca-bundle
-Package Control.system-ca-bundle
-Package Control.user-ca-bunlde
-sublime/User/Package Control.cache
