@@ -10,3 +10,6 @@
 [submodule "iterm/themes/material-theme"]
 	path = iterm/themes/material-theme
 	url = git@github.com:stoeffel/material-iterm.git
+[submodule "iterm/themes/dracula-theme"]
+	path = iterm/themes/dracula-theme
+	url = git@github.com:zenorocha/dracula-theme.git
