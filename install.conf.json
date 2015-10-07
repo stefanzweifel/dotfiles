@@ -13,12 +13,36 @@
     },
     {
         "link": {
-            "~/.gitconfig": "git/.gitconfig",
-            "~/.gitattributes": "git/.gitattributes",
-            "~/.zshrc": "zsh/.zshrc",
-            "~/.tmux.conf": "tmux/tmux.conf",
-            "~/.composer/composer.json": "composer/composer.json",
-            "~/Library/Application Support/Sublime Text 3/Packages/User": "sublime/user"
+            "~/.gitconfig": {
+                "relink": true,
+                "force": true,
+                "path": "git/.gitconfig"
+            },
+            "~/.gitattributes": {
+                "relink": true,
+                "force": true,
+                "path": "git/.gitattributes"
+            },
+            "~/.zshrc": {
+                "relink": true,
+                "force": true,
+                "path": "zsh/.zshrc"
+            },
+            "~/.tmux.conf": {
+                "relink": true,
+                "force": true,
+                "path": "tmux/tmux.conf"
+            },
+            "~/.composer/composer.json": {
+                "relink": true,
+                "force": true,
+                "path": "composer/composer.json"
+            },
+            "~/Library/Application Support/Sublime Text 3/Packages/User": {
+                "relink" : true,
+                "force": true,
+                "path": "sublime/user"
+            }
         }
     },
     {
