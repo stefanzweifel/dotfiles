@@ -3,13 +3,16 @@
 	url = https://github.com/anishathalye/dotbot
 [submodule "fonts/FiraCode"]
 	path = fonts/FiraCode
-	url = git@github.com:tonsky/FiraCode.git
+	url = https://github.com/tonsky/FiraCode.git
 [submodule "iterm/themes/seti-theme"]
 	path = iterm/themes/seti-theme
-	url = git@github.com:philduffy/seti-iterm.git
+	url = https://github.com/philduffy/seti-iterm.git
 [submodule "iterm/themes/material-theme"]
 	path = iterm/themes/material-theme
-	url = git@github.com:stoeffel/material-iterm.git
+	url = https://github.com/stoeffel/material-iterm.git
 [submodule "iterm/themes/dracula-theme"]
 	path = iterm/themes/dracula-theme
-	url = git@github.com:zenorocha/dracula-theme.git
+	url = https://github.com/zenorocha/dracula-theme.git
+[submodule "sublime/User/snippets/snippet-library"]
+	path = sublime/User/snippets/snippet-library
+	url = https://github.com/stefanzweifel/sublime-snippet-library.git
