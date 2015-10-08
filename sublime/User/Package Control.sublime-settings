@@ -30,11 +30,13 @@
 		"Laravel 4 Snippets",
 		"Laravel Blade Highlighter",
 		"Material Theme",
+		"Open Finder",
 		"Origami",
 		"Package Control",
 		"PackageResourceViewer",
 		"PHP Companion",
 		"PHP Completions Kit",
+		"Predawn",
 		"Pretty JSON",
 		"React Templates",
 		"ReactJS Snippets",
@@ -46,6 +48,8 @@
 		"SublimeLinter-php",
 		"SyncedSideBar",
 		"Syntax Highlighting for Sass",
+		"Theme - Cobalt2",
+		"Theme - SoDaReloaded",
 		"Themr"
 	],
 	"repositories":
