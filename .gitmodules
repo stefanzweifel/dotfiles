@@ -16,3 +16,6 @@
 [submodule "sublime/User/snippets/snippet-library"]
 	path = sublime/User/snippets/snippet-library
 	url = https://github.com/stefanzweifel/sublime-snippet-library.git
+[submodule "vim/amix-vimrc"]
+	path = vim/amix-vimrc
+	url = https://github.com/amix/vimrc.git
