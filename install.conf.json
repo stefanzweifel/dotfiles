@@ -49,6 +49,7 @@
         "shell": [
             ["composer global install", "Install global composer packages"],
             ["git submodule update --init --recursive", "Installing submodules"],
+            ["sh ~/.dotfiles/vim/amix-vimrc/install_awesome_vimrc.sh"]
         ]
     }
 ]
