@@ -51,3 +51,6 @@ alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && kil
 alias disksize="du -hs *"
 
 alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
+
+
+alias homestead='function __homestead() { (cd ~/Development/Homestead && vagrant $*); unset -f __homestead; }; __homestead'
