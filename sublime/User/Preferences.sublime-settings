@@ -49,6 +49,7 @@
 	"line_padding_bottom": 4,
 	"line_padding_top": 4,
 	"material_theme_accent_green": true,
+	"material_theme_compact_panel": true,
 	"material_theme_compact_sidebar": false,
 	"material_theme_panel_separator": true,
 	"remember_open_files": true,
