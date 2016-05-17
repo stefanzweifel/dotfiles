@@ -2,7 +2,7 @@
 	"bold_folder_labels": true,
 	"caret_style": "phase",
 	"close_windows_when_empty": true,
-	"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Material-Theme-OceanicNext (SL).tmTheme",
 	"copy_with_empty_selection": false,
 	"detect_indentation": true,
 	"drag_text": false,
@@ -25,7 +25,8 @@
 		"tmp",
 		".bundle",
 		".tmp",
-		".sass-cache"
+		".sass-cache",
+		"node_modules"
 	],
 	"font_face": "Input Mono",
 	"font_options":
