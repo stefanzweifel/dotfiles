@@ -1,12 +1,6 @@
 [submodule "dotbot"]
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
-[submodule "iterm/themes/seti-theme"]
-	path = iterm/themes/seti-theme
-	url = https://github.com/philduffy/seti-iterm.git
-[submodule "iterm/themes/material-theme"]
-	path = iterm/themes/material-theme
-	url = https://github.com/stoeffel/material-iterm.git
 [submodule "iterm/themes/dracula-theme"]
 	path = iterm/themes/dracula-theme
 	url = https://github.com/zenorocha/dracula-theme.git
