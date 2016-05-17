@@ -14,7 +14,6 @@ cd ~/.dotfiles
 
 - git
 - fonts
-    - FiraCode
 - composer
 - iterm (soon)
 - sublime text
