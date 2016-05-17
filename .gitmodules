@@ -1,9 +1,6 @@
 [submodule "dotbot"]
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
-[submodule "fonts/FiraCode"]
-	path = fonts/FiraCode
-	url = https://github.com/tonsky/FiraCode.git
 [submodule "iterm/themes/seti-theme"]
 	path = iterm/themes/seti-theme
 	url = https://github.com/philduffy/seti-iterm.git
