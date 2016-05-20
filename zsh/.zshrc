@@ -1,16 +1,6 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
-
-# ZSH_THEME="robbyrussell"
-# ZSH_THEME="kennethreitz"
-# ZSH_THEME="steeef"
-# ZSH_THEME="jbergantine"
-# ZSH_THEME="nebirhos"
-# ZSH_THEME="suvash"
-# ZSH_THEME="sorin"
-# ZSH_THEME="re5et"
-ZSH_THEME="norm"
-
+ZSH_THEME="cloud"
 
 DEFAULT_USER="stefan"
 
