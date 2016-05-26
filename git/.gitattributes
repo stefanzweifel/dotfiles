@@ -5,4 +5,3 @@
 *.bz2  binary -delta
 
 
-git lfs track "*.psd"
