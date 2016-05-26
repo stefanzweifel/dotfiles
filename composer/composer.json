@@ -1,11 +1,12 @@
 {
     "require": {
         "laravel/installer": "~1.1",
-        "franzl/studio": "*",
         "phpunit/phpunit": "5.0",
         "phploc/phploc": "*",
         "laravel/homestead": "~3.0",
         "hirak/prestissimo": "^0.1.4",
+        "franzl/studio": "0.9.*",
+        "laravel/envoy": "~1.0",
         "jonathantorres/construct": "^1.7"
     },
     "require-dev": {
