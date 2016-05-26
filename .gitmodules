@@ -1,21 +1,12 @@
 [submodule "dotbot"]
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
-[submodule "fonts/FiraCode"]
-	path = fonts/FiraCode
-	url = https://github.com/tonsky/FiraCode.git
-[submodule "iterm/themes/seti-theme"]
-	path = iterm/themes/seti-theme
-	url = https://github.com/philduffy/seti-iterm.git
-[submodule "iterm/themes/material-theme"]
-	path = iterm/themes/material-theme
-	url = https://github.com/stoeffel/material-iterm.git
 [submodule "iterm/themes/dracula-theme"]
 	path = iterm/themes/dracula-theme
 	url = https://github.com/zenorocha/dracula-theme.git
 [submodule "sublime/User/snippets/snippet-library"]
 	path = sublime/User/snippets/snippet-library
 	url = https://github.com/stefanzweifel/sublime-snippet-library.git
-[submodule "vim/amix-vimrc"]
-	path = vim/amix-vimrc
-	url = https://github.com/amix/vimrc.git
+[submodule "fonts/powerline-fonts"]
+	path = fonts/powerline-fonts
+	url = https://github.com/powerline/fonts.git

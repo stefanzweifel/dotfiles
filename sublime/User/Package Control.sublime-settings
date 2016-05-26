@@ -15,6 +15,7 @@
 		"Browser Sync",
 		"CoffeeAngular Syntax",
 		"Comment-Snippets",
+		"DashDoc",
 		"DocBlockr",
 		"Dotfiles Syntax Highlighting",
 		"Dracula Color Scheme",
@@ -31,6 +32,7 @@
 		"Laravel 4 Snippets",
 		"Laravel Blade Highlighter",
 		"Liquid",
+		"MarkdownEditing",
 		"Material Theme",
 		"Open Finder",
 		"Origami",
@@ -45,15 +47,19 @@
 		"ReactJS Snippets",
 		"Sass",
 		"Seti_UI",
+		"SideBarEnhancements",
+		"SmartMarkdown",
+		"SublimeCodeIntel",
 		"SublimeLinter",
 		"SublimeLinter-jscs",
 		"SublimeLinter-jshint",
 		"SublimeLinter-php",
 		"SyncedSideBar",
 		"Syntax Highlighting for Sass",
-		"Theme - Cobalt2",
 		"Theme - SoDaReloaded",
-		"Themr"
+		"Theme - Spacegray",
+		"Themr",
+		"Vue Syntax Highlight"
 	],
 	"repositories":
 	[

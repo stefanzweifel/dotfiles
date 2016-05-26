@@ -5,9 +5,12 @@
     ],
     "command": "alignment"
   },
-{ "keys": ["alt+d"], "command": "goto_definition" },
-
-
+  {
+    "keys": [
+      "alt+d"
+    ],
+    "command": "goto_definition"
+  },
   {
     "keys": [
       "alt+shift+f"
