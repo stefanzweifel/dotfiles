@@ -61,7 +61,7 @@
 	"material_theme_disable_tree_indicator": true,
 	"material_theme_panel_separator": true,
 	"material_theme_small_statusbar": true,
-	"material_theme_small_tab": true,
+	"material_theme_small_tab": false,
 	"material_theme_tabs_autowidth": false,
 	"material_theme_tabs_separator": true,
 	"remember_open_files": true,

@@ -4,7 +4,7 @@
 		"debug": false,
 		"delay": 0.25,
 		"error_color": "D02000",
-		"gutter_theme": "Packages/SublimeLinter/gutter-themes/Default/Default.gutter-theme",
+		"gutter_theme": "Packages/SublimeLinter/gutter-themes/Danish Royalty/Danish Royalty.gutter-theme",
 		"gutter_theme_excludes":
 		[
 		],
@@ -42,8 +42,8 @@
 				]
 			}
 		},
-		"mark_style": "outline",
-		"no_column_highlights_line": false,
+		"mark_style": "fill",
+		"no_column_highlights_line": true,
 		"passive_warnings": false,
 		"paths":
 		{
@@ -71,7 +71,7 @@
 		},
 		"rc_search_limit": 3,
 		"shell_timeout": 10,
-		"show_errors_on_save": false,
+		"show_errors_on_save": true,
 		"show_marks_in_minimap": true,
 		"syntax_map":
 		{
