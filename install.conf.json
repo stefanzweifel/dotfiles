@@ -42,6 +42,16 @@
                 "relink" : true,
                 "force": true,
                 "path": "sublime/user"
+            },
+            "/Users/stefan/.oh-my-zsh/custom/themes/taybalt.zsh-theme": {
+                "relink": true,
+                "force": true,
+                "path": "zsh/theme/taybalt/taybalt.zsh-theme"
+            },
+            "/Users/stefan/.oh-my-zsh/custom/themes/geometry.zsh-theme": {
+                "relink": true,
+                "force": true,
+                "path": "zsh/theme/geometry/geometry.zsh"
             }
         }
     },

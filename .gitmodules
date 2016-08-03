@@ -13,3 +13,6 @@
 [submodule "zsh/theme/taybalt"]
 	path = zsh/theme/taybalt
 	url = https://github.com/taylorotwell/shell.git
+[submodule "zsh/theme/geometry"]
+	path = zsh/theme/geometry
+	url = https://github.com/frmendes/geometry.git
