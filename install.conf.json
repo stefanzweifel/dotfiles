@@ -52,6 +52,11 @@
                 "relink": true,
                 "force": true,
                 "path": "zsh/theme/geometry/geometry.zsh"
+            },
+            "/usr/local/bin/gpg_wrap": {
+                "relink": true,
+                "force": true,
+                "path": "scripts/gpg_wrap"
             }
         }
     },

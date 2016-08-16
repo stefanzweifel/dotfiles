@@ -1,6 +1,7 @@
 [user]
 	name = Stefan Zweifel
 	email = hello@stefanzweifel.io
+	signingkey = 49392B0C00D7AB90
 [push]
 	default = matching
 [help]
@@ -21,3 +22,8 @@
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
+[commit]
+	gpgsign = true
+
+[gpg]
+	program = /usr/local/bin/gpg_wrap

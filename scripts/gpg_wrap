@@ -1,0 +1,4 @@
+#!/bin/sh
+# Source: https://twitter.com/dmilith/status/719457497053061121
+
+/usr/local/bin/gpg --batch $*
