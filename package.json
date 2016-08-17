@@ -15,6 +15,7 @@
     "postcss-cli": "*",
     "vtop": "*",
     "speed-test": "*",
+    "textlint": "*",
     "jscs": "*"
   }
 }
