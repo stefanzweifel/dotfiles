@@ -1,7 +1,7 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
-ZSH_THEME="geometry"
+ZSH_THEME="agnoster"
 
 DEFAULT_USER="stefan"
 

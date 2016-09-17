@@ -43,10 +43,10 @@
                 "force": true,
                 "path": "sublime/user"
             },
-            "~/.oh-my-zsh/custom/themes/taybalt.zsh-theme": {
+            "~/.oh-my-zsh/custom/themes/agnoster.zsh-theme": {
                 "relink": true,
                 "force": true,
-                "path": "zsh/theme/taybalt/taybalt.zsh-theme"
+                "path": "zsh/theme/agnoster.zsh-theme"
             },
             "~/.oh-my-zsh/custom/themes/geometry.zsh-theme": {
                 "relink": true,
@@ -57,6 +57,11 @@
                 "relink": true,
                 "force": true,
                 "path": "scripts/gpg_wrap"
+            },
+            "~/.hushlogin": {
+                "relink": true,
+                "force": true,
+                "path": "scripts/.hushlogin"
             }
         }
     },
