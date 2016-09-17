@@ -26,13 +26,15 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 
+export PATH="/usr/local/bin:$PATH"
+
+# Use Homebrew PHP Version in CLI
+export PATH="$(brew --prefix homebrew/php/php70)/bin:$PATH"
 
 # https://github.com/pindexis/qfc
 [[ -s "$HOME/.qfc/bin/qfc.sh" ]] && source "$HOME/.qfc/bin/qfc.sh"
 
 qfc_quick_command 'cd' '\C-b' 'cd $0'
-
-source $HOME/.dotfiles/aliases
 
 
 # See: https://github.com/pstadler/keybase-gpg-github?#optional-dont-ask-for-password-every-time
@@ -42,3 +44,5 @@ if test -f ~/.gnupg/.gpg-agent-info -a -n "$(pgrep gpg-agent)"; then
 else
   eval $(gpg-agent --daemon --write-env-file ~/.gnupg/.gpg-agent-info)
 fi
+
+source $HOME/.dotfiles/aliases
