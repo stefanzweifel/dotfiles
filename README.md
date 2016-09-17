@@ -10,17 +10,11 @@ cd ~/.dotfiles
 ./install
 ```
 
-## Contains
+## TODO
 
-- git
-- fonts
-- composer
-- iterm (soon)
-- sublime text
-- tmux (soon)
-- zsh
-- homebrew
-- os-x settings
+Stuff which should be added to the dotfiles:
+
+- [ ] [thyme](https://github.com/sourcegraph/thyme). Installation of binary and aliases to use.
 
 ## LICENSE
 
