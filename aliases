@@ -24,7 +24,6 @@ alias ss='open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Re
 # -------
 alias clr="clear" # Clear your terminal screen
 alias flush="sudo discoveryutil udnsflushcaches" # Flush DNS (Yosemite)
-alias ip="curl icanhazip.com" # Your public IP address
 alias ll="grc ls -al" # List all files in current directory in long list format
 alias ldir="grc ls -al | grep ^d" # List all directories in current directory in long list format
 alias o="open ." # Open the current directory in Finder
@@ -54,3 +53,8 @@ alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/La
 
 
 alias homestead='function __homestead() { (cd ~/Development/Homestead && vagrant $*); unset -f __homestead; }; __homestead'
+
+# Clear Apple System Logs to boost Terminal Speed
+alias slow_terminal='sudo rm /var/log/asl/*.asl'
+
+alias art='php artisan'
