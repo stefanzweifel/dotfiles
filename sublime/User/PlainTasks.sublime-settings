@@ -1,0 +1,12 @@
+{
+  "open_tasks_bullet": "›", // options: - | ❍ | ❑ | ■ | □ | ☐ | ▪ | ▫ | – | — | ≡ | → | › | [ ]
+  "done_tasks_bullet": "✓", // options: + | ✓ | ✔ | √ | [x]
+  "cancelled_tasks_bullet": "x", // options: x | ✘ | [-]
+  "before_tasks_bullet_margin": 0,
+  "color_scheme": "Packages/PlainTasks/tasks-eighties-colored.hidden-tmTheme",
+  "font_face": "Roboto Mono",
+  "draw_indent_guides": true,
+  "gutter": true,
+  "margin": 2,
+  "tab_size": 4,
+}
