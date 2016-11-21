@@ -34,6 +34,9 @@ export PATH="/usr/local/bin:$PATH"
 # Use Homebrew PHP Version in CLI
 export PATH="$(brew --prefix homebrew/php/php70)/bin:$PATH"
 
+# TMUX Settings
+export DISABLE_AUTO_TITLE='true'
+
 # https://github.com/pindexis/qfc
 [[ -s "$HOME/.qfc/bin/qfc.sh" ]] && source "$HOME/.qfc/bin/qfc.sh"
 
