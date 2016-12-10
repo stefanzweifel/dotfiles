@@ -48,11 +48,6 @@
                 "force": true,
                 "path": "zsh/theme/agnoster.zsh-theme"
             },
-            "~/.oh-my-zsh/custom/themes/geometry.zsh-theme": {
-                "relink": true,
-                "force": true,
-                "path": "zsh/theme/geometry/geometry.zsh"
-            },
             "/usr/local/bin/gpg_wrap": {
                 "relink": true,
                 "force": true,
