@@ -27,3 +27,4 @@
 
 [gpg]
 	program = /usr/local/bin/gpg_wrap
+

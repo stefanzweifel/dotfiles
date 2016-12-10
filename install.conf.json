@@ -16,17 +16,17 @@
             "~/.gitconfig": {
                 "relink": true,
                 "force": true,
-                "path": "git/.gitconfig"
+                "path": "git/gitconfig"
             },
             "~/.gitattributes": {
                 "relink": true,
                 "force": true,
-                "path": "git/.gitattributes"
+                "path": "git/gitattributes"
             },
             "~/.zshrc": {
                 "relink": true,
                 "force": true,
-                "path": "zsh/.zshrc"
+                "path": "zsh/zshrc"
             },
             "~/.tmux.conf": {
                 "relink": true,
