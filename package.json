@@ -6,16 +6,8 @@
     "url": "https://github.com/stefanzweifel/dotfiles.git"
   },
   "dependencies": {
-    "bower": "*",
-    "coffee-script": "*",
-    "grunt": "*",
-    "grunt-cli": "*",
     "gulp": "*",
-    "psi": "*",
-    "postcss-cli": "*",
-    "vtop": "*",
-    "speed-test": "*",
-    "textlint": "*",
-    "jscs": "*"
+    "jscs": "*",
+    "textlint": "*"
   }
 }
