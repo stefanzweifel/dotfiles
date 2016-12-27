@@ -16,17 +16,17 @@
             "~/.gitconfig": {
                 "relink": true,
                 "force": true,
-                "path": "git/.gitconfig"
+                "path": "git/gitconfig"
             },
             "~/.gitattributes": {
                 "relink": true,
                 "force": true,
-                "path": "git/.gitattributes"
+                "path": "git/gitattributes"
             },
             "~/.zshrc": {
                 "relink": true,
                 "force": true,
-                "path": "zsh/.zshrc"
+                "path": "zsh/zshrc"
             },
             "~/.tmux.conf": {
                 "relink": true,
@@ -47,11 +47,6 @@
                 "relink": true,
                 "force": true,
                 "path": "zsh/theme/agnoster.zsh-theme"
-            },
-            "~/.oh-my-zsh/custom/themes/geometry.zsh-theme": {
-                "relink": true,
-                "force": true,
-                "path": "zsh/theme/geometry/geometry.zsh"
             },
             "/usr/local/bin/gpg_wrap": {
                 "relink": true,
