@@ -43,11 +43,6 @@
                 "force": true,
                 "path": "sublime/user"
             },
-            "~/.oh-my-zsh/custom/themes/agnoster.zsh-theme": {
-                "relink": true,
-                "force": true,
-                "path": "zsh/theme/agnoster.zsh-theme"
-            },
             "/usr/local/bin/gpg_wrap": {
                 "relink": true,
                 "force": true,

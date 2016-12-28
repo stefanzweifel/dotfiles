@@ -2,9 +2,7 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
-ZSH_THEME="agnoster"
-ZSH_THEME="soliah"
-# ZSH_THEME="awesomepanda"
+ZSH_THEME="awesomepanda"
 
 DEFAULT_USER="stefan"
 
@@ -30,9 +28,6 @@ source $ZSH/oh-my-zsh.sh
 export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 
 export PATH="/usr/local/bin:$PATH"
-
-# Use Homebrew PHP Version in CLI
-export PATH="$(brew --prefix homebrew/php/php70)/bin:$PATH"
 
 # TMUX Settings
 export DISABLE_AUTO_TITLE='true'
