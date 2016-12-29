@@ -5,7 +5,7 @@
 	"bold_folder_labels": true,
 	"caret_style": "phase",
 	"close_windows_when_empty": true,
-	"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Dracula (SL).tmTheme",
 	"copy_with_empty_selection": false,
 	"detect_indentation": true,
 	"drag_text": false,
@@ -42,6 +42,7 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
+		"PHP",
 		"Vintage"
 	],
 	"indent_guide_options":
@@ -51,20 +52,18 @@
 	],
 	"line_padding_bottom": 5,
 	"line_padding_top": 5,
-	"material_theme_accent_acid-lime": true,
-	"material_theme_accent_orange": true,
+	"material_theme_accent_lime": true,
+	"material_theme_arrow_folders": true,
 	"material_theme_bold_tab": true,
 	"material_theme_compact_panel": true,
-	"material_theme_compact_sidebar": false,
 	"material_theme_contrast_mode": true,
-	"material_theme_disable_fileicons": false,
 	"material_theme_disable_folder_animation": true,
-	"material_theme_disable_tree_indicator": true,
 	"material_theme_panel_separator": true,
 	"material_theme_small_statusbar": true,
 	"material_theme_small_tab": false,
 	"material_theme_tabs_autowidth": false,
 	"material_theme_tabs_separator": true,
+	"phpunit-sublime-terminal": "iTerm",
 	"remember_open_files": true,
 	"remember_open_folders": true,
 	"rulers":

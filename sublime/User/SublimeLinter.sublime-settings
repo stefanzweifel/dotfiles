@@ -4,7 +4,7 @@
 		"debug": false,
 		"delay": 0.25,
 		"error_color": "D02000",
-		"gutter_theme": "Packages/SublimeLinter/gutter-themes/Danish Royalty/Danish Royalty.gutter-theme",
+		"gutter_theme": "Packages/Material Theme/extras/SublimeLinter/Material-Theme.gutter-theme",
 		"gutter_theme_excludes":
 		[
 		],
