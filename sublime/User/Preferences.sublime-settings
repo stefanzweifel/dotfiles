@@ -31,7 +31,7 @@
 		".sass-cache",
 		"node_modules"
 	],
-	"font_face": "Input Mono",
+	"font_face": "Fira Code",
 	"font_options":
 	[
 		"no_round",
