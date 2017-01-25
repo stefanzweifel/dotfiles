@@ -31,7 +31,7 @@
 		".sass-cache",
 		"node_modules"
 	],
-	"font_face": "Fira Code",
+	"font_face": "SFMono-Regular",
 	"font_options":
 	[
 		"no_round",
@@ -50,8 +50,8 @@
 		"draw_normal",
 		"draw_active"
 	],
-	"line_padding_bottom": 5,
-	"line_padding_top": 5,
+	"line_padding_bottom": 7,
+	"line_padding_top": 7,
 	"material_theme_accent_lime": true,
 	"material_theme_arrow_folders": true,
 	"material_theme_bold_tab": true,
