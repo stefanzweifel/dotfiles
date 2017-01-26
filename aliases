@@ -43,3 +43,8 @@ alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/La
 
 alias homestead='function __homestead() { (cd ~/Development/Homestead && vagrant $*); unset -f __homestead; }; __homestead'
 alias art='php artisan'
+
+alias time="timew"
+alias twsa="timew start"
+alias twso="timew stop"
+

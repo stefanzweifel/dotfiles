@@ -53,8 +53,22 @@
     ],
     "command": "insert_php_constructor_property"
   },
-  { "keys": ["ctrl+tab"], "command": "next_view" },
-  { "keys": ["ctrl+shift+tab"], "command": "prev_view" }
-
-
+  {
+    "keys": [
+      "ctrl+tab"
+    ],
+    "command": "next_view"
+  },
+  {
+    "keys": [
+      "ctrl+shift+tab"
+    ],
+    "command": "prev_view"
+  },
+  {
+    "keys": [
+      "alt+shift+w"
+    ],
+    "command": "run_single_phpunit_test"
+  }
 ]
