@@ -12,6 +12,7 @@
     	user = stefanzweifel
 [core]
 	editor = vim
+	quotepath = false
 [filter "media"]
 	required = true
 	clean = git media clean %f
