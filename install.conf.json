@@ -23,6 +23,11 @@
                 "force": true,
                 "path": "git/gitattributes"
             },
+            "~/.gitignore": {
+                "relink": true,
+                "force": true,
+                "path": "git/gitignore"
+            },
             "~/.zshrc": {
                 "relink": true,
                 "force": true,
@@ -58,7 +63,8 @@
     {
         "shell": [
             ["composer global install", "Install global composer packages"],
-            ["git submodule update --init --recursive", "Installing submodules"]
+            ["git submodule update --init --recursive", "Installing submodules"],
+            ["git config --global core.excludesfile ~/.gitignore"]
         ]
     }
 ]
