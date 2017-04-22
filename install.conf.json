@@ -57,6 +57,10 @@
                 "relink": true,
                 "force": true,
                 "path": "scripts/.hushlogin"
+            },
+            "~/.tmux/plugins/tpm": {
+                "relink": true,
+                "path": "tmux/plugins/tpm"
             }
         }
     },
