@@ -49,7 +49,5 @@ alias twsa="timew start"
 alias twso="timew stop"
 
 alias weather='curl -s wttr.in | sed -n "1,7p"'
-
-
 alias stop-ss="caffeinate -di -t 900"
-
+alias puf="phpunit --filter="
