@@ -17,7 +17,8 @@
 	[
 		".DS_Store",
 		"*.lib",
-		"*.sketch"
+		"*.sketch",
+		".php_cs.cache"
 	],
 	"folder_exclude_patterns":
 	[
