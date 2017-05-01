@@ -39,12 +39,10 @@ printf "\n\n${yel} _____     ______     ______   ______   __     __         ____
 
                              ${red}BY STEFAN ZWEIFEL${end}\n\n\n"
 
-printf "This script is gonna do a bunch of wacky things to your computer/CLI. Continue? [Y/n] "
+printf "This script is gonna setup your computer to be a developer machine. Continue? [Y/n] "
 read a
 if [[ $a == "N" || $a == "n" ]]; then
-  printf "\n${red}NUCLEAR LAUNCH DETECTED ...${end}\n"
-  sleep 1
-  printf "${pur}Just kidding.${end}\n\n"
+  printf "\n${red}Abort ...${end}\n"
   exit;
 else
   printf "\n${grn}You're the boss. Here we go. (Password may be required now.)${end}\n\n"
@@ -76,56 +74,6 @@ if [[ `uname` == "Darwin" ]]; then
 
 fi
 
-#==============================
-# NPM
-#==============================
-
-printf "Install global npm packages? [Y/N]"
-read a
-
-if [[ $a == "N" || $a == "n" ]]; then
-    printf "${pur}Skipped.${end}\n\n"
-else
-    printf "\n${grn}Install ...${end}\n\n"
-    msg "Installing npm packages..."
-    sudo npm install -g
-    don
-fi
-
-#==============================
-#
-# Coding Environment and stuff
-#
-#==============================
-
-printf "Setup Code environment and install Homestead? [Y/N]"
-read a
-
-if [[ $a == "N" || $a == "n" ]]; then
-  printf "${pur}Skipped.${end}\n\n"
-else
-  printf "\n${grn}Install ...${end}\n\n"
-
-    msg "Add laravel/homestead box to vagrant"
-    vagrant box add laravel/homestead
-
-    msg "Setup code environment"
-
-    if [ ! -d "$HOME/Code" ]; then
-      mkdir $HOME/Code
-    fi
-
-    cd $HOME/Code
-
-    msg "Setup homestead"
-
-    if [ ! -d "$HOME/Code/Homestead" ]; then
-      git clone https://github.com/laravel/homestead Homestead
-      cd Homestead bash init.sh
-    fi
-    don
-
-fi
 
 #==============================
 # Dotfiles management
