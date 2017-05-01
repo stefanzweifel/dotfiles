@@ -29,3 +29,5 @@
 [gpg]
 	program = /usr/local/bin/gpg_wrap
 
+[ghi]
+	token = !security find-internet-password -a stefanzweifel -s github.com -l 'ghi token' -w
