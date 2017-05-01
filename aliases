@@ -53,3 +53,6 @@ alias weather='curl -s wttr.in | sed -n "1,7p"'
 
 alias stop-ss="caffeinate -di -t 900"
 
+alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
+
+
