@@ -1,9 +1,7 @@
 {
     "require": {
         "laravel/installer": "~1.1",
-        "phpunit/phpunit": "^5.0",
         "phploc/phploc": "*",
-        "laravel/homestead": "~3.0",
         "franzl/studio": "*",
         "laravel/envoy": "~1.0",
         "jonathantorres/construct": "^1.7",
@@ -13,6 +11,7 @@
         "laravel/valet": "^2.0",
         "yab/homeforge": "^0.2.0",
         "phpmetrics/phpmetrics": "^1.10",
-        "friendsofphp/php-cs-fixer": "^2.0"
+        "friendsofphp/php-cs-fixer": "^2.0",
+        "phpunit/phpunit": "^6.0"
     }
 }
