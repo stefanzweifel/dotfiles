@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+/**
+ * Relationships morphing to this ${1:Model} model.
+ *
+ * @return    Illuminate\Database\Eloquent\Relations\MorphTo
+ */
+public function ${2:${1/(\w{1})/\L$1/}able}()
+{
+    return \$this->morphTo();
+}
+]]></content>
+    <tabTrigger>relmt</tabTrigger>
+    <description>Generate "morph to" relationship</description>
+    <scope>source.php</scope>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+test('${1/\s/_/g}', t => {
+   ${0:// ${1:type name of method with spaces}}
+
+   t.pass();
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>ava</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+</snippet>

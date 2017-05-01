@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[@extends('${1:layouts.master}')
+
+@section('title') ${2:meta_title} @stop
+
+@section('content')
+${3:content}
+@stop]]></content>
+    <tabTrigger>bview</tabTrigger>
+    <description>New Blade View</description>
+    <scope>text.html.laravel-blade</scope>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+factory(${1:Model}::class, ${2:5})->${3:create}();
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>factory</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.php</scope>
+</snippet>

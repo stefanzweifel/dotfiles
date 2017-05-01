@@ -1,0 +1,19 @@
+<snippet>
+    <content><![CDATA[
+<?php
+
+namespace ${4:Namespace};
+
+trait ${1:Name}Trait
+{
+
+    public function ${2:method_name}(${3:arguments})
+    {
+        ${10://Code}
+    }
+
+}
+]]></content>
+    <tabTrigger>phpt</tabTrigger>
+    <description>Generate a PHP trait</description>
+</snippet>

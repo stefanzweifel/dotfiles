@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[
+/**
+ * Query scope "${1:Name}".
+ *
+ * @param   Illuminate\Database\Query\Builder   \$query${2:
+ * @param   ${3:type}   \$${4:value}}
+ * @return  Illuminate\Database\Query\Builder
+ */
+public function scope${1/(?:^| )([a-z])?/\U$1/g}(\$query${5:, \$$4})
+{
+    return \$query->$6;
+}
+]]></content>
+    <tabTrigger>scope</tabTrigger>
+    <description>Generate a new query scope</description>
+    <scope>source.php</scope>
+</snippet>

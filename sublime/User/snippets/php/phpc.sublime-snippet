@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+<?php
+
+namespace ${6:Namespace};
+
+class ${1:Name}${2: extends ${3:Parent}}${4: implements ${5:Name}Interface}
+{
+
+    ${7:// code}
+
+}
+]]></content>
+    <tabTrigger>phpc</tabTrigger>
+    <description>Generate a PHP class</description>
+</snippet>

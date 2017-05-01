@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+/** @test */
+public function ${1/\s/_/g}()
+{
+    ${0:// ${1:type name of method with spaces}}
+}
+]]></content>
+    <tabTrigger>test</tabTrigger>
+    <description>Generate a new test</description>
+    <scope>source.php</scope>
+</snippet>

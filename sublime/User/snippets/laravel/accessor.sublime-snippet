@@ -1,0 +1,17 @@
+<snippet>
+    <content><![CDATA[
+/**
+ * Retrieve the ${1:attribute} attribute.
+ *
+ * @param   mixed   $value
+ * @return  string
+ */
+public function get${1/(?:^| )([a-z])?/\U$1/g}Attribute(${2:\$value})
+{
+    return $3;
+}
+]]></content>
+    <tabTrigger>accessor</tabTrigger>
+    <description>Generate an accessor</description>
+    <scope>source.php</scope>
+</snippet>

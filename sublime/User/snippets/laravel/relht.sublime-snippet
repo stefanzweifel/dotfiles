@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+/**
+ * Relationship with the ${1:Model} model through the ${2:Model} model.
+ *
+ * @return    Illuminate\Database\Eloquent\Relations\HasManyThrough
+ */
+public function ${3:${1/(\w{1})/\L$1/}s}()
+{
+    return \$this->hasManyThrough('${1/(\w{1})/\U$1/}', '${2/(\w{1})/\U$1/}'$4);
+}
+]]></content>
+    <tabTrigger>relht</tabTrigger>
+    <description>Generate "has many through" relationship</description>
+    <scope>source.php</scope>
+</snippet>

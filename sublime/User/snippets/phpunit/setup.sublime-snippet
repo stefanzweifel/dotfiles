@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[
+/**
+ * Initialise classes to test against.
+ *
+ * @return  void
+ */
+public function setUp()
+{
+    parent::setUp();
+
+    \$this->${1:property} = $2;
+}
+]]></content>
+    <tabTrigger>setup</tabTrigger>
+    <description>Generate PHPUnit setUp</description>
+    <scope>source.php</scope>
+</snippet>

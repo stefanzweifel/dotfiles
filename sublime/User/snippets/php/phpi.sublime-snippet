@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+<?php
+
+namespace ${4:Namespace};
+
+interface ${1:Name}Interface
+{
+
+    public function ${2:method_name}(${3:arguments});$5
+
+}
+]]></content>
+    <tabTrigger>phpi</tabTrigger>
+    <description>Generate a PHP interface</description>
+</snippet>
