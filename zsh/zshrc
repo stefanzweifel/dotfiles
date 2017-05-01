@@ -47,3 +47,4 @@ else
 fi
 
 source $HOME/.dotfiles/aliases
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
