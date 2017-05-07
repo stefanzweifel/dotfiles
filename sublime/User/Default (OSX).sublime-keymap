@@ -1,12 +1,6 @@
 [
   {
     "keys": [
-      "super+ctrl+alt+a"
-    ],
-    "command": "alignment"
-  },
-  {
-    "keys": [
       "alt+d"
     ],
     "command": "goto_definition"
