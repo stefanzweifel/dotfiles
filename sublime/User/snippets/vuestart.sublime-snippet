@@ -1,0 +1,31 @@
+<snippet>
+    <content><![CDATA[
+<template>
+    <div>
+        ${1:template_goes_here}
+    </div>
+</template>
+
+<script>
+export default {
+    props: [],
+
+    data() {
+        return {
+            ${2}
+        }
+    },
+
+    methods: {
+
+    },
+
+    computed: {
+
+    }
+}
+</script>
+]]></content>
+    <tabTrigger>vuvestart</tabTrigger>
+    <scope>source.vue</scope>
+</snippet>
