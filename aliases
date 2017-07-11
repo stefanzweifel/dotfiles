@@ -54,3 +54,5 @@ alias stop-ss="caffeinate -di -t 900"
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 
 alias puf="phpunit --filter="
+
+alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
