@@ -4611,13 +4611,13 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>521 148 959 420 0 0 1680 1027 </string>
+	<string>164 190 1231 596 0 0 1920 1080 </string>
 	<key>NSWindow Frame Preferences</key>
 	<string>285 569 606 456 0 0 1680 1050 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>548 476 620 392 0 0 1680 1027 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>444 593 796 473 0 0 1920 1080 </string>
+	<string>590 314 918 512 0 0 1680 1050 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>127 443 592 584 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
@@ -5542,7 +5542,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-12-15T11:46:57Z</date>
+	<date>2017-04-18T19:03:28Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -12418,7 +12418,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.12</string>
+	<string>3.0.15</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
