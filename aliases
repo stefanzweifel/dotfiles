@@ -56,3 +56,6 @@ alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 alias puf="./vendor/bin/phpunit --filter="
 
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
+
+alias pw="phpunit-watcher watch"
+
