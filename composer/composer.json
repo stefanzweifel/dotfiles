@@ -9,8 +9,9 @@
         "laravel/valet": "^2.0",
         "phpmetrics/phpmetrics": "^1.10",
         "friendsofphp/php-cs-fixer": "^2.0",
-        "phpunit/phpunit": "^6.0",
-        "deployer/deployer": "^5.0",
-        "getkirby/cli": "^1.6"
+        "phpunit/phpunit": "^6.0",     
+        "deployer/deployer": "^5.1",
+        "getkirby/cli": "^1.6",
+        "spatie/phpunit-watcher": "^1.3"
     }
 }
