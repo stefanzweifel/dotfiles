@@ -4,7 +4,7 @@
 	"auto_complete_with_fields": true,
 	"caret_style": "blink",
 	"close_windows_when_empty": true,
-	"color_scheme": "Packages/User/SublimeLinter/duotone-darkheath.dark (SL).tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/duotone-darkspace.dark (SL).tmTheme",
 	"detect_indentation": true,
 	"drag_text": false,
 	"draw_minimap_border": true,
