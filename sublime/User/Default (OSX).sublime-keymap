@@ -44,9 +44,5 @@
   {
     "keys": ["ctrl+shift+tab"],
     "command": "prev_view"
-  },
-  {
-    "keys": ["alt+shift+w"],
-    "command": "run_single_phpunit_test"
   }
 ]

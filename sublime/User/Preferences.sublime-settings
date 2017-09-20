@@ -2,17 +2,15 @@
 	"auto_complete_commit_on_tab": false,
 	"auto_complete_selector": "source - (comment, string.quoted), text",
 	"auto_complete_with_fields": true,
-	"bold_folder_labels": true,
-	"caret_style": "phase",
+	"caret_style": "blink",
 	"close_windows_when_empty": true,
-	"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
-	"copy_with_empty_selection": false,
+	"color_scheme": "Packages/User/SublimeLinter/duotone-darkheath.dark (SL).tmTheme",
 	"detect_indentation": true,
 	"drag_text": false,
 	"draw_minimap_border": true,
-	"draw_white_space": true,
+	"draw_white_space": "all",
 	"enable_tab_scrolling": false,
-	"fade_fold_buttons": false,
+	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":
 	[
 		".DS_Store",
@@ -40,7 +38,6 @@
 	],
 	"font_size": 12,
 	"highlight_line": true,
-	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
 		"PHP",
@@ -48,23 +45,12 @@
 	],
 	"indent_guide_options":
 	[
-		"draw_normal",
 		"draw_active"
 	],
 	"line_padding_bottom": 7,
 	"line_padding_top": 7,
-	"material_theme_accent_lime": true,
-	"material_theme_arrow_folders": true,
-	"material_theme_bold_tab": true,
-	"material_theme_compact_panel": true,
-	"material_theme_contrast_mode": true,
-	"material_theme_disable_folder_animation": true,
-	"material_theme_panel_separator": true,
-	"material_theme_small_statusbar": true,
-	"material_theme_small_tab": false,
-	"material_theme_tabs_autowidth": false,
-	"material_theme_tabs_separator": true,
 	"phpunit-sublime-terminal": "iTerm",
+	"phpunit.php_executable": "/usr/local/bin/php",
 	"remember_open_files": true,
 	"remember_open_folders": true,
 	"rulers":
@@ -73,16 +59,11 @@
 		120
 	],
 	"scroll_past_end": true,
-	"scroll_speed": 8,
 	"show_full_path": false,
-	"show_tab_close_buttons": true,
-	"soda_classic_tabs": true,
 	"tab_size": 4,
 	"theme": "SoDaReloaded Light.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
-	"use_simple_full_screen": false,
-	"wide_caret": true,
 	"word_wrap": false,
 	"wrap_width": 80
 }
