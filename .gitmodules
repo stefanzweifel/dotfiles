@@ -10,3 +10,6 @@
 [submodule "tmux/plugins/tpm"]
 	path = tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
+[submodule "sublime/User/themes"]
+	path = sublime/User/themes
+	url = https://github.com/rainglow/sublime.git
