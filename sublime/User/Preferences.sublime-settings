@@ -4,11 +4,10 @@
 	"auto_complete_with_fields": true,
 	"caret_style": "blink",
 	"close_windows_when_empty": true,
-	"color_scheme": "Packages/User/SublimeLinter/duotone-darkspace.dark (SL).tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Peacocks In Space (rainglow) (SL).tmTheme",
 	"detect_indentation": true,
 	"drag_text": false,
 	"draw_minimap_border": true,
-	"draw_white_space": "all",
 	"enable_tab_scrolling": false,
 	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":
@@ -40,7 +39,6 @@
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"PHP",
 		"Vintage"
 	],
 	"indent_guide_options":
