@@ -23,11 +23,6 @@
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
-[commit]
-	gpgsign = false
-
-[gpg]
-	program = /usr/local/bin/gpg_wrap
 
 [ghi]
 	token = !security find-internet-password -a stefanzweifel -s github.com -l 'ghi token' -w
