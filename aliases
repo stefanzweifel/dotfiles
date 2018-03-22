@@ -44,9 +44,9 @@ alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/La
 alias homestead='function __homestead() { (cd ~/Development/Homestead && vagrant $*); unset -f __homestead; }; __homestead'
 alias art='php artisan'
 
-alias time="timew"
-alias twsa="timew start"
-alias twso="timew stop"
+alias ci="composer install"
+alias cr="composer require"
+alias cda="composer dumpautoload"
 
 alias weather='curl -s wttr.in | sed -n "1,7p"'
 alias stop-ss="caffeinate -di -t 900"
@@ -58,4 +58,3 @@ alias puf="./vendor/bin/phpunit --filter="
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 
 alias pw="phpunit-watcher watch"
-

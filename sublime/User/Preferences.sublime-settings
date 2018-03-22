@@ -4,7 +4,7 @@
 	"auto_complete_with_fields": true,
 	"caret_style": "blink",
 	"close_windows_when_empty": true,
-	"color_scheme": "Packages/User/SublimeLinter/Peacocks In Space (rainglow) (SL).tmTheme",
+	"color_scheme": "Packages/User/themes/rainglow/Lichen (rainglow).tmTheme",
 	"detect_indentation": true,
 	"drag_text": false,
 	"draw_minimap_border": true,
