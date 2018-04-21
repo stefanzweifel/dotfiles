@@ -48,3 +48,8 @@ fi
 
 source $HOME/.dotfiles/aliases
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# See: http://calebporzio.com/bash-alias-composer-link-use-local-folders-as-composer-dependancies/
+composer-link() {
+    composer config repositories.local '{"type": "path", "url": "'$1'"}' --file composer.json
+}
