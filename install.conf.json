@@ -8,7 +8,7 @@
     },
     {
         "shell": [
-            ["mkdir -p ~/.composer", "Create global composer folder"],
+            ["mkdir -p ~/.composer", "Create global composer folder"]
         ]
     },
     {
