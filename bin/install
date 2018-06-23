@@ -1,38 +1,6 @@
 #!/usr/bin/env bash
 
 #==============================
-# Forked from http://github.com/daneden/dotfiles
-#==============================
-
-# First, let's set up some ouput functions
-red=$'\e[1;31m'
-pur=$'\e[0;35m'
-yel=$'\e[0;33m'
-grn=$'\e[0;32m'
-end=$'\e[0m'
-
-msg() {
-  printf "${yel} ~ ${pur}$*${end}\n"
-}
-
-suc() {
-  printf "${grn}$*${end}\n"
-}
-
-warn() {
-  printf "${red}$*${end}\n"
-}
-
-don() {
-  printf "...done\n\n"
-}
-
-#==============================
-# Introduction
-#==============================
-
-
-#==============================
 # Homebrew
 # Check presence of Homebrew,
 # add bundler, then install our
@@ -45,11 +13,11 @@ if [[ `uname` == "Darwin" ]]; then
     read a
 
     if [[ $a == "N" || $a == "n" ]]; then
-      printf "${pur}Skipped.${end}\n\n"
+      printf "Skipped."
     else
-      printf "\n${grn}Install ...${end}\n\n"
+      printf "Install ...\n\n"
 
-        msg "Installing Homebrew packages..."
+        printf "Installing Homebrew packages..."
         type brew &>/dev/null && printf "`brew bundle`" || echo "`ruby -e \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)\" && brew tap Homebrew/bundle && brew bundle`"
         brew update && brew upgrade `brew outdated`
         don
@@ -63,7 +31,7 @@ fi
 # Dotfiles management
 #==============================
 
-msg "Setup dotfiles ..."
+printf "Setup dotfiles ..."
 
 set -e
 

@@ -53,11 +53,6 @@
                 "force": true,
                 "path": "scripts/gpg_wrap"
             },
-            "~/.hushlogin": {
-                "relink": true,
-                "force": true,
-                "path": "scripts/.hushlogin"
-            },
             "~/.tmux/plugins/tpm": {
                 "relink": true,
                 "path": "tmux/plugins/tpm"
@@ -66,6 +61,7 @@
     },
     {
         "shell": [
+            ["touch $HOME/.hushlogin"]
             ["composer global install", "Install global composer packages"],
             ["git submodule update --init --recursive", "Installing submodules"],
             ["git config --global core.excludesfile ~/.gitignore"]
