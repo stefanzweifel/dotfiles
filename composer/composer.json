@@ -3,12 +3,7 @@
         "laravel/installer": "~2.0",
         "laravel/valet": "~2.0",
         "phpunit/phpunit": "~7.0",
-        "getkirby/cli": "^1.6",
         "deployer/deployer": "^6.0",
-        "spatie/phpunit-watcher": "^1.3",
-        "spatie/http-status-check": "^2.4"
-    },
-    "require-dev": {
-        "deployer/recipes": "^6.0"
+        "spatie/phpunit-watcher": "^1.3"
     }
 }
