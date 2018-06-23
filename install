@@ -31,22 +31,6 @@ don() {
 # Introduction
 #==============================
 
-printf "\n\n${yel} _____     ______     ______   ______   __     __         ______     ______
-/\\  __-.  /\\  __ \\   /\\__  _\\ /\\  ___\\ /\\ \\   /\\ \\       /\\  ___\\   /\\  ___\\
-\\ \\ \\/\\ \\ \\ \\ \\/\\ \\  \\/_/\\ \\/ \\ \\  __\\ \\ \\ \\  \\ \\ \\____  \\ \\  __\\   \\ \\___  \\
- \\ \\____-  \\ \\_____\\    \\ \\_\\  \\ \\_\\    \\ \\_\\  \\ \\_____\\  \\ \\_____\\  \\/\\_____\\
-  \\/____/   \\/_____/     \\/_/   \\/_/     \\/_/   \\/_____/   \\/_____/   \\/_____/${end}
-
-                             ${red}BY STEFAN ZWEIFEL${end}\n\n\n"
-
-printf "This script is gonna setup your computer to be a developer machine. Continue? [Y/n] "
-read a
-if [[ $a == "N" || $a == "n" ]]; then
-  printf "\n${red}Abort ...${end}\n"
-  exit;
-else
-  printf "\n${grn}You're the boss. Here we go. (Password may be required now.)${end}\n\n"
-fi
 
 #==============================
 # Homebrew
@@ -111,20 +95,3 @@ else
   printf "\n${grn}Apply settings ...${end}\n\n"
   sh osx/.osx
 fi
-
-#==============================
-#
-# Closing ceremonies
-#
-#==============================
-
-# Switch to zsh if we're not already there
-# if [[ ! `echo $SHELL` == "/bin/zsh" ]]; then
-#   msg "Switching to zsh..."
-#   chsh -s /bin/zsh
-#   don
-# fi
-
-# source $HOME/.zshrc
-
-suc "==> All done! Happy hacking."
