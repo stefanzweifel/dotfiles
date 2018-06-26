@@ -33,11 +33,6 @@
                 "force": true,
                 "path": "zsh/zshrc"
             },
-            "~/.tmux.conf": {
-                "relink": true,
-                "force": true,
-                "path": "tmux/tmux.conf"
-            },
             "~/.composer/composer.json": {
                 "relink": true,
                 "force": true,
@@ -46,17 +41,13 @@
             "~/Library/Application Support/Sublime Text 3/Packages/User": {
                 "relink" : true,
                 "force": true,
-                "path": "sublime/user"
+                "path": "sublime/User"
             },
             "/usr/local/bin/gpg_wrap": {
                 "relink": true,
                 "force": true,
                 "path": "scripts/gpg_wrap"
             },
-            "~/.tmux/plugins/tpm": {
-                "relink": true,
-                "path": "tmux/plugins/tpm"
-            }
         }
     },
     {
