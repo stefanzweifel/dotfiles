@@ -5,24 +5,13 @@
 [push]
 	default = matching
 [help]
-    	autocorrect = 1
+    autocorrect = 1
 [color]
 	ui = true
 [github]
-    	user = stefanzweifel
+    user = stefanzweifel
 [core]
 	editor = vim
 	quotepath = false
-[filter "media"]
-	required = true
-	clean = git media clean %f
-	smudge = git media smudge %f
 [mergetool]
 	keepBackup = true
-[filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
-	required = true
-
-[ghi]
-	token = !security find-internet-password -a stefanzweifel -s github.com -l 'ghi token' -w
