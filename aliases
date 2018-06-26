@@ -1,60 +1,18 @@
-# Lock the screen (when going AFK)
-alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
-
 # Shortcuts
 # https://github.com/mathiasbynens/dotfiles/blob/master/.aliases#L9
-alias dl="cd ~/Downloads"
-alias dt="cd ~/Desktop"
-alias reload="exec $SHELL -l"
 
-# See: https://github.com/mathiasbynens/dotfiles/blob/master/.aliases#L133
-# Kill all the tabs in Chrome to free up memory
-# [C] explained: http://www.commandlinefu.com/commands/view/402/exclude-grep-from-your-grepped-output-of-ps-alias-included-in-description
-alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v extension-process | tr -s ' ' | cut -d ' ' -f2 | xargs kill"
-
-# Start screensaver
-alias ss='open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app'
-
-# -------
-# Aliases
-# Source: https://jonsuh.com/blog/bash-command-line-shortcuts/
-# -------
-alias ll="grc ls -al" # List all files in current directory in long list format
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
 
-# Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-alias update='sudo softwareupdate -i -a; brew update; brew upgrade --all; brew cleanup; npm install npm -g; npm update -g;'
 
 # Empty the Trash on all mounted volumes and the main HDD
 # Also, clear Apple’s System Logs to improve shell startup speed
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
 
-# Show/hide hidden files in Finder
-alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
-alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
-
-alias disksize="du -hs *"
-
 alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
 
 
-alias homestead='function __homestead() { (cd ~/Development/Homestead && vagrant $*); unset -f __homestead; }; __homestead'
-alias art='php artisan'
-
-alias ci="composer install"
-alias cr="composer require"
-alias cda="composer dumpautoload"
-
-alias weather='curl -s wttr.in | sed -n "1,7p"'
-alias stop-ss="caffeinate -di -t 900"
-
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 
-alias puf="./vendor/bin/phpunit --filter="
-
-alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
-
-alias pw="phpunit-watcher watch"
