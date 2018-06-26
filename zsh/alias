@@ -1,0 +1,21 @@
+alias reload="exec $SHELL -l"
+
+# Paths
+alias dl="cd ~/Downloads"
+alias dt="cd ~/Desktop"
+alias dv="cd ~/Code"
+
+# Laravel
+alias art='php artisan'
+
+# Composer
+alias ci="composer install"
+alias cr="composer require"
+alias cda="composer dumpautoload"
+
+# PHP Unit
+alias puf="./vendor/bin/phpunit --filter="
+alias pw="phpunit-watcher watch"
+alias pwf="phpunit-watcher watch --filter "
+
+
