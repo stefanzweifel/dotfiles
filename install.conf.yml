@@ -1,0 +1,27 @@
+- defaults:
+    link:
+      relink: true
+      force: true
+
+
+### 
+
+- clean: ['~', '~/.cache', '~/.zshrc']
+
+- shell:
+  - [mkdir -p ~/.composer, Create global composer folder]
+
+- link:
+  ~/.gitconfig: git/gitconfig
+  ~/.gitattributes: git/gitattributes
+  ~/.gitignore: git/gitignore
+  ~/.zshrc: zsh/zshrc
+  ~/.composer/composer.json: composer/composer.json
+  ~/Library/Application Support/Sublime Text 3/Packages/User: sublime/User
+  /usr/local/bin/gpg_wrap: scripts/gpg_wrap
+
+- shell:
+  - [touch $HOME/.hushlogin]
+  - [composer global install]
+  - [git submodule update --init --recursive]
+  - [git config --global core.excludesfile ~/.gitignore]
