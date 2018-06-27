@@ -10,12 +10,6 @@ cd ~/.dotfiles
 ./install
 ```
 
-## TODO
-
-Stuff which should be added to the dotfiles:
-
-- [ ] [thyme](https://github.com/sourcegraph/thyme). Installation of binary and aliases to use.
-
 ## LICENSE
 
 MIT
