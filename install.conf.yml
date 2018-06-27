@@ -14,8 +14,7 @@
   ~/.gitignore: git/gitignore
   ~/.zshrc: zsh/zshrc
   ~/.composer/composer.json: composer/composer.json
-  ~/Library/Application Support/Sublime Text 3/Packages/User: sublime/User
-  /usr/local/bin/gpg_wrap: scripts/gpg_wrap
+  ~/Library/Application Support/Sublime Text 3/Packages/User: app/sublime-text/User
 
 - shell:
   - [touch $HOME/.hushlogin]
