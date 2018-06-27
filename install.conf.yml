@@ -3,9 +3,6 @@
       relink: true
       force: true
 
-
-### 
-
 - clean: ['~', '~/.cache', '~/.zshrc']
 
 - shell:

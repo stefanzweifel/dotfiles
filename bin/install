@@ -1,41 +1,25 @@
 #!/usr/bin/env bash
 
-#==============================
 # Homebrew
-# Check presence of Homebrew,
-# add bundler, then install our
-# desired recipes & update them
-#==============================
+printf "Install Homebrew and install bundle? [Y/N]"
+read a
 
-if [[ `uname` == "Darwin" ]]; then
+if [[ $a == "N" || $a == "n" ]]; then
+  printf "Skipped."
+else
+  printf "Install ...\n\n"
 
-    printf "Install Homebrew and install bundle? [Y/N]"
-    read a
-
-    if [[ $a == "N" || $a == "n" ]]; then
-      printf "Skipped."
-    else
-      printf "Install ...\n\n"
-
-        printf "Installing Homebrew packages..."
-        type brew &>/dev/null && printf "`brew bundle`" || echo "`ruby -e \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)\" && brew tap Homebrew/bundle && brew bundle`"
-        brew update && brew upgrade `brew outdated`
-        don
-
-    fi
-
+  printf "Installing Homebrew packages..."
+  type brew &>/dev/null && printf "`brew bundle`" || echo "`ruby -e \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)\" && brew tap Homebrew/bundle && brew bundle`"
+  brew update && brew upgrade `brew outdated`
 fi
 
-
-#==============================
-# Dotfiles management
-#==============================
-
+# Dotfiles
 printf "Setup dotfiles ..."
 
 set -e
 
-CONFIG="install.conf.json"
+CONFIG="install.conf.yaml"
 DOTBOT_DIR="dotbot"
 
 DOTBOT_BIN="bin/dotbot"
@@ -46,20 +30,6 @@ git submodule update --init --recursive "${DOTBOT_DIR}"
 
 "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
 
-don
 
-#==============================
-#
-# OS X Stuff
-#
-#==============================
 
-printf "Should I apply some predefined OS X settings for you? [Y/N]"
-read a
-
-if [[ $a == "N" || $a == "n" ]]; then
-  printf "${pur}Okay. I skipped this part.${end}\n\n"
-else
-  printf "\n${grn}Apply settings ...${end}\n\n"
-  sh osx/.osx
-fi
+printf "Done ✅"
