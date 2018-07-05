@@ -19,7 +19,7 @@ printf "Setup dotfiles ..."
 
 set -e
 
-CONFIG="install.conf.yaml"
+CONFIG="install.conf.yml"
 DOTBOT_DIR="dotbot"
 
 DOTBOT_BIN="bin/dotbot"
