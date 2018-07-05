@@ -6,6 +6,7 @@
 - clean: ['~', '~/.cache', '~/.zshrc']
 
 - shell:
+  - [mkdir -p ~/dev, Create Development Folder]
   - [mkdir -p ~/.composer, Create global composer folder]
   - [mkdir -p ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User]
 
