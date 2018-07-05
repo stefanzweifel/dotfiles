@@ -1,3 +1,6 @@
 [submodule "dotbot"]
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
+[submodule "apps/sublime-text/themes/rainglow"]
+	path = apps/sublime-text/themes/rainglow
+	url = https://github.com/rainglow/sublime.git
