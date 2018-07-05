@@ -7,14 +7,15 @@
 
 - shell:
   - [mkdir -p ~/.composer, Create global composer folder]
+  - [mkdir -p ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User]
 
 - link:
-  ~/.gitconfig: git/gitconfig
-  ~/.gitattributes: git/gitattributes
-  ~/.gitignore: git/gitignore
-  ~/.zshrc: zsh/zshrc
-  ~/.composer/composer.json: composer/composer.json
-  ~/Library/Application Support/Sublime Text 3/Packages/User: app/sublime-text/User
+    ~/.gitconfig: git/gitconfig
+    ~/.gitattributes: git/gitattributes
+    ~/.gitignore: git/gitignore
+    ~/.zshrc: zsh/zshrc
+    ~/.composer/composer.json: composer/composer.json
+    ~/Library/Application Support/Sublime Text 3/Packages/User: apps/sublime-text/user
 
 - shell:
   - [touch $HOME/.hushlogin]
