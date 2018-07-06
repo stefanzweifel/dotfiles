@@ -16,6 +16,9 @@ alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias dv="cd ~/Code"
 
+# PHP
+alias pserve="php -S localhost:"
+
 # Laravel
 alias art='php artisan'
 
