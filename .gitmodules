@@ -4,3 +4,6 @@
 [submodule "apps/sublime-text/themes/rainglow"]
 	path = apps/sublime-text/themes/rainglow
 	url = https://github.com/rainglow/sublime.git
+[submodule "dotbot-brew"]
+	path = dotbot-brew
+	url = https://github.com/d12frosted/dotbot-brew.git
