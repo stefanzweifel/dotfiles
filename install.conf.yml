@@ -23,10 +23,12 @@
     ~/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-mousemap: apps/sublime-text/user/Default (OSX).sublime-mousemap
     ~/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings: apps/sublime-text/user/Package Control.sublime-settings
 
+- brewfile:
+    - homebrew/Brewfile
+
 - shell:
   - [touch $HOME/.hushlogin]
   - [/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)", 'Install Homebrew']
-  - [brew bundle install --file=homebrew/Brewfile]
   - [composer global install]
   - [git submodule update --init --recursive]
   - [git config --global core.excludesfile ~/.gitignore]
