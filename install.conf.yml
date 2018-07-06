@@ -28,7 +28,7 @@
 
 - shell:
   - [touch $HOME/.hushlogin]
-  - [/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)", 'Install Homebrew']
+  # - [/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)", 'Install Homebrew']
   - [chsh -s $(which zsh), 'Switch to ZSH']
   - [composer global install]
   - [git submodule update --init --recursive]
