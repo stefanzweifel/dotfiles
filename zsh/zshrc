@@ -20,14 +20,14 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-extras git-flow npm vagrant brew composer sublime zsh-syntax-highlighting laravel5)
+plugins=(git git-extras git-flow npm brew composer sublime zsh-syntax-highlighting laravel5)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+# export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 
-export PATH="/usr/local/bin:$PATH"
+# export PATH="/usr/local/bin:$PATH"
 
 # TMUX Settings
 export DISABLE_AUTO_TITLE='true'
@@ -46,7 +46,8 @@ else
   eval $(gpg-agent --daemon --write-env-file ~/.gnupg/.gpg-agent-info)
 fi
 
-source $HOME/.dotfiles/aliases
+source $HOME/.dotfiles/zsh/aliases
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # See: http://calebporzio.com/bash-alias-composer-link-use-local-folders-as-composer-dependancies/

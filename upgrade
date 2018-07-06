@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Upgrade stuff on your machine
+
+# brew update
+# brew upgrade
+# brew cask update
+# brew cask upgrade
+# brew cleanup
+# brew cask cleanup
+
+# mas upgrade
+
+# composer global update
+
+# yarn global upgrade
+
+
+# Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
+# alias update='sudo softwareupdate -i -a; brew update; brew upgrade --all; brew cleanup; npm install npm -g; npm update -g;'

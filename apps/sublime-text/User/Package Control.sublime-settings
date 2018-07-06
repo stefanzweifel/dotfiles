@@ -37,9 +37,5 @@
 		"Theme - SoDaReloaded",
 		"Themr",
 		"Vue Syntax Highlight"
-	],
-	"repositories":
-	[
-		"https://github.com/stefanzweifel/sublime-snippet-library"
 	]
 }

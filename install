@@ -1,89 +1,8 @@
 #!/usr/bin/env bash
 
-#==============================
-# Forked from http://github.com/daneden/dotfiles
-#==============================
-
-# First, let's set up some ouput functions
-red=$'\e[1;31m'
-pur=$'\e[0;35m'
-yel=$'\e[0;33m'
-grn=$'\e[0;32m'
-end=$'\e[0m'
-
-msg() {
-  printf "${yel} ~ ${pur}$*${end}\n"
-}
-
-suc() {
-  printf "${grn}$*${end}\n"
-}
-
-warn() {
-  printf "${red}$*${end}\n"
-}
-
-don() {
-  printf "...done\n\n"
-}
-
-#==============================
-# Introduction
-#==============================
-
-printf "\n\n${yel} _____     ______     ______   ______   __     __         ______     ______
-/\\  __-.  /\\  __ \\   /\\__  _\\ /\\  ___\\ /\\ \\   /\\ \\       /\\  ___\\   /\\  ___\\
-\\ \\ \\/\\ \\ \\ \\ \\/\\ \\  \\/_/\\ \\/ \\ \\  __\\ \\ \\ \\  \\ \\ \\____  \\ \\  __\\   \\ \\___  \\
- \\ \\____-  \\ \\_____\\    \\ \\_\\  \\ \\_\\    \\ \\_\\  \\ \\_____\\  \\ \\_____\\  \\/\\_____\\
-  \\/____/   \\/_____/     \\/_/   \\/_/     \\/_/   \\/_____/   \\/_____/   \\/_____/${end}
-
-                             ${red}BY STEFAN ZWEIFEL${end}\n\n\n"
-
-printf "This script is gonna setup your computer to be a developer machine. Continue? [Y/n] "
-read a
-if [[ $a == "N" || $a == "n" ]]; then
-  printf "\n${red}Abort ...${end}\n"
-  exit;
-else
-  printf "\n${grn}You're the boss. Here we go. (Password may be required now.)${end}\n\n"
-fi
-
-#==============================
-# Homebrew
-# Check presence of Homebrew,
-# add bundler, then install our
-# desired recipes & update them
-#==============================
-
-if [[ `uname` == "Darwin" ]]; then
-
-    printf "Install Homebrew and install bundle? [Y/N]"
-    read a
-
-    if [[ $a == "N" || $a == "n" ]]; then
-      printf "${pur}Skipped.${end}\n\n"
-    else
-      printf "\n${grn}Install ...${end}\n\n"
-
-        msg "Installing Homebrew packages..."
-        type brew &>/dev/null && printf "`brew bundle`" || echo "`ruby -e \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)\" && brew tap Homebrew/bundle && brew bundle`"
-        brew update && brew upgrade `brew outdated`
-        don
-
-    fi
-
-fi
-
-
-#==============================
-# Dotfiles management
-#==============================
-
-msg "Setup dotfiles ..."
-
 set -e
 
-CONFIG="install.conf.json"
+CONFIG="install.conf.yml"
 DOTBOT_DIR="dotbot"
 
 DOTBOT_BIN="bin/dotbot"
@@ -92,39 +11,4 @@ BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "${BASEDIR}"
 git submodule update --init --recursive "${DOTBOT_DIR}"
 
-"${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
-
-don
-
-#==============================
-#
-# OS X Stuff
-#
-#==============================
-
-printf "Should I apply some predefined OS X settings for you? [Y/N]"
-read a
-
-if [[ $a == "N" || $a == "n" ]]; then
-  printf "${pur}Okay. I skipped this part.${end}\n\n"
-else
-  printf "\n${grn}Apply settings ...${end}\n\n"
-  sh osx/.osx
-fi
-
-#==============================
-#
-# Closing ceremonies
-#
-#==============================
-
-# Switch to zsh if we're not already there
-# if [[ ! `echo $SHELL` == "/bin/zsh" ]]; then
-#   msg "Switching to zsh..."
-#   chsh -s /bin/zsh
-#   don
-# fi
-
-# source $HOME/.zshrc
-
-suc "==> All done! Happy hacking."
+"${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" --plugin-dir dotbot-brew -c "${CONFIG}" "${@}"
