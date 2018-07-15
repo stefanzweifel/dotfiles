@@ -26,6 +26,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/opt/node@8/bin:$PATH"
 
 # TMUX Settings
 export DISABLE_AUTO_TITLE='true'

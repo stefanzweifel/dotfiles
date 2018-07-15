@@ -22,7 +22,7 @@ brew 'zsh-completion'
 # Development
 brew 'php'
 brew 'mysql'
-brew 'node'
+brew 'node@8'
 brew 'yarn'
 
 
