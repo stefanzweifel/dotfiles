@@ -21,7 +21,7 @@ brew 'zsh-completion'
 
 # Development
 brew 'php'
-brew 'mysql'
+brew 'mariadb'
 brew 'node@8'
 brew 'yarn'
 
@@ -39,7 +39,6 @@ cask 'firefox'
 cask 'flux'
 cask 'google-backup-and-sync'
 cask 'google-chrome'
-cask 'gpgtools'
 cask 'highsierramediakeyenabler'
 cask 'iina'
 cask 'insomnia'
