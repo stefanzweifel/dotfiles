@@ -9,6 +9,12 @@
   - [mkdir -p ~/dev, Create Development Folder]
   - [mkdir -p ~/.composer, Create global composer folder]
   - [mkdir -p ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User]
+  -
+    command: wget -O $HOME/.oh-my-zsh/custom/themes/common.zsh-theme https://raw.githubusercontent.com/jackharrisonsherlock/common/master/common.zsh-theme
+    message: Install theme
+    stdout: true
+    stderr: true
+    stdin: true
 
 - link:
     ~/.gitconfig: git/gitconfig
