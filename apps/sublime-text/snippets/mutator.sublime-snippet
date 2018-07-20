@@ -1,11 +1,5 @@
 <snippet>
     <content><![CDATA[
-/**
- * Set the ${1:attribute} attribute.
- *
- * @param   mixed   $value
- * @return  void
- */
 public function set${1/(?:^| )([a-z])?/\U$1/g}Attribute(\$value)
 {
     \$this->attributes['${1/( )/_/}'] = $2;

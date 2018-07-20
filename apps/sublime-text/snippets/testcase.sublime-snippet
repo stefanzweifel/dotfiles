@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[
+<?php
+
+use Illuminate\Foundation\Testing\WithoutMiddleware;
+use Illuminate\Foundation\Testing\DatabaseMigrations;
+use Illuminate\Foundation\Testing\DatabaseTransactions;
+
+class ${TM_FILENAME/(\w+)\.php/\1/} extends TestCase
+{
+    ${0}
+}
+]]></content>
+    <tabTrigger>testcase</tabTrigger>
+</snippet>
