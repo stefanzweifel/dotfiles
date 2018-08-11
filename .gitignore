@@ -3,3 +3,5 @@
 .Trashes
 zsh/.zsh/histfile
 zsh/.zsh/cache
+apps/phoenix/spaces/list_raw.json
+apps/phoenix/spaces/list.json
