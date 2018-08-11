@@ -21,6 +21,7 @@ alias pserve="php -S localhost:"
 
 # Laravel
 alias art='php artisan'
+alias mfs='php artisan migrate:fresh --seed'
 
 # Composer
 alias ci="composer install"
