@@ -5,6 +5,7 @@ tap 'caskroom/versions'
 tap 'homebrew/bundle'
 
 brew 'ack'
+brew 'bat'
 brew 'composer'
 brew 'coreutils'
 brew 'git'
@@ -17,6 +18,7 @@ brew 'wget'
 brew 'youtube-dl'
 brew 'zsh'
 brew 'zsh-completion'
+brew 'zsh-autosuggestions'
 
 
 # Development
