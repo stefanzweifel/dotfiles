@@ -15,7 +15,7 @@
     ~/.gitconfig: git/gitconfig
     ~/.gitattributes: git/gitattributes
     ~/.gitignore: git/gitignore
-    ~/.zshrc: zsh/zshrc
+    ~/.zshrc: zsh/.zshrc
     ~/.composer/composer.json: composer/composer.json
     ~/.config/phoenix: apps/phoenix
     ~/Library/Application Support/Sublime Text 3/Packages/User/themes: apps/sublime-text/themes
