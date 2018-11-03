@@ -5,12 +5,9 @@
 	],
 	"installed_packages":
 	[
-		"A File Icon",
 		"AdvancedNewFile",
 		"Babel",
 		"Blade Snippets",
-		"BracketHighlighter",
-		"Comment-Snippets",
 		"DocBlockr",
 		"Duotones Colorschemes",
 		"Emmet",
@@ -18,8 +15,6 @@
 		"GitGutter",
 		"Handlebars",
 		"HTML Snippets",
-		"HTMLBeautify",
-		"JavaScript Enhancements",
 		"Laravel 4 Snippets",
 		"Laravel Blade Highlighter",
 		"MarkdownEditing",
@@ -34,8 +29,6 @@
 		"Pretty JSON",
 		"Sass",
 		"Schemr",
-		"SideBarEnhancements",
-		"TerminalView",
 		"Theme - SoDaReloaded",
 		"Themr",
 		"Vue Syntax Highlight"
