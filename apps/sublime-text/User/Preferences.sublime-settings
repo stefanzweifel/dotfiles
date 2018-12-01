@@ -4,7 +4,7 @@
 	"auto_complete_with_fields": true,
 	"caret_style": "blink",
 	"close_windows_when_empty": true,
-	"color_scheme": "Packages/Duotones Colorschemes/duotone-dark.dark.tmTheme",
+	"color_scheme": "Packages/Duotones Colorschemes/duotone-darkspace.dark.tmTheme",
 	"detect_indentation": true,
 	"drag_text": false,
 	"draw_minimap_border": true,
@@ -29,13 +29,13 @@
 		".sass-cache",
 		"node_modules"
 	],
-	"font_face": "SFMono-Regular",
+	"font_face": "IBM Plex Mono",
 	"font_options":
 	[
 		"no_round",
 		"subpixel_antialias"
 	],
-	"font_size": 12,
+	"font_size": 14,
 	"highlight_line": true,
 	"ignored_packages":
 	[
