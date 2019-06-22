@@ -45,3 +45,9 @@ source $HOME/.dotfiles/zsh/aliases
 composer-link() {
     composer config repositories.local '{"type": "path", "url": "'$1'"}' --file composer.json
 }
+
+# Go Setup
+
+export GOPATH="${HOME}/.go"
+export GOROOT="$(brew --prefix golang)/libexec"
+export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
