@@ -4,7 +4,7 @@ ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="common"
 
-DEFAULT_USER="stefan"
+DEFAULT_USER="stefanzweifel"
 
 # Set to this to use case-sensitive completion
 CASE_SENSITIVE="true"
@@ -20,7 +20,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-extras git-flow npm brew composer sublime zsh-syntax-highlighting laravel5)
+plugins=(git git-extras git-flow npm brew composer sublime laravel5)
 
 source $ZSH/oh-my-zsh.sh
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
