@@ -8,13 +8,14 @@
 		"AdvancedNewFile",
 		"Babel",
 		"Blade Snippets",
+		"ColorSchemeEditor",
 		"DocBlockr",
 		"Duotones Colorschemes",
 		"Emmet",
 		"Format JSDoc @params",
-		"GitGutter",
 		"Handlebars",
 		"HTML Snippets",
+		"Inspired GitHub Color Scheme",
 		"Laravel 4 Snippets",
 		"Laravel Blade Highlighter",
 		"MarkdownEditing",
@@ -29,7 +30,11 @@
 		"Pretty JSON",
 		"Sass",
 		"SideBarEnhancements",
+		"Solarized Color Scheme",
+		"Terraform",
 		"Theme - SoDaReloaded",
+		"Theme - Solarized Space",
+		"TOML",
 		"Vue Syntax Highlight"
 	]
 }

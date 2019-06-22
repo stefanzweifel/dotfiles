@@ -4,7 +4,7 @@
 	"auto_complete_with_fields": true,
 	"caret_style": "blink",
 	"close_windows_when_empty": true,
-	"color_scheme": "Packages/Duotones Colorschemes/duotone-darkspace.dark.tmTheme",
+	"color_scheme": "Packages/User/themes/Primer - Light 2.tmTheme",
 	"detect_indentation": true,
 	"drag_text": false,
 	"draw_minimap_border": true,
@@ -29,7 +29,7 @@
 		".sass-cache",
 		"node_modules"
 	],
-	"font_face": "IBM Plex Mono",
+	"font_face": "SFMono-Regular",
 	"font_options":
 	[
 		"no_round",
