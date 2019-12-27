@@ -9,12 +9,11 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
-alias -- -="cd -"
 
 # Paths
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias dv="cd ~/Code"
+alias dv="cd ~/dev"
 
 # PHP
 alias pserve="php -S localhost:"

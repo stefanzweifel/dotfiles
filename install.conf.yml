@@ -6,15 +6,14 @@
 - clean: ['~', '~/.cache', '~/.zshrc']
 
 
-- brewfile:
-    - homebrew/Brewfile
+# - brewfile:
+    # - homebrew/Brewfile
 
 - shell:
   - [mkdir -p ~/dev, Create Development Folder]
+  - [mkdir -p ~/Sites, Create Sites Folder]
   - [mkdir -p ~/.composer, Create global composer folder]
   - [mkdir -p ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User]
-  - [git clone https://github.com/pindexis/qfc $HOME/.qfc]
-  - wget -O $HOME/.oh-my-zsh/custom/themes/common.zsh-theme https://raw.githubusercontent.com/jackharrisonsherlock/common/master/common.zsh-theme
 
 - link:
     ~/.gitconfig: git/gitconfig
