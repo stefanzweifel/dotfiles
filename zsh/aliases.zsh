@@ -33,6 +33,17 @@ alias puf="./vendor/bin/phpunit --filter="
 alias pw="phpunit-watcher watch"
 alias pwf="phpunit-watcher watch --filter "
 
+# Git
+alias gs="git status"
+alias gc="git checkout"
+alias gpo="git push origin"
+alias gm="git merge"
+alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias nah='git reset --hard;git clean -df'
+
+# PhpStorm
+alias phpstorm='open -a /Applications/PhpStorm.app "`pwd`"'
+
 # Empty the Trash on all mounted volumes and the main HDD
 # Also, clear Apple’s System Logs to improve shell startup speed
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
