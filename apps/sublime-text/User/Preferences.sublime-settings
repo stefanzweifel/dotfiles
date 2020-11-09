@@ -60,7 +60,7 @@
 	"scroll_past_end": true,
 	"show_full_path": false,
 	"tab_size": 4,
-	"theme": "SoDaReloaded Light.sublime-theme",
+	"theme": "Default.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"word_wrap": false,
