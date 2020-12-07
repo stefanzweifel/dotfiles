@@ -3,7 +3,6 @@ tap 'homebrew/bundle'
 tap 'homebrew/cask-fonts'
 tap 'homebrew/cask'
 
-
 brew 'bat'
 brew 'composer'
 brew 'git'
@@ -26,10 +25,10 @@ brew 'tree'
 
 
 # Development
- brew 'php'
-# brew 'mariadb'
- brew 'node'
- brew 'yarn'
+brew 'php@7.4'
+# brew 'php'
+brew 'node'
+brew 'yarn'
 
 
 # Apps
