@@ -311,6 +311,56 @@
             }
           }
         }
+      },
+      "dnsmasq": {
+        "version": "2.82",
+        "bottle": {
+          "cellar": "/opt/homebrew/Cellar",
+          "prefix": "/opt/homebrew",
+          "files": {
+            "big_sur": {
+              "url": "https://homebrew.bintray.com/bottles/dnsmasq-2.82.big_sur.bottle.tar.gz",
+              "sha256": "d452e2a6562538d398ffa39c7a1761d222d613b2cbcadf5796a7dc2a25697d55"
+            },
+            "catalina": {
+              "url": "https://homebrew.bintray.com/bottles/dnsmasq-2.82.catalina.bottle.tar.gz",
+              "sha256": "0cab9dbb88d09946faed36b09a1f0919141b3e56eea45e5f77969619e00796e0"
+            },
+            "mojave": {
+              "url": "https://homebrew.bintray.com/bottles/dnsmasq-2.82.mojave.bottle.tar.gz",
+              "sha256": "c70c3fe42cdabac2497377e6718678eb5c433658ce1ea92e4193d6877d81c628"
+            },
+            "high_sierra": {
+              "url": "https://homebrew.bintray.com/bottles/dnsmasq-2.82.high_sierra.bottle.tar.gz",
+              "sha256": "77e52871d7bd6af6f4f1e7b1d55bae2fa235c1d6cafc14b290758b741bc19f95"
+            }
+          }
+        }
+      },
+      "nginx": {
+        "version": "1.19.5",
+        "bottle": {
+          "cellar": "/opt/homebrew/Cellar",
+          "prefix": "/opt/homebrew",
+          "files": {
+            "big_sur": {
+              "url": "https://homebrew.bintray.com/bottles/nginx-1.19.5.big_sur.bottle.tar.gz",
+              "sha256": "9deda8734db308f21e3c8601e0a62a22dc91260fa9155f3695fe9bdb294af69a"
+            },
+            "arm64_big_sur": {
+              "url": "https://homebrew.bintray.com/bottles/nginx-1.19.5.arm64_big_sur.bottle.tar.gz",
+              "sha256": "7066a9b43b6a0aee99dc056c08d9ba68ca52f87fede5e0e6cd9b91dbb81a2637"
+            },
+            "catalina": {
+              "url": "https://homebrew.bintray.com/bottles/nginx-1.19.5.catalina.bottle.tar.gz",
+              "sha256": "aff0c071bc1b2e8e84e0dd99ffe01a6a29fc6fc933372099bb2aa55d312e501d"
+            },
+            "mojave": {
+              "url": "https://homebrew.bintray.com/bottles/nginx-1.19.5.mojave.bottle.tar.gz",
+              "sha256": "9f8c235119144279a014e3b88db1658f139bc1bbc9f81ea714a99b3dbba887f1"
+            }
+          }
+        }
       }
     },
     "cask": {

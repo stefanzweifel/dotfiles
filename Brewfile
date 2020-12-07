@@ -5,6 +5,7 @@ tap 'homebrew/cask'
 
 brew 'bat'
 brew 'composer'
+brew 'dnsmasq'
 brew 'git'
 brew 'goaccess'
 brew 'htop'
