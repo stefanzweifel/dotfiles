@@ -57,3 +57,7 @@ alias cat="bat"
 alias ping='prettyping --nolegend'
 alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
 alias help='tldr'
+
+
+alias ros2="arch -x86_64 "
+alias brew="arch -x86_64 brew"
