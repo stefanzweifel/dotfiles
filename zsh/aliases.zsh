@@ -13,7 +13,8 @@ alias ~="cd ~" # `cd` is probably faster to type though
 # Paths
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias dv="cd ~/dev"
+alias dv="cd ~/Sites"
+alias dotfiles="cd $DOTFILES"
 
 # PHP
 alias pserve="php -S localhost:"
@@ -48,16 +49,20 @@ alias phpstorm='open -a /Applications/PhpStorm.app "`pwd`"'
 # Also, clear Apple’s System Logs to improve shell startup speed
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
 
-alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
-
+# Start Google Chrome Browser
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 
+# Analyse Disk Space
+alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
 
+# Transpile binaries through Rosetta 2 (for Apple Silicon machines)
+alias ros2="arch -x86_64 "
+
+# Make Homebrew compatible with Apple Silicon
+alias brew="arch -x86_64 brew"
+
+
+alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
 alias cat="bat"
 alias ping='prettyping --nolegend'
-alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
 alias help='tldr'
-
-
-alias ros2="arch -x86_64 "
-alias brew="arch -x86_64 brew"
