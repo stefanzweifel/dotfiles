@@ -1,44 +1,45 @@
 # Taps
-tap 'caskroom/cask'
-tap 'caskroom/fonts'
-tap 'caskroom/versions'
 tap 'homebrew/bundle'
+tap 'homebrew/cask-fonts'
+tap 'homebrew/cask'
 
-brew 'ack'
+
 brew 'bat'
 brew 'composer'
-brew 'coreutils'
 brew 'git'
 brew 'goaccess'
-brew 'grep'
+brew 'htop'
 brew 'hub'
-brew 'ncdu'
-brew 'prettyping'
-brew 'tree'
-brew 'tldr'
-brew 'wget'
 brew 'youtube-dl'
-brew 'zsh'
-brew 'zsh-completion'
-brew 'zsh-autosuggestions'
+brew 'tree'
+
+
+# brew 'ack'
+# brew 'coreutils'
+# brew 'grep'
+# brew 'ncdu'
+# brew 'prettyping'
+# brew 'tldr'
+# brew 'zsh'
+# brew 'zsh-completion'
+# brew 'zsh-autosuggestions'
 
 
 # Development
-brew 'php'
-brew 'mariadb'
-brew 'node'
-brew 'yarn'
+ brew 'php'
+# brew 'mariadb'
+ brew 'node'
+ brew 'yarn'
 
 
 # Apps
 # cask '1password'
 # cask 'alfred'
-cask 'caffeine'
+# cask 'caffeine'
 # cask 'dropshare'
 # cask 'figma'
 # cask 'firefox'
 # cask 'google-backup-and-sync'
-cask 'highsierramediakeyenabler'
 # cask 'iina'
 # cask 'insomnia'
 # cask 'istat-menus'
@@ -51,10 +52,10 @@ cask 'highsierramediakeyenabler'
 # cask 'transmit'
 
 # Quicklook
-cask 'qlmarkdown'
-cask 'quicklook-json'
-cask 'quicklook-csv'
-cask 'qlstephen'
+# cask 'qlmarkdown'
+# cask 'quicklook-json'
+# cask 'quicklook-csv'
+# cask 'qlstephen'
 
 # Fonts
 cask 'font-iosevka'
