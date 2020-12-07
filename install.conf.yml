@@ -20,8 +20,8 @@
     ~/.gitconfig: git/gitconfig
     ~/.gitattributes: git/gitattributes
     ~/.gitignore: git/gitignore
-    ~/.zshrc: zsh/.zshrc
-    ~/.composer/composer.json: composer/composer.json
+    ~/.zshrc: zsh/zshrc.zsh
+    ~/.composer/composer.json: global-composer.json
     ~/Library/Application Support/Sublime Text 3/Packages/User/themes: apps/sublime-text/themes
     ~/Library/Application Support/Sublime Text 3/Packages/User/snippets: apps/sublime-text/snippets
     ~/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings: apps/sublime-text/user/Preferences.sublime-settings
@@ -35,4 +35,4 @@
   - [composer global install]
   - [git submodule update --init --recursive]
   - [git config --global core.excludesfile ~/.gitignore]
-  - [ros2 valet install]
+  # - [ros2 valet install]
