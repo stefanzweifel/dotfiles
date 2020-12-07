@@ -13,7 +13,7 @@
 [core]
 	editor = vim
 	quotepath = false
-	excludesfile = /Users/stefanzweifel/.dotfiles/git/gitignore
+	excludesfile = /Users/stefan/.gitignore
 [mergetool]
 	keepBackup = true
 [filter "lfs"]
