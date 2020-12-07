@@ -41,6 +41,9 @@ export PATH="$HOME/.node/bin:$PATH"
 # Use project specific binaries before global ones
 export PATH="node_modules/.bin:vendor/bin:$PATH"
 
+# Add Homebrews sbin path
+export PATH="/usr/local/sbin:$PATH"
+
 # Install z (https://github.com/rupa/z)
 # . /usr/local/etc/profile.d/z.sh
 
@@ -74,7 +77,7 @@ function commit() {
 }
 
 
-# Open Database 
+# Open Database
 function opendb () {
     [ ! -f .env ] && { echo "No .env file found."; exit 1; }
 
