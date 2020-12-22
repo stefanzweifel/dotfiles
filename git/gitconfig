@@ -7,13 +7,16 @@
 [help]
     autocorrect = 1
 [color]
-	ui = true
+    diff = auto
+    status = auto
+    branch = auto
+    ui = true
 [github]
     user = stefanzweifel
 [core]
 	editor = vim
 	quotepath = false
-	excludesfile = /Users/stefan/.gitignore
+	excludesfile = ~/.gitignore
 [mergetool]
 	keepBackup = true
 [filter "lfs"]
@@ -21,6 +24,13 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+
+[push]
+    # See `git help config` (search for push.default)
+    # for more information on different options of the below setting.
+    #
+    # Setting to git 2.0 default to suppress warning message
+    default = simple
 
 [alias]
    forget="! /usr/local/bin/git fetch -p && /usr/local/bin/git branch -vv | awk '/: gone]/{print $1}' | xargs /usr/local/bin/git branch -D"
