@@ -35,4 +35,5 @@
   - [composer global install]
   - [git submodule update --init --recursive]
   - [git config --global core.excludesfile ~/.gitignore]
+  - [sh macOs/set-defaults.sh]
   # - [ros2 valet install]
