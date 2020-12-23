@@ -1,7 +1,7 @@
 <snippet>
     <content><![CDATA[@extends('${1:layouts.master}')
 
-@section('title') ${2:meta_title} @stop
+@section('title', ${2:meta_title})
 
 @section('content')
 ${3:content}
