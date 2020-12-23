@@ -1,7 +1,0 @@
-<snippet>
-    <content><![CDATA[
-\$this->${1:method_name}
-]]></content>
-    <tabTrigger>$th</tabTrigger>
-    <scope>source.php</scope>
-</snippet>
