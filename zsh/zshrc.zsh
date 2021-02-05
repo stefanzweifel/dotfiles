@@ -93,3 +93,9 @@ function opendb () {
     echo "Opening ${DB_URL}"
     open $DB_URL
  }
+
+
+# Execute a single test n times
+function brittle-test() {
+    for i in {1.."${2:-5}"}; do ./vendor/bin/phpunit --filter $1; done
+}
