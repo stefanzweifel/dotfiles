@@ -42,7 +42,8 @@ export PATH="$HOME/.node/bin:$PATH"
 export PATH="node_modules/.bin:vendor/bin:$PATH"
 
 # Add Homebrews sbin path
-export PATH="/usr/local/sbin:$PATH"
+export PATH="/opt/homebrew/bin:$PATH"
+export PATH="/opt/homebrew/sbin:$PATH"
 
 # Install z (https://github.com/rupa/z)
 # . /usr/local/etc/profile.d/z.sh
