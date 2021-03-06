@@ -24,10 +24,10 @@ alias art='php artisan'
 alias mfs='php artisan migrate:fresh --seed'
 
 # Composer
-alias c="/usr/local/bin/composer"
-alias ci="/usr/local/bin/composer install"
-alias cr="/usr/local/bin/composer require"
-alias cda="/usr/local/bin/composer dumpautoload"
+alias c="/opt/homebrew/bin/composer"
+alias ci="/opt/homebrew/bin/composer install"
+alias cr="/opt/homebrew/bin/composer require"
+alias cda="/opt/homebrew/bin/composer dumpautoload"
 
 # PHP Unit
 alias puf="./vendor/bin/phpunit --filter="
