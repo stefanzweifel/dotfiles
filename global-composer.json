@@ -2,7 +2,7 @@
     "require": {
         "laravel/installer": "~4.0",
         "laravel/valet": "~2.0",
-        "deployer/deployer": "^6.0",
-        "spatie/phpunit-watcher": "^1.12"
+        "spatie/phpunit-watcher": "^1.12",
+        "laravel/forge-cli": "^0.1.4"
     }
 }
