@@ -4,10 +4,10 @@
 	"auto_complete_with_fields": true,
 	"caret_style": "blink",
 	"close_windows_when_empty": true,
-	"color_scheme": "Packages/User/themes/Primer - Light 2.tmTheme",
+	"color_scheme": "auto",
 	"detect_indentation": true,
 	"drag_text": false,
-	"draw_minimap_border": true,
+	"draw_minimap_border": false,
 	"enable_tab_scrolling": false,
 	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":
@@ -40,7 +40,7 @@
 	"ignored_packages":
 	[
 		"Markdown",
-		"Vintage"
+		"Vintage",
 	],
 	"indent_guide_options":
 	[
@@ -60,9 +60,13 @@
 	"scroll_past_end": true,
 	"show_full_path": false,
 	"tab_size": 4,
-	"theme": "Default.sublime-theme",
+	"theme": "auto",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"word_wrap": false,
-	"wrap_width": 80
+	"wrap_width": 80,
+	"dark_theme": "Default Dark.sublime-theme",
+	"light_theme": "Default.sublime-theme",
+	"dark_color_scheme": "Packages/rsms-sublime/rsms-dark.sublime-color-scheme",
+	"light_color_scheme": "Packages/User/themes/Primer - Light 2.tmTheme",
 }
