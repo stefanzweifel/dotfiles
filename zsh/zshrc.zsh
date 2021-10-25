@@ -41,11 +41,11 @@ export PATH="$HOME/.node/bin:$PATH"
 # Use project specific binaries before global ones
 export PATH="node_modules/.bin:vendor/bin:$PATH"
 
-# Add Homebrews sbin path
+# Add Homebrews sbin path
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/opt/homebrew/sbin:$PATH"
 
-# Install z (https://github.com/rupa/z)
+# Install z (https://github.com/rupa/z)
 # . /usr/local/etc/profile.d/z.sh
 
 
@@ -78,7 +78,7 @@ function commit() {
 }
 
 
-# Open Database
+# Open Database
 function opendb () {
     [ ! -f .env ] && { echo "No .env file found."; exit 1; }
 
@@ -100,3 +100,8 @@ function opendb () {
 function brittle-test() {
     for i in {1.."${2:-5}"}; do ./vendor/bin/phpunit --filter $1; done
 }
+
+# Fix puppeteer install on M1 MacBook
+# export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
+# export PUPPETEER_EXECUTABLE_PATH=`which chrome`
+# export PUPPETEER_PRODUCT=firefox

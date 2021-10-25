@@ -1,5 +1,5 @@
 # Globally ignored files
-# See: https://dev.to/grahamcox82/global-git-ignores
+# See: https://dev.to/grahamcox82/global-git-ignores
 
 .DS_Store
 .*.swp

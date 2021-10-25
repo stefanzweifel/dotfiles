@@ -8,11 +8,11 @@
 # brew cleanup
 # brew cask cleanup
 
-# mas upgrade
+# mas upgrade
 
 # composer global update
 
-# yarn global upgrade
+# yarn global upgrade
 
 
 # Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages

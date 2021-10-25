@@ -52,10 +52,10 @@ alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo 
 # Start Google Chrome Browser
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 
-# Analyse Disk Space
+# Analyse Disk Space
 alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
 
-# Transpile binaries through Rosetta 2 (for Apple Silicon machines)
+# Transpile binaries through Rosetta 2 (for Apple Silicon machines)
 alias ros2="arch -x86_64 "
 
 
