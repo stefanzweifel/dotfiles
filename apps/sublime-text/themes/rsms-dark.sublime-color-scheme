@@ -1,32 +1,37 @@
 {
-  "name": "rsms dark v2",
+  "name": "rsms dark",
   "author": "rsms",
   "variables": {
-    "red": "hsl(5, 100%, 50%)",
+    "red":    "hsl(5, 100%, 50%)",
+    "green":  "hsl(150, 100%, 43%)",
+    "blue":   "hsl(210, 100%, 50%)",
     "orange": "hsl(27, 100%, 50%)",
     "yellow": "hsl(60, 100%, 50%)",
-    "green": "hsl(150, 100%, 43%)",
-    "cyan": "hsl(180, 100%, 50%)",
-    "blue": "hsl(210, 100%, 50%)",
+    "cyan":   "hsl(180, 100%, 50%)",
     // "transparent": "#ff000000",  // note: ff needed to force transparency
 
     "fg": "#fff",
-    "bg": "hsl(60, 5%, 8%)",
+    "bg": "hsl(50, 3%, 10%)",
     "unimportant": "color(var(fg) alpha(0.4))",
     "cursor": "hsl(320, 90%, 70%)",
+    "accent": "var(cursor)",
     "selection": "hsl(204, 100%, 70%)",
     "type": "var(orange)",
     "keyword": "var(blue)",
     "data": "var(green)",
+    "meta": "color(var(data) saturation(15%) lightness(50%))",
+    "metaKeyword": "color(var(data) saturation(20%) lightness(60%))",
+    "header": "color(var(keyword) saturation(80%) lightness(70%))",
 
     "fgBase": "color(var(fg) alpha(0.8))",
-    "typeRef": "color(var(type) lightness(87%) saturation(100%))",
-    "keywordBase": "color(var(keyword) lightness(70%) saturation(40%))",
-    "dataBase": "color(var(data) saturation(70%) lightness(70%))",
+    "typeRef": "color(var(type) saturation(100%) lightness(87%))",
+    "keywordBase": "color(var(keyword) saturation(40%) lightness(70%))",
+    "dataBase": "color(var(data) saturation(40%) lightness(70%))",
   },
   "globals": {
     "foreground": "var(fgBase)",
     "background": "var(bg)",
+    "accent": "var(accent)",
     "caret": "var(cursor)",
 
     // selection
@@ -55,9 +60,9 @@
     // "invisibles": "#000",  // defaults to color(foreground alpha(0.35))
 
     // brackets
-    "brackets_options": "foreground underline",
-    "bracket_contents_options": "foreground",
+    "brackets_options": "foreground bold",
     "brackets_foreground": "var(cursor)",
+    "bracket_contents_options": "foreground",
     "bracket_contents_foreground": "var(cursor)",
 
     // canvas shadow (indicates scroll)
@@ -70,6 +75,22 @@
       "scope": "comment",
       "foreground": "color(var(fg) alpha(0.35))",
       // "foreground_adjust": "alpha(0.3)"
+    },
+
+    {
+      // meta keyword (may appear in comments)
+      "scope": "meta.keyword",
+      "foreground": "var(metaKeyword)",
+    },
+    {
+      // meta variable (may appear in comments)
+      "scope": "meta.variable",
+      "foreground": "var(meta)",
+    },
+    {
+      // meta variable (may appear in comments)
+      "scope": "meta.annotation",
+      "foreground": "var(meta)",
     },
 
     {
@@ -101,7 +122,7 @@
     {
       // Type definition
       // e.g. "Foo" in `typedef struct x Foo` (C)
-      "scope": "entity.name.type, meta.type.declaration entity.name.type, entity.name.type.typedef",
+      "scope": "entity.name.type, entity.name.class, meta.type.declaration entity.name.type, entity.name.type.typedef",
       "foreground": "color(var(type) lightness(70%) saturation(90%))"
     },
     {
@@ -141,7 +162,8 @@
 
     // Data
     { // e.g. "foo" and 42
-      "scope": "string, constant",
+      // Note: JS inside HTML uses punctuation.definition...
+      "scope": "string, constant, string punctuation.definition, constant punctuation.definition",
       "foreground": "var(dataBase)"
     },
     { // e.g. "%d" in `"age: %d"`
@@ -240,6 +262,48 @@
     },
 
 
+
+    // -------------------------------------------------------------------------------------------
+    // diff
+    {
+      "scope": "source.diff",
+      "foreground": "color(var(fg) alpha(0.5))",
+      // "font_style": "italic underline"
+    },
+    { // all meta, including e.g. "@@ -26,6 +26,7 @@"
+      "scope": "meta.diff",
+      "foreground": "color(var(cyan) saturation(40%) lightness(60%))",
+      "font_style": "italic"
+    },
+    { // header
+      "scope": "meta.diff.header",
+      "foreground": "var(header)",
+      "font_style": "italic"
+    },
+    { // header prev files e.g. "--- a.c"
+      "scope": "meta.diff.header.from-file",
+      "foreground": "color(var(red) saturation(90%) lightness(70%))",
+    },
+    { // header next file e.g. "+++ a.c"
+      "scope": "meta.diff.header.to-file",
+      "foreground": "color(var(green) saturation(90%) lightness(60%))",
+    },
+
+    { // removed line
+      "scope": "markup.deleted",
+      "foreground": "color(var(red) saturation(65%) lightness(70%))",
+      // "background": "color(var(red) saturation(10%) lightness(10%))",
+      // "background": "#151515",
+      "background": "color(var(bg) lightness(9%))",
+    },
+    { // added line
+      "scope": "markup.inserted",
+      "foreground": "color(var(green) saturation(90%) lightness(80%))",
+      // "background": "color(var(green) saturation(10%) lightness(13%))",
+    },
+
+
+    // -------------------------------------------------------------------------------------------
     // misc
     {
       "scope": "invalid.deprecated",
@@ -251,6 +315,12 @@
       "foreground": "var(fg)",
       "background": "var(red)"
     },
+
+    // {
+    //   "scope": "meta.block.go",
+    //   "foreground": "var(fg)",
+    //   "background": "var(red)"
+    // },
 
     // Example of Hashed Syntax Highlighting
     // https://www.sublimetext.com/docs/3/color_schemes.html#hashed_syntax_highlighting
