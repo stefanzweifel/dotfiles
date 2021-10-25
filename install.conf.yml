@@ -8,12 +8,12 @@
 - create:
   - ~/Sites
   - ~/.composer
-  - ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+  - ~/Library/Application Support/Sublime Text/Packages/User/
 
-- shell:
-  - [brew tap homebrew/bundle]
-  - [brew bundle]
-  # TODO: Install Homebrew if it doesnt exist yet
+# - shell:
+  # - [brew tap homebrew/bundle]
+  # - [brew bundle]
+  # TODO: Install Homebrew if it doesnt exist yet
   # - [/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)", 'Install Homebrew']
 
 - link:
@@ -22,6 +22,12 @@
     ~/.gitignore: git/gitignore
     ~/.zshrc: zsh/zshrc.zsh
     ~/.composer/composer.json: global-composer.json
+    ~/Library/Application Support/Sublime Text/Packages/User/themes: apps/sublime-text/themes
+    ~/Library/Application Support/Sublime Text/Packages/User/snippets: apps/sublime-text/snippets
+    ~/Library/Application Support/Sublime Text/Packages/User/Preferences.sublime-settings: apps/sublime-text/user/Preferences.sublime-settings
+    ~/Library/Application Support/Sublime Text/Packages/User/Default (OSX).sublime-keymap: apps/sublime-text/user/Default (OSX).sublime-keymap
+    ~/Library/Application Support/Sublime Text/Packages/User/Default (OSX).sublime-mousemap: apps/sublime-text/user/Default (OSX).sublime-mousemap
+    ~/Library/Application Support/Sublime Text/Packages/User/Package Control.sublime-settings: apps/sublime-text/user/Package Control.sublime-settings
     ~/Library/Application Support/Sublime Text 3/Packages/User/themes: apps/sublime-text/themes
     ~/Library/Application Support/Sublime Text 3/Packages/User/snippets: apps/sublime-text/snippets
     ~/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings: apps/sublime-text/user/Preferences.sublime-settings
@@ -32,8 +38,8 @@
 
 - shell:
   - [touch $HOME/.hushlogin]
-  - [composer global install]
   - [git submodule update --init --recursive]
-  - [git config --global core.excludesfile ~/.gitignore]
-  - [sh macOs/set-defaults.sh]
+  # - [composer global install]
+  # - [git config --global core.excludesfile ~/.gitignore]
+  # - [sh macOs/set-defaults.sh]
   # - [ros2 valet install]

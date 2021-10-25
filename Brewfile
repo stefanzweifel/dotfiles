@@ -18,12 +18,12 @@ brew 'tree'
 brew 'youtube-dl'
 
 
-# brew 'ack'
+# brew 'ack'
 # brew 'coreutils'
-# brew 'grep'
-# brew 'zsh'
-# brew 'zsh-completion'
-# brew 'zsh-autosuggestions'
+# brew 'grep'
+# brew 'zsh'
+# brew 'zsh-completion'
+# brew 'zsh-autosuggestions'
 
 
 # Development
@@ -36,7 +36,7 @@ brew 'yarn'
 # Apps
 # cask '1password'
 # cask 'alfred'
-# cask 'caffeine'
+# cask 'caffeine'
 # cask 'dropshare'
 # cask 'figma'
 # cask 'firefox'
