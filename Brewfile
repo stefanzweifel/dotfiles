@@ -10,6 +10,7 @@ brew 'git'
 brew 'goaccess'
 brew 'htop'
 brew 'hub'
+brew 'mas'
 brew 'ncdu'
 brew 'nginx'
 brew 'prettyping'
@@ -17,18 +18,13 @@ brew 'tldr'
 brew 'tree'
 brew 'youtube-dl'
 
-
-# brew 'ack'
-# brew 'coreutils'
-# brew 'grep'
 # brew 'zsh'
 # brew 'zsh-completion'
 # brew 'zsh-autosuggestions'
 
 
 # Development
-brew 'php@7.4'
-# brew 'php'
+brew 'php'
 brew 'node'
 brew 'yarn'
 

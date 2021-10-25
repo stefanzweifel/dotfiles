@@ -14,6 +14,7 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias dv="cd ~/Sites"
+alias sites="cd ~/Sites"
 alias dotfiles="cd $DOTFILES"
 
 # PHP
