@@ -34,3 +34,8 @@
 
 [alias]
    forget="! /usr/local/bin/git fetch -p && /usr/local/bin/git branch -vv | awk '/: gone]/{print $1}' | xargs /usr/local/bin/git branch -D"
+[init]
+	defaultBranch = main
+
+[includeIf "gitdir:~/Sites/git-auto-commit-action/"]
+	path = "~/.dotfiles/git/gitconfig-git-auto-commit"
