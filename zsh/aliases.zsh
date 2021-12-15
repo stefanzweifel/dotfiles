@@ -31,7 +31,6 @@ alias cr="/opt/homebrew/bin/composer require"
 alias cda="/opt/homebrew/bin/composer dumpautoload"
 
 # PHP Unit
-alias puf="./vendor/bin/phpunit --filter="
 alias pw="phpunit-watcher watch"
 alias pwf="phpunit-watcher watch --filter "
 

@@ -101,6 +101,26 @@ function brittle-test() {
     for i in {1.."${2:-5}"}; do ./vendor/bin/phpunit --filter $1; done
 }
 
+# Run phpunit or pest
+# https://freek.dev/2142-a-bash-function-to-run-tests-for-both-phpunit-and-pest
+function p() {
+    if [ -f vendor/bin/pest ]; then
+       vendor/bin/pest "$@"
+    else
+       vendor/bin/phpunit "$@"
+    fi
+ }
+
+# Run phpunit or pest and apply filter
+# https://freek.dev/2142-a-bash-function-to-run-tests-for-both-phpunit-and-pest
+ function puf() {
+    if [ -f vendor/bin/pest ]; then
+       vendor/bin/pest --filter "$@"
+    else
+       vendor/bin/phpunit --filter "$@"
+    fi
+ }
+
 # Fix puppeteer install on M1 MacBook
 # export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
 # export PUPPETEER_EXECUTABLE_PATH=`which chrome`
