@@ -6,7 +6,7 @@
 - clean: ['~', '~/.cache', '~/.zshrc']
 
 - create:
-  - ~/Sites
+  - ~/Developer
   - ~/.composer
   - ~/Library/Application Support/Sublime Text/Packages/User/
 

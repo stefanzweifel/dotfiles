@@ -37,5 +37,5 @@
 [init]
 	defaultBranch = main
 
-[includeIf "gitdir:~/Sites/git-auto-commit-action/"]
+[includeIf "gitdir:~/Developer/git-auto-commit-action/"]
 	path = "~/.dotfiles/git/gitconfig-git-auto-commit"
