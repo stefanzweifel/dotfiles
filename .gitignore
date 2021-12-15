@@ -7,3 +7,4 @@ zsh/.zsh/cache
 
 *.sublime-project
 *.sublime-workspace
+*.sqlite-journal
