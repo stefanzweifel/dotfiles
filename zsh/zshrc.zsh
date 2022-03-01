@@ -125,3 +125,7 @@ function p() {
 # export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
 # export PUPPETEER_EXECUTABLE_PATH=`which chrome`
 # export PUPPETEER_PRODUCT=firefox
+
+
+# fnm
+eval "$(fnm env --use-on-cd)"
