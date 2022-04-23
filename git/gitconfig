@@ -17,6 +17,7 @@
 	editor = vim
 	quotepath = false
 	excludesfile = ~/.gitignore
+    pager = delta
 [mergetool]
 	keepBackup = true
 [filter "lfs"]
@@ -39,3 +40,15 @@
 
 [includeIf "gitdir:~/Developer/git-auto-commit-action/"]
 	path = "~/.dotfiles/git/gitconfig-git-auto-commit"
+
+# Config for `git-delta`
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true  # use n and N to move between diff sections
+
+[merge]
+    conflictstyle = diff3
+[diff]
+    colorMoved = default
