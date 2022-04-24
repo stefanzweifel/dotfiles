@@ -12,18 +12,18 @@ abbr dotfiles 'cd ~/.dotfiles'
 abbr pserve 'php -s localhost:'
 
 # Laravel
-abbr art 'php artisan'
-abbr mfs 'php artisan migrate:fresh --seed'
+alias art 'php artisan'
+alias mfs 'php artisan migrate:fresh --seed'
 
 # Composer
-abbr c '/opt/homebrew/bin/composer'
-abbr ci '/opt/homebrew/bin/composer install'
-abbr cr '/opt/homebrew/bin/composer require'
-abbr cda '/opt/homebrew/bin/composer dumpautoload'
+alias c '/opt/homebrew/bin/composer'
+alias ci '/opt/homebrew/bin/composer install'
+alias cr '/opt/homebrew/bin/composer require'
+alias cda '/opt/homebrew/bin/composer dumpautoload'
 
 # PHP Unit
-abbr pw 'phpunit-watcher watch'
-abbr pwf 'phpunit-watcher watch --filter '
+alias pw 'phpunit-watcher watch'
+alias pwf 'phpunit-watcher watch --filter '
 
 # Git
 abbr gs 'git status'
@@ -47,6 +47,5 @@ abbr chrome '/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
 abbr du 'ncdu --color dark -rr -x --exclude .git --exclude node_modules'
 
 abbr lscleanup '/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder'
-abbr cat 'bat'
-abbr ping 'prettyping --nolegend'
-abbr ls 'ls -Fog'
+alias cat 'bat'
+alias ping 'prettyping --nolegend'
