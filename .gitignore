@@ -1,7 +1,6 @@
 .DS_Store
 ._*
 .Trashes
-fish/fish_variables
 zsh/.zsh/histfile
 zsh/.zsh/cache
 
