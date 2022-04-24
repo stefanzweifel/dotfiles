@@ -12,4 +12,4 @@ fish_add_path /opt/homebrew/bin
 fish_add_path /opt/homebrew/sbin
 
 # fnm
-# eval "$(fnm env --use-on-cd)"
+eval "$(fnm env --use-on-cd)"
