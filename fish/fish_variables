@@ -8,18 +8,11 @@ SETUVAR _fish_abbr_dt:cd\x20\x7e/Desktop
 SETUVAR _fish_abbr_du:ncdu\x20\x2d\x2dcolor\x20dark\x20\x2drr\x20\x2dx\x20\x2d\x2dexclude\x20\x2egit\x20\x2d\x2dexclude\x20node_modules
 SETUVAR _fish_abbr_dv:cd\x20\x7e/Developer
 SETUVAR _fish_abbr_emptytrash:sudo\x20rm\x20\x2drfv\x20/Volumes/\x2a/\x2eTrashes\x3b\x20sudo\x20rm\x20\x2drfv\x20\x7e/\x2eTrash\x3b\x20sudo\x20rm\x20\x2drfv\x20/private/var/log/asl/\x2a\x2easl
-SETUVAR _fish_abbr_gc:git\x20checkout
-SETUVAR _fish_abbr_glog:git\x20log\x20\x2d\x2dgraph\x20\x2d\x2dpretty\x3dformat\x3a\x27\x25Cred\x25h\x25Creset\x20\x2d\x25C\x28yellow\x29\x25d\x25Creset\x20\x25s\x20\x25Cgreen\x28\x25cr\x29\x20\x25C\x28bold\x20blue\x29\x3c\x25an\x3e\x25Creset\x27\x20\x2d\x2dabbrev\x2dcommit
-SETUVAR _fish_abbr_gm:git\x20merge
-SETUVAR _fish_abbr_gpo:git\x20push\x20origin
-SETUVAR _fish_abbr_gs:git\x20status
 SETUVAR _fish_abbr_lscleanup:/System/Library/Frameworks/CoreServices\x2eframework/Frameworks/LaunchServices\x2eframework/Support/lsregister\x20\x2dkill\x20\x2dr\x20\x2ddomain\x20local\x20\x2ddomain\x20system\x20\x2ddomain\x20user\x20\x26\x26\x20killall\x20Finder
-SETUVAR _fish_abbr_nah:git\x20reset\x20\x2d\x2dhard\x3bgit\x20clean\x20\x2ddf
 SETUVAR _fish_abbr_phpstorm:open\x20\x2da\x20/Applications/PhpStorm\x2eapp\x20\x60pwd\x60
 SETUVAR _fish_abbr_pserve:php\x20\x2ds\x20localhost\x3a
 SETUVAR _fish_abbr_reload:exec\x20/opt/homebrew/bin/fish\x20\x2dl
 SETUVAR _fish_abbr_sites:cd\x20\x7e/Developer
-SETUVAR _hydro_git_85476:main\x20
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:blue
@@ -48,4 +41,4 @@ SETUVAR fish_pager_color_description:B3A06D\x1eyellow\x1e\x2di
 SETUVAR fish_pager_color_prefix:cyan\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_pager_color_selected_background:\x2dr
-SETUVAR fish_user_paths:/Users/stefan/Developer/screeenly\x2d3/vendor/bin\x1e/Users/stefan/Developer/screeenly\x2d3/node_modules/\x2ebin\x1e/opt/homebrew/sbin\x1e/opt/homebrew/bin\x1e/Users/stefan/\x2ecomposer/vendor/bin
+SETUVAR fish_user_paths:/opt/homebrew/sbin\x1e/opt/homebrew/bin\x1e/Users/stefan/\x2ecomposer/vendor/bin

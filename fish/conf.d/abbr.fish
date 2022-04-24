@@ -26,12 +26,12 @@ alias pw 'phpunit-watcher watch'
 alias pwf 'phpunit-watcher watch --filter '
 
 # Git
-abbr gs 'git status'
-abbr gc 'git checkout'
-abbr gpo 'git push origin'
-abbr gm 'git merge'
-abbr glog "git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
-abbr nah 'git reset --hard;git clean -df'
+alias gs 'git status'
+alias gc 'git checkout'
+alias gpo 'git push origin'
+alias gm 'git merge'
+alias glog "git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias nah 'git reset --hard;git clean -df'
 
 # PhpStorm
 abbr phpstorm 'open -a /Applications/PhpStorm.app '`pwd`''
