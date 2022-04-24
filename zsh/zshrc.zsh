@@ -25,7 +25,6 @@ source $ZSH/oh-my-zsh.sh
 
 
 
-
 # User configuration
 
 # You may need to manually set your language environment
@@ -44,6 +43,9 @@ export PATH="node_modules/.bin:vendor/bin:$PATH"
 # Add Homebrews sbin path
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/opt/homebrew/sbin:$PATH"
+
+# Set vim as default editor
+export EDITOR=vim
 
 # Install z (https://github.com/rupa/z)
 # . /usr/local/etc/profile.d/z.sh
