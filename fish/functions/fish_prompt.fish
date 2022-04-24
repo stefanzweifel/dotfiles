@@ -1,12 +1,3 @@
-# a called to `_pure_prompt_new_line` is triggered by an event
-function fish_prompt
-    set --local exit_code $status  # save previous exit code
-
-    echo -e -n (_pure_prompt_beginning)  # init prompt context (clear current line, etc.)
-    _pure_print_prompt_rows # manage default vs. compact prompt
-    _pure_place_iterm2_prompt_mark # place iTerm shell integration mark
-    echo -e -n (_pure_prompt $exit_code)  # print prompt
-    echo -e (_pure_prompt_ending)  # reset colors and end prompt
-
-    set _pure_fresh_session false
+function fish_prompt -d Hydro
+    echo -e "$_hydro_color_pwd$_hydro_pwd$hydro_color_normal $_hydro_color_git$$_hydro_git$hydro_color_normal$_hydro_color_duration$_hydro_cmd_duration$hydro_color_normal$_hydro_prompt$hydro_color_normal "
 end
