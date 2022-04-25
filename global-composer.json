@@ -4,5 +4,8 @@
         "spatie/phpunit-watcher": "^1.12",
         "laravel/forge-cli": "^1.3",
         "laravel/valet": "^2.17"
+    },
+    "require-dev": {
+        "deployer/deployer": "v7.0.0-rc.3"
     }
 }
