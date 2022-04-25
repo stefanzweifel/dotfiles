@@ -21,6 +21,7 @@
     ~/.gitattributes: git/gitattributes
     ~/.gitignore: git/gitignore
     ~/.zshrc: zsh/zshrc.zsh
+    ~/.config/fish: fish
     ~/.composer/composer.json: global-composer.json
     ~/Library/Application Support/Sublime Text/Packages/User/themes: apps/sublime-text/themes
     ~/Library/Application Support/Sublime Text/Packages/User/snippets: apps/sublime-text/snippets
@@ -39,6 +40,7 @@
 - shell:
   - [touch $HOME/.hushlogin]
   - [git submodule update --init --recursive]
+  - [git clone https://github.com/jessarcher/zsh-artisan.git ~/.oh-my-zsh/custom/plugins/artisan]
   # - [composer global install]
   # - [git config --global core.excludesfile ~/.gitignore]
   # - [sh macOs/set-defaults.sh]

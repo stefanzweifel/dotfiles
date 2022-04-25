@@ -55,10 +55,6 @@ alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 # Analyse Disk Space
 alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
 
-# Transpile binaries through Rosetta 2 (for Apple Silicon machines)
-alias ros2="arch -x86_64 "
-
-
 alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
 alias cat="bat"
 alias ping='prettyping --nolegend'

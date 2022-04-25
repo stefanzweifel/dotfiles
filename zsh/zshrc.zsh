@@ -19,10 +19,9 @@ ZSH_THEME="lambda"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-extras)
+plugins=(git git-extras artisan)
 
 source $ZSH/oh-my-zsh.sh
-
 
 
 
@@ -44,6 +43,9 @@ export PATH="node_modules/.bin:vendor/bin:$PATH"
 # Add Homebrews sbin path
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/opt/homebrew/sbin:$PATH"
+
+# Set vim as default editor
+export EDITOR=vim
 
 # Install z (https://github.com/rupa/z)
 # . /usr/local/etc/profile.d/z.sh
@@ -126,6 +128,12 @@ function p() {
 # export PUPPETEER_EXECUTABLE_PATH=`which chrome`
 # export PUPPETEER_PRODUCT=firefox
 
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
+# fnm
+eval "$(fnm env --use-on-cd)"
+

@@ -17,6 +17,7 @@
 	editor = vim
 	quotepath = false
 	excludesfile = ~/.gitignore
+    pager = delta
 [mergetool]
 	keepBackup = true
 [filter "lfs"]
@@ -33,9 +34,21 @@
     default = simple
 
 [alias]
-   forget="! /usr/local/bin/git fetch -p && /usr/local/bin/git branch -vv | awk '/: gone]/{print $1}' | xargs /usr/local/bin/git branch -D"
+    forget="! /opt/homebrew/bin/git fetch -p && /opt/homebrew/bin/git branch -vv | awk '/: gone]/{print $1}' | xargs /opt/homebrew/bin/git branch -D"
 [init]
 	defaultBranch = main
 
 [includeIf "gitdir:~/Developer/git-auto-commit-action/"]
 	path = "~/.dotfiles/git/gitconfig-git-auto-commit"
+
+# Config for `git-delta`
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true  # use n and N to move between diff sections
+
+[merge]
+    conflictstyle = diff3
+[diff]
+    colorMoved = default
