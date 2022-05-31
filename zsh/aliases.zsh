@@ -15,6 +15,7 @@ alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias dv="cd ~/Developer"
 alias sites="cd ~/Developer"
+alias icloud="cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/"
 alias dotfiles="cd $DOTFILES"
 
 # PHP
