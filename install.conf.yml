@@ -21,6 +21,7 @@
     ~/.gitattributes: git/gitattributes
     ~/.gitignore: git/gitignore
     ~/.zshrc: zsh/zshrc.zsh
+    ~/.config/starship.toml: zsh/starship.toml
     ~/.config/fish: fish
     ~/.composer/composer.json: global-composer.json
     ~/Library/Application Support/Sublime Text/Packages/User/themes: apps/sublime-text/themes

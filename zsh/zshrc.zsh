@@ -140,3 +140,6 @@ export NVM_DIR="$HOME/.nvm"
 # fnm
 eval "$(fnm env --use-on-cd)"
 
+
+# starship - https://starship.rs
+eval "$(starship init zsh)"

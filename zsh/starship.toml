@@ -1,0 +1,49 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Inserts a blank line between shell prompts
+add_newline = false
+
+[[battery.display]]
+threshold = 10
+style = "bold red"
+
+[battery]
+full_symbol = "🔋 "
+charging_symbol = "⚡️ "
+discharging_symbol = "💀 "
+
+[git_branch]
+symbol = "🌱 "
+truncation_length = 10
+truncation_symbol = ""
+ignore_branches = ["master", "main"]
+
+[sudo]
+style = "bold green"
+symbol = "👩‍💻 "
+disabled = false
+
+[character]
+success_symbol = "[>](bold green)"
+error_symbol = "[x](bold red)"
+vicmd_symbol = "[<](bold green)"
+
+[git_status]
+ahead = ">"
+behind = "<"
+diverged = "<>"
+renamed = "r"
+deleted = "x"
+
+[docker_context]
+symbol = "docker "
+
+[nodejs]
+symbol = "nodejs "
+
+[package]
+symbol = "pkg "
+
+[php]
+symbol = "php "
