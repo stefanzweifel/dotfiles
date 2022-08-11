@@ -17,7 +17,7 @@ discharging_symbol = "💀 "
 symbol = "🌱 "
 truncation_length = 10
 truncation_symbol = ""
-ignore_branches = ["master", "main"]
+# ignore_branches = ["master", "main"]
 
 [sudo]
 style = "bold green"

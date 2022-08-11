@@ -67,7 +67,7 @@
 	"wrap_width": 80,
 	"dark_theme": "Default Dark.sublime-theme",
 	"light_theme": "Default.sublime-theme",
-	"dark_color_scheme": "Packages/rsms-sublime/rsms-dark.sublime-color-scheme",
+	"dark_color_scheme": "rsms-dark.sublime-color-scheme",
 	"light_color_scheme": "Packages/User/themes/Primer - Light 2.tmTheme",
 
 	"mde.keep_centered": true,
