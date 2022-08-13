@@ -24,19 +24,12 @@
     ~/.config/starship.toml: zsh/starship.toml
     ~/.config/fish: fish
     ~/.composer/composer.json: global-composer.json
-    ~/Library/Application Support/Sublime Text/Packages/User/themes: apps/sublime-text/themes
-    ~/Library/Application Support/Sublime Text/Packages/User/snippets: apps/sublime-text/snippets
-    ~/Library/Application Support/Sublime Text/Packages/User/Preferences.sublime-settings: apps/sublime-text/user/Preferences.sublime-settings
-    ~/Library/Application Support/Sublime Text/Packages/User/Default (OSX).sublime-keymap: apps/sublime-text/user/Default (OSX).sublime-keymap
-    ~/Library/Application Support/Sublime Text/Packages/User/Default (OSX).sublime-mousemap: apps/sublime-text/user/Default (OSX).sublime-mousemap
-    ~/Library/Application Support/Sublime Text/Packages/User/Package Control.sublime-settings: apps/sublime-text/user/Package Control.sublime-settings
-    ~/Library/Application Support/Sublime Text 3/Packages/User/themes: apps/sublime-text/themes
-    ~/Library/Application Support/Sublime Text 3/Packages/User/snippets: apps/sublime-text/snippets
-    ~/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings: apps/sublime-text/user/Preferences.sublime-settings
-    ~/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap: apps/sublime-text/user/Default (OSX).sublime-keymap
-    ~/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-mousemap: apps/sublime-text/user/Default (OSX).sublime-mousemap
-    ~/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings: apps/sublime-text/user/Package Control.sublime-settings
-
+    # ~/Library/Application Support/Sublime Text/Packages/User/themes: apps/sublime-text/themes
+    # ~/Library/Application Support/Sublime Text/Packages/User/snippets: apps/sublime-text/snippets
+    # ~/Library/Application Support/Sublime Text/Packages/User/Preferences.sublime-settings: apps/sublime-text/user/Preferences.sublime-settings
+    # ~/Library/Application Support/Sublime Text/Packages/User/Default (OSX).sublime-keymap: apps/sublime-text/user/Default (OSX).sublime-keymap
+    # ~/Library/Application Support/Sublime Text/Packages/User/Default (OSX).sublime-mousemap: apps/sublime-text/user/Default (OSX).sublime-mousemap
+    # ~/Library/Application Support/Sublime Text/Packages/User/Package Control.sublime-settings: apps/sublime-text/user/Package Control.sublime-settings
 
 - shell:
   - [touch $HOME/.hushlogin]
