@@ -1,75 +1,45 @@
 {
-	"auto_complete_commit_on_tab": false,
-	"auto_complete_selector": "source - (comment, string.quoted), text",
-	"auto_complete_with_fields": true,
-	"caret_style": "blink",
-	"close_windows_when_empty": true,
-	"color_scheme": "auto",
-	"detect_indentation": true,
-	"drag_text": false,
-	"draw_minimap_border": false,
-	"enable_tab_scrolling": false,
-	"ensure_newline_at_eof_on_save": true,
-	"file_exclude_patterns":
-	[
-		".DS_Store",
-		"*.lib",
-		"*.sketch",
-		".php_cs.cache"
-	],
-	"folder_exclude_patterns":
-	[
-		".svn",
-		".git",
-		".hg",
-		"CVS",
-		"tmp",
-		".bundle",
-		".tmp",
-		".sass-cache",
-		"node_modules"
-	],
-	"font_face": "JetBrains Mono",
-	"font_options":
-	[
-		"no_round",
-		"subpixel_antialias"
-	],
+	"font_face": "JetBrainsMono",
 	"font_size": 14,
+
+	// Set to false to prevent line numbers being drawn in the gutter
+	"line_numbers": false,
+
+	// Additional spacing at the top of each line, in pixels
+	"line_padding_top": 7,
+
+	// Additional spacing at the bottom of each line, in pixels
+	"line_padding_bottom": 7,
+
+	// If enabled, will highlight any line with a caret
 	"highlight_line": true,
-	"ignored_packages":
-	[
-		"Markdown",
+
+	// Columns in which to display vertical rulers
+	"rulers": [80, 120],
+
+	// Set to true to insert spaces when tab is pressed
+	"translate_tabs_to_spaces": true,
+
+	// Set to true to ensure the last line of the file ends in a newline
+	// character when saving
+	"ensure_newline_at_eof_on_save": true,
+
+
+	// When drag_text is enabled, clicking on selected text will begin a
+	// drag-drop operation.
+	"drag_text": false,
+
+	// Set to a value other than 0 to force wrapping at that column rather than
+	// the window width. See "wrap_width_style" for extra options.
+	"wrap_width": 120,
+
+	"ignored_packages": [
 		"Vintage",
 	],
-	"indent_guide_options":
-	[
-		"draw_active"
-	],
-	"line_padding_bottom": 7,
-	"line_padding_top": 7,
-	"phpunit-sublime-terminal": "iTerm",
-	"phpunit.php_executable": "/usr/local/bin/php",
-	"remember_open_files": true,
-	"remember_open_folders": true,
-	"rulers":
-	[
-		80,
-		120
-	],
-	"scroll_past_end": true,
-	"show_full_path": false,
-	"tab_size": 4,
 	"theme": "auto",
-	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true,
-	"word_wrap": false,
-	"wrap_width": 80,
-	"dark_theme": "Default Dark.sublime-theme",
-	"light_theme": "Default.sublime-theme",
-	"dark_color_scheme": "rsms-dark.sublime-color-scheme",
-	"light_color_scheme": "Packages/User/themes/Primer - Light 2.tmTheme",
+	"color_scheme": "auto",
 
-	"mde.keep_centered": true,
-	"mde.auto_fold_link.enabled": false,
+
+	"dark_color_scheme": "rsms-dark.sublime-color-scheme",
+	"light_color_scheme": "Packages/User/Themes/Primer - Light 2.tmTheme",
 }
