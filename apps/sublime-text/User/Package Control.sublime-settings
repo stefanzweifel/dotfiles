@@ -5,6 +5,11 @@
 	],
 	"installed_packages":
 	[
+		"Bats",
+		"DocBlockr",
+		"Duotones Colorschemes",
+		"Emmet",
+		"Laravel Blade Highlighter",
 		"LSP",
 		"LSP-bash",
 		"LSP-css",
@@ -16,5 +21,8 @@
 		"LSP-vue",
 		"LSP-yaml",
 		"Package Control",
+		"Pretty JSON",
+		"SideBarEnhancements",
+		"Vue Syntax Highlight",
 	],
 }

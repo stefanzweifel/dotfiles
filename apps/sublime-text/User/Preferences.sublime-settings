@@ -33,10 +33,13 @@
 	// the window width. See "wrap_width_style" for extra options.
 	"wrap_width": 120,
 
-	"ignored_packages":
-	[
+	"ignored_packages": [
 		"Vintage",
 	],
 	"theme": "auto",
-	"color_scheme": "Mariana.sublime-color-scheme",
+	"color_scheme": "auto",
+
+
+	"dark_color_scheme": "rsms-dark.sublime-color-scheme",
+	"light_color_scheme": "Packages/User/Themes/Primer - Light 2.tmTheme",
 }
