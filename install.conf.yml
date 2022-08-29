@@ -9,6 +9,7 @@
   - ~/Developer
   - ~/.composer
   - ~/Library/Application Support/Sublime Text/Packages/User/
+  - ~/Library/KeyBindings
 
 # - shell:
   # - [brew tap homebrew/bundle]
@@ -30,6 +31,7 @@
     ~/Library/Application Support/Sublime Text/Packages/User/Default (OSX).sublime-keymap: apps/sublime-text/user/Default (OSX).sublime-keymap
     ~/Library/Application Support/Sublime Text/Packages/User/Default (OSX).sublime-mousemap: apps/sublime-text/user/Default (OSX).sublime-mousemap
     ~/Library/Application Support/Sublime Text/Packages/User/Package Control.sublime-settings: apps/sublime-text/user/Package Control.sublime-settings
+    ~/Library/KeyBindings/DefaultKeyBinding.dict: macOS/DefaultKeyBinding.dict
 
 - shell:
   - [touch $HOME/.hushlogin]

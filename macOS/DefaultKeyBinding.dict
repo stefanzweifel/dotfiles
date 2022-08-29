@@ -1,0 +1,4 @@
+/* https://cpojer.net/posts/set-up-a-new-mac-fast#german-keyboard-layouts-and-optionspace */
+{
+"~ " = ("insertText:", " ");
+}
