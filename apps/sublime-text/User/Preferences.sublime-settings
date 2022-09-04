@@ -5,6 +5,9 @@
 	// Set to false to prevent line numbers being drawn in the gutter
 	"line_numbers": false,
 
+	// Controls where trailing white space is removed on save.
+	"trim_trailing_white_space_on_save": "all",
+
 	// Additional spacing at the top of each line, in pixels
 	"line_padding_top": 7,
 
