@@ -3,10 +3,7 @@
 	"font_size": 14,
 
 	// Set to false to prevent line numbers being drawn in the gutter
-	"line_numbers": false,
-
-	// Controls where trailing white space is removed on save.
-	"trim_trailing_white_space_on_save": "all",
+	"line_numbers": true,
 
 	// Additional spacing at the top of each line, in pixels
 	"line_padding_top": 7,
@@ -22,6 +19,16 @@
 
 	// Set to true to insert spaces when tab is pressed
 	"translate_tabs_to_spaces": true,
+
+	// Controls where trailing white space is removed on save.
+	// - "none": Do not remove any trailing white space on save.
+	// - "all": Remove all trailing white space on save.
+	// - "not_on_caret": Only remove white space that won't affect the caret.
+	//                   When used in conjunction with "save_on_focus_lost" and
+	//                   certain desktop environments that frequently make the
+	//                   application lose focus this avoids the caret jumping
+	//                   around a lot.
+	"trim_trailing_white_space_on_save": "all",
 
 	// Set to true to ensure the last line of the file ends in a newline
 	// character when saving
