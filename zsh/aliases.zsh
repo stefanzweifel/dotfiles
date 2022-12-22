@@ -30,6 +30,7 @@ alias c="/opt/homebrew/bin/composer"
 alias ci="/opt/homebrew/bin/composer install"
 alias cr="/opt/homebrew/bin/composer require"
 alias cda="/opt/homebrew/bin/composer dumpautoload"
+alias co="/opt/homebrew/bin/composer outdated --direct"
 
 # PHP Unit
 alias pw="phpunit-watcher watch"
