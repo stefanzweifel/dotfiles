@@ -142,4 +142,5 @@ eval "$(fnm env --use-on-cd)"
 
 
 # starship - https://starship.rs
-# eval "$(starship init zsh)"
+eval "$(starship init zsh)"
+
