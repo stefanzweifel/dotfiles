@@ -36,8 +36,8 @@
 - shell:
   - [touch $HOME/.hushlogin]
   - [git submodule update --init --recursive]
+  - [git clone https://github.com/jasonmccreary/git-trim.git $ZSH_CUSTOM/plugins/git-trim]
   # - [git clone https://github.com/jessarcher/zsh-artisan.git ~/.oh-my-zsh/custom/plugins/artisan]
   # - [composer global install]
   # - [git config --global core.excludesfile ~/.gitignore]
   # - [sh macOs/set-defaults.sh]
-  # - [ros2 valet install]

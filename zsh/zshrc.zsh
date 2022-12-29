@@ -19,7 +19,7 @@ ZSH_THEME="lambda"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-extras artisan)
+plugins=(git git-extras git-trim artisan)
 
 source $ZSH/oh-my-zsh.sh
 
