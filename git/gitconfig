@@ -32,9 +32,6 @@
     #
     # Setting to git 2.0 default to suppress warning message
     default = simple
-
-[alias]
-    forget="! /opt/homebrew/bin/git fetch -p && /opt/homebrew/bin/git branch -vv | awk '/: gone]/{print $1}' | xargs /opt/homebrew/bin/git branch -D"
 [init]
 	defaultBranch = main
 
