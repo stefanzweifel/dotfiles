@@ -47,7 +47,7 @@ export PATH="node_modules/.bin:vendor/bin:$PATH"
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/opt/homebrew/sbin:$PATH"
 
-# Add Support for opening files and folders in Sublime Text
+# Add Support for opening files and folders in Sublime Text with `subl`
 export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 
 # Set vim as default editor
