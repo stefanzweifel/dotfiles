@@ -7,6 +7,9 @@ export DOTFILES=$HOME/.dotfiles
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
+# Set theme used by bat/cat
+# See `bat --list-themes` for list of available themes
+export BAT_THEME="gruvbox-dark"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
