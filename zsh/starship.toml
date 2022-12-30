@@ -4,6 +4,14 @@
 # Inserts a blank line between shell prompts
 add_newline = false
 
+[aws]
+disabled=false
+style = 'yellow'
+symbol = 'aws '
+format='on [$symbol($profile )(\($region\) )(\[$duration\] )]($style)'
+[aws.region_aliases]
+eu-central-1 = 'fra'
+
 [[battery.display]]
 threshold = 10
 style = "bold red"
@@ -17,6 +25,7 @@ discharging_symbol = "💀 "
 symbol = "🌱 "
 truncation_length = 10
 truncation_symbol = ""
+style = "bold red"
 # ignore_branches = ["master", "main"]
 
 [sudo]
@@ -25,7 +34,7 @@ symbol = "👩‍💻 "
 disabled = false
 
 [character]
-success_symbol = "[>](bold green)"
+success_symbol = "[➜](bold yellow)"
 error_symbol = "[x](bold red)"
 vicmd_symbol = "[<](bold green)"
 
@@ -35,15 +44,20 @@ behind = "<"
 diverged = "<>"
 renamed = "r"
 deleted = "x"
+style = "bold red"
 
 [docker_context]
 symbol = "docker "
 
 [nodejs]
-symbol = "nodejs "
+disabled=false
+symbol = "n"
+version_format='${major}.${minor}'
 
 [package]
 symbol = "pkg "
 
 [php]
-symbol = "php "
+disabled=false
+version_format='${major}.${minor}'
+symbol = "php"
