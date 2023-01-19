@@ -1,7 +1,7 @@
 [user]
 	name = Stefan Zweifel
 	email = hello@stefanzweifel.io
-	signingkey = 49392B0C00D7AB90
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMLolczJLVpNjoNb9it03uLmYVAMsgIyyqatY0zpJV5j
 [push]
 	default = matching
 [help]
@@ -25,6 +25,15 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+
+[gpg]
+  format = ssh
+
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+
+[commit]
+  gpgsign = true
 
 [push]
     # See `git help config` (search for push.default)
