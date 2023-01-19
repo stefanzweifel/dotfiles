@@ -50,6 +50,10 @@ export PATH="/opt/homebrew/sbin:$PATH"
 # Add Support for opening files and folders in Sublime Text with `subl`
 export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 
+# Add PHP Monitor Helpers
+# https://github.com/nicoverbruggen/phpmon/wiki/PHP-Monitor-helper-binaries#ensuring-helpers-are-generated
+export PATH=$HOME/bin:~/.config/phpmon/bin:$PATH
+
 # Set vim as default editor
 export EDITOR=vim
 

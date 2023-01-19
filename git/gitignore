@@ -4,7 +4,7 @@
 .DS_Store
 .*.swp
 .idea
-.npmrc
+# .npmrc
 /node_modules
 /vendor
 
