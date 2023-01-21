@@ -62,3 +62,10 @@ alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/La
 alias cat="bat"
 alias ping='prettyping --nolegend'
 alias help='tldr'
+
+# Borg Backup
+# https://github.com/stefanzweifel/borg-backup-scripts
+alias borg:backup="sh $HOME/bin/borg-backup-scripts/backup.sh"
+alias borg:list="sh $HOME/bin/borg-backup-scripts/list.sh"
+alias borg:check="sh $HOME/bin/borg-backup-scripts/check.sh"
+alias borg:export="sh $HOME/bin/borg-backup-scripts/export.sh"
