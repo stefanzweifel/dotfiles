@@ -1,6 +1,6 @@
 [user]
 	name = Stefan Zweifel
-	email = hello@stefanzweifel.io
+	email = stefan@stefanzweifel.dev
 	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMLolczJLVpNjoNb9it03uLmYVAMsgIyyqatY0zpJV5j
 [push]
 	default = matching
