@@ -47,6 +47,8 @@ alias nah='git reset --hard;git clean -df'
 
 # PhpStorm
 alias phpstorm='open -a /Applications/PhpStorm.app "`pwd`"'
+
+# GitHub Desktop
 alias github='open -a "/Applications/GitHub Desktop.app" "`pwd`"'
 
 
