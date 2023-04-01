@@ -54,6 +54,14 @@ export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 # https://github.com/nicoverbruggen/phpmon/wiki/PHP-Monitor-helper-binaries#ensuring-helpers-are-generated
 export PATH=$HOME/bin:~/.config/phpmon/bin:$PATH
 
+# Add MySQL binaries through DBngin
+export PATH=/Users/Shared/DBngin/mysql/8.0.19/bin:$PATH
+
+# Add Postgres binaries through DBngin
+export PATH=//Users/Shared/DBngin/postgresql/15.1/bin:$PATH
+
+
+
 # Set vim as default editor
 export EDITOR=vim
 
