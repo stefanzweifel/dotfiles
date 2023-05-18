@@ -1,0 +1,11 @@
+name: blog
+root: ~/Developer/stefanzweifel.dev
+
+windows:
+  - shell:
+      layout: main-vertical
+      panes:
+        - null
+        - yarn dev
+  - logs: tail -f storage/logs/*.log
+
