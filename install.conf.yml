@@ -23,7 +23,9 @@
     ~/.gitignore: git/gitignore
     ~/.zshrc: zsh/zshrc.zsh
     ~/.config/starship.toml: zsh/starship.toml
+    ~/.config/tmuxinator: tmuxinator
     ~/.config/fish: fish
+    ~/.tmux.conf: tmux/tmux.conf
     ~/.composer/composer.json: global-composer.json
     ~/Library/Application Support/Sublime Text/Packages/User/Themes: apps/sublime-text/themes
     ~/Library/Application Support/Sublime Text/Packages/User/Snippets: apps/sublime-text/snippets

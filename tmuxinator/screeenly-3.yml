@@ -1,0 +1,11 @@
+name: screeenly-3
+root: ~/Developer/screeenly-3
+
+windows:
+  - shell:
+      layout: main-vertical
+      panes:
+        - null
+        - yarn dev
+  - logs: tail -f storage/logs/*.log
+
