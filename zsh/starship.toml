@@ -11,6 +11,7 @@ symbol = 'aws '
 format='on [$symbol($profile )(\($region\) )(\[$duration\] )]($style)'
 [aws.region_aliases]
 eu-central-1 = 'fra'
+eu-central-2 = 'zrh'
 
 [[battery.display]]
 threshold = 10
