@@ -27,7 +27,6 @@ plugins=(git git-extras git-trim artisan)
 source $ZSH/oh-my-zsh.sh
 
 
-
 # User configuration
 
 # You may need to manually set your language environment
@@ -125,31 +124,39 @@ function brittle-test() {
 # https://freek.dev/2142-a-bash-function-to-run-tests-for-both-phpunit-and-pest
 function p() {
     if [ -f vendor/bin/pest ]; then
-       vendor/bin/pest "$@"
+        vendor/bin/pest "$@"
     else
-       vendor/bin/phpunit "$@"
+        vendor/bin/phpunit "$@"
     fi
- }
+}
 
 # Run phpunit or pest and apply filter
 # https://freek.dev/2142-a-bash-function-to-run-tests-for-both-phpunit-and-pest
- function puf() {
+function puf() {
     if [ -f vendor/bin/pest ]; then
-       vendor/bin/pest --filter "$@"
+        vendor/bin/pest --filter "$@"
     else
-       vendor/bin/phpunit --filter "$@"
+        vendor/bin/phpunit --filter "$@"
     fi
- }
+}
+
+mov_to_mp4() {
+    if [ $# -ne 1 ]; then
+        echo "Usage: convert_to_mp4 input.mov"
+        return 1
+    fi
+
+    input_file="$1"
+    output_file="${input_file%.mov}.mp4"
+
+    ffmpeg -i "$input_file" -c:v libx264 -preset slow -crf 22 -c:a aac -strict experimental "$output_file"
+}
+
 
 # Fix puppeteer install on M1 MacBook
 # export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
 # export PUPPETEER_EXECUTABLE_PATH=`which chrome`
 # export PUPPETEER_PRODUCT=firefox
-
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 
 # fnm
