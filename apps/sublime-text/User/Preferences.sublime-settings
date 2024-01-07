@@ -28,7 +28,7 @@
 	//                   certain desktop environments that frequently make the
 	//                   application lose focus this avoids the caret jumping
 	//                   around a lot.
-	"trim_trailing_white_space_on_save": "all",
+	"trim_trailing_white_space_on_save": "none",
 
 	// Set to true to ensure the last line of the file ends in a newline
 	// character when saving
@@ -40,15 +40,17 @@
 
 	// Set to a value other than 0 to force wrapping at that column rather than
 	// the window width. See "wrap_width_style" for extra options.
-	"wrap_width": 80,
+	// "wrap_width": 80,
 
 	"ignored_packages": [
+		"Package Control",
 		"Vintage",
 	],
 	"theme": "auto",
 	"color_scheme": "auto",
 
 
-	"dark_color_scheme": "rsms-dark.sublime-color-scheme",
+	"dark_color_scheme": "Flexoki Dark.sublime-color-scheme",
 	"light_color_scheme": "Packages/User/Themes/Primer - Light 2.tmTheme",
+	"index_files": true,
 }
