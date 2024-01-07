@@ -57,9 +57,10 @@ export PATH=$HOME/bin:~/.config/phpmon/bin:$PATH
 export PATH=/Users/Shared/DBngin/mysql/8.0.19/bin:$PATH
 
 # Add Postgres binaries through DBngin
-export PATH=//Users/Shared/DBngin/postgresql/15.1/bin:$PATH
+export PATH=/Users/Shared/DBngin/postgresql/15.1/bin:$PATH
 
-
+# Disable Homebrew auto updates
+export HOMEBREW_NO_AUTO_UPDATE=1
 
 # Set vim as default editor
 export EDITOR=vim
