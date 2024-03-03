@@ -25,6 +25,7 @@ brew 'tmuxinator'
 brew 'tree'
 brew 'wakeonlan'
 brew 'youtube-dl'
+brew 'zoxide';
 
 # brew 'zsh'
 # brew 'zsh-completion'
