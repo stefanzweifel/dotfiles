@@ -48,6 +48,7 @@ alias nah='git reset --hard;git clean -df'
 # PhpStorm
 alias phpstorm='open -a /Applications/PhpStorm.app "`pwd`"'
 
+alias github='open -a "/Applications/GitHub Desktop.app" "`pwd`"'
 
 # Empty the Trash on all mounted volumes and the main HDD
 # Also, clear Apple’s System Logs to improve shell startup speed
