@@ -24,7 +24,8 @@ brew 'tldr'
 brew 'tmuxinator'
 brew 'tree'
 brew 'wakeonlan'
-brew 'youtube-dl'
+brew 'yt-dlp'
+brew 'zellij';
 brew 'zoxide';
 
 # brew 'zsh'
@@ -47,13 +48,11 @@ cask 'phpmon'
 # cask 'figma'
 # cask 'firefox'
 # cask 'iina'
-# cask 'istat-menus'
 # cask 'iterm2'
 # cask 'little-snitch'
 # cask 'rescuetime'
 # cask 'spotify'
 # cask 'sublime-text'
-# cask 'tower'
 # cask 'transmit'
 
 # Quicklook
