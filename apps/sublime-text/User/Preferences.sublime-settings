@@ -52,4 +52,6 @@
 	"dark_color_scheme": "Flexoki Dark.sublime-color-scheme",
 	"light_color_scheme": "Packages/User/Themes/Primer - Light 2.tmTheme",
 	"index_files": true,
+
+	"sidebar_on_right": true,
 }
