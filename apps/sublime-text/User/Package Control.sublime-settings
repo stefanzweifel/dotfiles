@@ -9,7 +9,7 @@
 		"DocBlockr",
 		"Duotones Colorschemes",
 		"Emmet",
-		"Laravel Blade Highlighter",
+		"Laravel Blade",
 		"LSP",
 		"LSP-bash",
 		"LSP-css",
@@ -24,6 +24,6 @@
 		"Package Control",
 		"Pretty JSON",
 		"SideBarEnhancements",
-		"Vue Syntax Highlight",
+		"Vue",
 	],
 }

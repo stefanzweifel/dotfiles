@@ -69,4 +69,3 @@ cask 'font-iosevka'
 # mas 'Icon Slate', id: 439697913
 # mas 'The Unarchiver', id: 425424353
 # mas 'Things', id: 904280696
-# mas 'Tweetbot', id: 1384080005
