@@ -1,0 +1,114 @@
+{
+    "global": { "show_in_menu_bar": false },
+    "profiles": [
+        {
+            "complex_modifications": {
+                "rules": [
+                    {
+                        "manipulators": [
+                            {
+                                "description": "Change caps_lock to command+control+option+shift.",
+                                "from": {
+                                    "key_code": "caps_lock",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_shift",
+                                        "modifiers": ["left_command", "left_control", "left_option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "devices": [
+                {
+                    "fn_function_keys": [
+                        {
+                            "from": { "key_code": "f1" },
+                            "to": [{ "apple_vendor_keyboard_key_code": "brightness_down" }]
+                        },
+                        {
+                            "from": { "key_code": "f2" },
+                            "to": [{ "apple_vendor_keyboard_key_code": "brightness_up" }]
+                        }
+                    ],
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "product_id": 592,
+                        "vendor_id": 1452
+                    },
+                    "simple_modifications": [
+                        {
+                            "from": { "key_code": "grave_accent_and_tilde" },
+                            "to": [{ "key_code": "non_us_backslash" }]
+                        },
+                        {
+                            "from": { "key_code": "non_us_backslash" },
+                            "to": [{ "key_code": "grave_accent_and_tilde" }]
+                        }
+                    ]
+                },
+                {
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "is_pointing_device": true,
+                        "product_id": 591,
+                        "vendor_id": 1452
+                    },
+                    "ignore": false
+                },
+                {
+                    "fn_function_keys": [
+                        {
+                            "from": { "key_code": "f1" },
+                            "to": [{ "apple_vendor_keyboard_key_code": "brightness_down" }]
+                        },
+                        {
+                            "from": { "key_code": "f2" },
+                            "to": [{ "apple_vendor_keyboard_key_code": "brightness_up" }]
+                        }
+                    ],
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "product_id": 591,
+                        "vendor_id": 1452
+                    }
+                }
+            ],
+            "fn_function_keys": [
+                {
+                    "from": { "key_code": "f3" },
+                    "to": [{ "key_code": "mission_control" }]
+                },
+                {
+                    "from": { "key_code": "f4" },
+                    "to": [{ "key_code": "launchpad" }]
+                },
+                {
+                    "from": { "key_code": "f5" },
+                    "to": [{ "key_code": "illumination_decrement" }]
+                },
+                {
+                    "from": { "key_code": "f6" },
+                    "to": [{ "key_code": "illumination_increment" }]
+                }
+            ],
+            "name": "Default profile",
+            "selected": true,
+            "simple_modifications": [
+                {
+                    "from": { "key_code": "right_control" },
+                    "to": [{ "key_code": "right_option" }]
+                }
+            ],
+            "virtual_hid_keyboard": {
+                "country_code": 0,
+                "keyboard_type_v2": "jis"
+            }
+        }
+    ]
+}

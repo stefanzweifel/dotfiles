@@ -3,19 +3,19 @@
       relink: true
       force: true
 
-- clean: ['~', '~/.cache', '~/.zshrc']
+- clean: ["~", "~/.cache", "~/.zshrc"]
 
 - create:
-  - ~/Developer
-  - ~/.composer
-  - ~/Library/Application Support/Sublime Text/Packages/User/
-  - ~/Library/KeyBindings
+    - ~/Developer
+    - ~/.composer
+    - ~/Library/Application Support/Sublime Text/Packages/User/
+    - ~/Library/KeyBindings
 
 # - shell:
-  # - [brew tap homebrew/bundle]
-  # - [brew bundle]
-  # TODO: Install Homebrew if it doesnt exist yet
-  # - [/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)", 'Install Homebrew']
+# - [brew tap homebrew/bundle]
+# - [brew bundle]
+# TODO: Install Homebrew if it doesnt exist yet
+# - [/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)", 'Install Homebrew']
 
 - link:
     ~/.gitconfig: git/gitconfig
@@ -25,6 +25,7 @@
     ~/.config/starship.toml: zsh/starship.toml
     ~/.config/tmuxinator: tmuxinator
     ~/.config/fish: fish
+    ~/.config/karabiner/karabiner.json: karabiner/karabiner.json
     ~/.tmux.conf: tmux/tmux.conf
     ~/.composer/composer.json: global-composer.json
     ~/Library/Application Support/Sublime Text/Packages/User/Themes: apps/sublime-text/themes
@@ -36,9 +37,11 @@
     ~/Library/KeyBindings/DefaultKeyBinding.dict: macOS/DefaultKeyBinding.dict
 
 - shell:
-  - [touch $HOME/.hushlogin]
-  - [git submodule update --init --recursive]
-  - [git clone https://github.com/jasonmccreary/git-trim.git $ZSH_CUSTOM/plugins/git-trim]
+    - [touch $HOME/.hushlogin]
+    - [git submodule update --init --recursive]
+    - [
+        git clone https://github.com/jasonmccreary/git-trim.git $ZSH_CUSTOM/plugins/git-trim,
+      ]
   # - [git clone https://github.com/jessarcher/zsh-artisan.git ~/.oh-my-zsh/custom/plugins/artisan]
   # - [composer global install]
   # - [git config --global core.excludesfile ~/.gitignore]
