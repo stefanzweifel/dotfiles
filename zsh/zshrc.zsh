@@ -180,4 +180,4 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 eval "$(zoxide init zsh --cmd cd)"
 
 # zellij
-eval "$(zellij setup --generate-auto-start zsh)"
+# eval "$(zellij setup --generate-auto-start zsh)"

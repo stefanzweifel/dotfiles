@@ -6,7 +6,6 @@ tap 'homebrew/cask'
 brew 'bat'
 brew 'cmatrix'
 brew 'composer'
-brew 'dnsmasq'
 brew 'fd'
 brew 'fish'
 brew 'fzf'
@@ -16,7 +15,7 @@ brew 'git-delta'
 brew 'goaccess'
 brew 'htop'
 brew 'ncdu'
-brew 'nginx'
+brew 'lazygit'
 brew 'prettyping'
 brew 'starship'
 brew 'ranger'
@@ -32,15 +31,15 @@ brew 'zoxide';
 # brew 'zsh-completion'
 # brew 'zsh-autosuggestions'
 
-
 # Development
 brew 'php'
 brew 'node'
-brew 'yarn'
 
 
 # Apps
 cask 'phpmon'
+cask 'keycastr'
+cask 'raycast'
 # cask '1password'
 # cask 'alfred'
 # cask 'caffeine'
@@ -48,21 +47,14 @@ cask 'phpmon'
 # cask 'figma'
 # cask 'firefox'
 # cask 'iina'
-# cask 'iterm2'
 # cask 'little-snitch'
-# cask 'rescuetime'
 # cask 'spotify'
 # cask 'sublime-text'
 # cask 'transmit'
 
-# Quicklook
-# cask 'qlmarkdown'
-# cask 'quicklook-json'
-# cask 'quicklook-csv'
-# cask 'qlstephen'
-
 # Fonts
 cask 'font-iosevka'
+cask 'font-fira-code'
 
 # Install Mac App Store apps
 # mas 'iA Writer', id: 775737590
