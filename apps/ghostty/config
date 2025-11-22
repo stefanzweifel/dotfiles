@@ -1,0 +1,16 @@
+theme = dark:TokyoNight Night,light:GitHub Light Default
+theme = TokyoNight Night
+
+shell-integration = zsh
+
+font-family = JetBrains Mono
+font-size = 14
+font-thicken = true
+font-feature = -liga
+
+adjust-cell-height = 20
+
+window-padding-x = 20
+window-padding-y = 20
+
+working-directory = /Users/stefan/Developer

@@ -28,6 +28,7 @@
     ~/.config/karabiner/karabiner.json: karabiner/karabiner.json
     ~/.tmux.conf: tmux/tmux.conf
     ~/.composer/composer.json: global-composer.json
+    ~/Library/Application Support/com.mitchellh.ghostty/config: apps/ghostty/config
     ~/Library/Application Support/Sublime Text/Packages/User/Themes: apps/sublime-text/themes
     ~/Library/Application Support/Sublime Text/Packages/User/Snippets: apps/sublime-text/snippets
     ~/Library/Application Support/Sublime Text/Packages/User/Preferences.sublime-settings: apps/sublime-text/user/Preferences.sublime-settings
