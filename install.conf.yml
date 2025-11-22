@@ -9,6 +9,7 @@
     - ~/Developer
     - ~/.composer
     - ~/Library/Application Support/Sublime Text/Packages/User/
+    - ~/Library/Application Support/Rectangle/
     - ~/Library/KeyBindings
 
 # - shell:
@@ -28,6 +29,7 @@
     ~/.config/karabiner/karabiner.json: karabiner/karabiner.json
     ~/.tmux.conf: tmux/tmux.conf
     ~/.composer/composer.json: global-composer.json
+    ~/Library/Application Support/Rectangle/RectangleConfig.json: apps/rectangle/RectangleConfig.json
     ~/Library/Application Support/com.mitchellh.ghostty/config: apps/ghostty/config
     ~/Library/Application Support/Sublime Text/Packages/User/Themes: apps/sublime-text/themes
     ~/Library/Application Support/Sublime Text/Packages/User/Snippets: apps/sublime-text/snippets
