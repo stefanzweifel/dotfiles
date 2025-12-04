@@ -167,15 +167,6 @@ eval "$(fnm env --use-on-cd)"
 # starship - https://starship.rs
 eval "$(starship init zsh)"
 
-
-# Bun
-## bun completions
-[ -s "/Users/stefan/.bun/_bun" ] && source "/Users/stefan/.bun/_bun"
-
-## bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-
 # zoxide
 eval "$(zoxide init zsh --cmd cd)"
 
