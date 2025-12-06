@@ -3,7 +3,7 @@
       relink: true
       force: true
 
-- clean: ["~", "~/.cache", "~/.zshrc"]
+- clean: ["~", "~/.cache"]
 
 - create:
     - ~/Developer
