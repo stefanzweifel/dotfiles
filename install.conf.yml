@@ -26,6 +26,7 @@
     ~/.config/starship.toml: zsh/starship.toml
     ~/.config/tmuxinator: tmuxinator
     ~/.config/fish: fish
+    ~/.config/zed/settings.json: apps/zed/settings.json
     ~/.config/karabiner/karabiner.json: karabiner/karabiner.json
     ~/.tmux.conf: tmux/tmux.conf
     ~/.composer/composer.json: global-composer.json
