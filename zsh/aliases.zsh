@@ -46,7 +46,7 @@ alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset
 alias nah='git reset --hard;git clean -df'
 
 # PhpStorm
-alias phpstorm='open -a /Applications/PhpStorm.app "`pwd`"'
+alias phpstorm='open -a ~/Applications/PhpStorm.app "`pwd`"'
 
 alias github='open -a "/Applications/GitHub Desktop.app" "`pwd`"'
 
