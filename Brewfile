@@ -26,6 +26,7 @@ brew 'wakeonlan'
 brew 'yt-dlp'
 brew 'zellij';
 brew 'zoxide';
+brew 'jordond/tap/jolt'
 
 # brew 'zsh'
 # brew 'zsh-completion'
@@ -34,7 +35,6 @@ brew 'zoxide';
 # Development
 brew 'php'
 brew 'node'
-
 
 # Apps
 cask 'phpmon'

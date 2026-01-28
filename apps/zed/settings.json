@@ -7,6 +7,12 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "git_panel": {
+    "tree_view": false
+  },
+  "project_panel": {
+    "dock": "right"
+  },
   "base_keymap": "SublimeText",
   "ui_font_size": 16,
   "buffer_font_size": 15,

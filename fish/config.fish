@@ -13,3 +13,8 @@ fish_add_path /opt/homebrew/sbin
 
 # fnm
 eval "$(fnm env --use-on-cd)"
+
+# Added by LM Studio CLI (lms)
+set -gx PATH $PATH /Users/stefan/.lmstudio/bin
+# End of LM Studio CLI section
+
