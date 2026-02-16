@@ -54,7 +54,7 @@ export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 export PATH=$HOME/bin:~/.config/phpmon/bin:$PATH
 
 # Add MySQL binaries through DBngin
-export PATH=/Users/Shared/DBngin/mysql/8.0.19/bin:$PATH
+export PATH=/Users/Shared/DBngin/mysql/8.0.33/bin:$PATH
 
 # Add Postgres binaries through DBngin
 export PATH=/Users/Shared/DBngin/postgresql/15.1/bin:$PATH
@@ -172,3 +172,7 @@ eval "$(zoxide init zsh --cmd cd)"
 
 # zellij
 # eval "$(zellij setup --generate-auto-start zsh)"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/stefan/.lmstudio/bin"
+# End of LM Studio CLI section
