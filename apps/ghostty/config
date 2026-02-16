@@ -1,6 +1,5 @@
 # theme = dark:TokyoNight Night,light:GitHub Light Default
-theme = Monokai Pro Light
-# theme = Monokai Pro
+theme = dark:Monokai Pro,light:Monokai Pro Light
 
 shell-integration = zsh
 
