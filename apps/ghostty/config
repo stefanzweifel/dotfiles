@@ -14,3 +14,5 @@ window-padding-x = 20
 window-padding-y = 20
 
 working-directory = /Users/stefan/Developer
+
+quit-after-last-window-closed = true
