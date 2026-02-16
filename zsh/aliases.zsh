@@ -10,6 +10,9 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 
+alias ls="eza"
+alias find="fd"
+
 # Paths
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"

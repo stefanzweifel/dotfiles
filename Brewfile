@@ -25,6 +25,7 @@ brew 'tree'
 brew 'wakeonlan'
 brew 'yt-dlp'
 brew 'zellij';
+brew 'eza';
 brew 'zoxide';
 brew 'jordond/tap/jolt'
 
