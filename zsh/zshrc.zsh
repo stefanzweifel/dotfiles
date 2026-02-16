@@ -22,7 +22,7 @@ ZSH_THEME="lambda"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-extras git-trim artisan)
+plugins=(git git-extras git-trim)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -58,6 +58,9 @@ export PATH=/Users/Shared/DBngin/mysql/8.0.33/bin:$PATH
 
 # Add Postgres binaries through DBngin
 export PATH=/Users/Shared/DBngin/postgresql/15.1/bin:$PATH
+
+# Add binaries from .local to the Path
+export PATH="$HOME/.local/bin:$PATH"
 
 # Disable Homebrew auto updates
 export HOMEBREW_NO_AUTO_UPDATE=1
