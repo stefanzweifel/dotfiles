@@ -7,18 +7,58 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "debugger": {
+    "button": false,
+  },
+  "agent": {
+    "dock": "left",
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "git": {
+    "inline_blame": {
+      "enabled": false,
+    },
+    "git_gutter": "tracked_files",
+  },
+  "collaboration_panel": {
+    "button": false,
+  },
+  "notification_panel": {
+    "button": false,
+  },
   "git_panel": {
-    "tree_view": false
+    "dock": "left",
+    "button": false,
+  },
+  "outline_panel": {
+    "file_icons": true,
+    "button": false,
   },
   "project_panel": {
-    "dock": "right"
+    "hide_hidden": false,
+    "hide_root": false,
+    "folder_icons": true,
+    "file_icons": true,
+    "entry_spacing": "comfortable",
+    "hide_gitignore": false,
+    "dock": "right",
   },
+  "minimap": {
+    "show": "never",
+  },
+  "buffer_line_height": "comfortable",
   "base_keymap": "SublimeText",
+  "icon_theme": {
+    "mode": "light",
+    "light": "Zed (Default)",
+    "dark": "Zed (Default)",
+  },
   "ui_font_size": 16,
-  "buffer_font_size": 15,
+  "buffer_font_size": 16,
   "theme": {
     "mode": "system",
-    "light": "Ayu Light",
-    "dark": "Ayu Dark"
-  }
+    "light": "One Light",
+    "dark": "One Dark",
+  },
 }
