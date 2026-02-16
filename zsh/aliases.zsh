@@ -25,12 +25,15 @@ alias pserve="php -S localhost:"
 alias art='php artisan'
 alias mfs='php artisan migrate:fresh --seed'
 
+
+COMPOSER_BINARY_PATH="~/Library/Application\ Support/Herd/bin/composer"
+
 # Composer
-alias c="/opt/homebrew/bin/composer"
-alias ci="/opt/homebrew/bin/composer install"
-alias cr="/opt/homebrew/bin/composer require"
-alias cda="/opt/homebrew/bin/composer dumpautoload"
-alias co="/opt/homebrew/bin/composer outdated --direct"
+alias c="$COMPOSER_BINARY_PATH"
+alias ci="$COMPOSER_BINARY_PATH install"
+alias cr="$COMPOSER_BINARY_PATH require"
+alias cda="$COMPOSER_BINARY_PATH dumpautoload"
+alias co="$COMPOSER_BINARY_PATH outdated --direct"
 
 # PHP Unit
 alias pw="phpunit-watcher watch"
@@ -46,7 +49,7 @@ alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset
 alias nah='git reset --hard;git clean -df'
 
 # PhpStorm
-alias phpstorm='open -a /Applications/PhpStorm.app "`pwd`"'
+alias phpstorm='open -a '~/Applications/PhpStorm.app' "`pwd`"'
 
 alias github='open -a "/Applications/GitHub Desktop.app" "`pwd`"'
 
