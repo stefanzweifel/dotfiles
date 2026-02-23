@@ -30,6 +30,7 @@
     ~/.config/karabiner/karabiner.json: karabiner/karabiner.json
     ~/.tmux.conf: tmux/tmux.conf
     ~/.composer/composer.json: global-composer.json
+    ~/.raycast/scripts/: apps/raycast/scripts
     ~/Library/Application Support/Rectangle/RectangleConfig.json: apps/rectangle/RectangleConfig.json
     ~/Library/Application Support/com.mitchellh.ghostty/config: apps/ghostty/config
     ~/Library/Application Support/Sublime Text/Packages/User/Themes: apps/sublime-text/themes

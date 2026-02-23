@@ -3,6 +3,8 @@ tap 'homebrew/bundle'
 tap 'homebrew/cask-fonts'
 tap 'homebrew/cask'
 
+brew 'blueutil'
+brew 'switchaudio-osx'
 brew 'bat'
 brew 'cmatrix'
 brew 'composer'
