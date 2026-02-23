@@ -8,6 +8,7 @@
 - create:
     - ~/Developer
     - ~/.composer
+    - ~/.raycast/
     - ~/Library/Application Support/Sublime Text/Packages/User/
     - ~/Library/Application Support/Rectangle/
     - ~/Library/KeyBindings
