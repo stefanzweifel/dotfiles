@@ -61,4 +61,16 @@
     "light": "One Light",
     "dark": "One Dark",
   },
+
+  "format_on_save": "on",
+  "languages": {
+    "PHP": {
+      "formatter": {
+        "external": {
+          "command": "/Users/stefanzweifel/.dotfiles/bin/php-format.sh",
+          "arguments": ["{buffer_path}"],
+        },
+      },
+    },
+  },
 }
