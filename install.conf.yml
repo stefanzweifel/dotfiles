@@ -25,7 +25,6 @@
     ~/.gitignore: git/gitignore
     ~/.zshrc: zsh/zshrc.zsh
     ~/.config/starship.toml: zsh/starship.toml
-    ~/.config/tmuxinator: tmuxinator
     ~/.config/zed/settings.json: apps/zed/settings.json
     ~/.config/karabiner/karabiner.json: karabiner/karabiner.json
     ~/.tmux.conf: tmux/tmux.conf

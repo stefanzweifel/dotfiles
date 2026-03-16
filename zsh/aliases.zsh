@@ -70,7 +70,6 @@ alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/La
 alias cat="bat"
 alias ping='prettyping --nolegend'
 alias help='tldr'
-alias mux=tmuxinator
 
 # Borg Backup
 # https://github.com/stefanzweifel/borg-backup-scripts
