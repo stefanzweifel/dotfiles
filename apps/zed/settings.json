@@ -7,12 +7,36 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "edit_predictions": {
+    "mode": "eager",
+  },
   "debugger": {
     "button": false,
   },
   "agent": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4o",
+      "enable_thinking": false,
+    },
     "dock": "left",
-    "favorite_models": [],
+    "favorite_models": [
+      {
+        "provider": "copilot_chat",
+        "model": "claude-opus-4.5",
+        "enable_thinking": false,
+      },
+      {
+        "provider": "copilot_chat",
+        "model": "gpt-4o",
+        "enable_thinking": false,
+      },
+      {
+        "provider": "copilot_chat",
+        "model": "gpt-4.1",
+        "enable_thinking": false,
+      },
+    ],
     "model_parameters": [],
   },
   "git": {

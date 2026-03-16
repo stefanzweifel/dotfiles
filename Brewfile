@@ -52,6 +52,7 @@ cask 'keycastr'
 cask 'raycast'
 cask 'fastmate'
 cask 'caffeine'
+cask 'claude-code'
 
 # cask '1password'
 # cask 'alfred'
