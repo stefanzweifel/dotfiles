@@ -12,6 +12,11 @@ source "${BASEDIR}/bin/_helpers.sh"
 dotfiles_header
 
 cd "${BASEDIR}"
-git submodule update --init --recursive "${DOTBOT_DIR}"
 
+step "Updating dotbot submodule"
+git submodule update --init --recursive "${DOTBOT_DIR}"
+success "Submodule up to date"
+
+step "Linking dotfiles"
 "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" --plugin-dir dotbot-brew -c "${CONFIG}" "${@}"
+success "Dotfiles linked"
