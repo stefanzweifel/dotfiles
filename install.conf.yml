@@ -20,9 +20,9 @@
 # - [/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)", 'Install Homebrew']
 
 - link:
-    ~/.gitconfig: git/gitconfig
-    ~/.gitattributes: git/gitattributes
-    ~/.gitignore: git/gitignore
+    ~/.gitconfig: config/git/gitconfig
+    ~/.gitattributes: config/git/gitattributes
+    ~/.gitignore: config/git/gitignore
     ~/.zshrc: zsh/zshrc.zsh
     ~/.config/starship.toml: zsh/starship.toml
     ~/.config/zed/settings.json: config/zed/settings.json
