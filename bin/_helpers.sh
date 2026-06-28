@@ -19,3 +19,15 @@ step()    { echo ""; echo -e "${BLUE}➜${NC} $1"; }
 success() { echo -e "${GREEN}✓${NC} $1"; }
 warn()    { echo -e "${YELLOW}⚠${NC} $1"; }
 error()   { echo -e "${RED}✗${NC} $1"; exit 1; }
+
+dotfiles_header() {
+    [ -n "${DOTFILES_HEADER_SHOWN:-}" ] && return 0
+    export DOTFILES_HEADER_SHOWN=1
+    cat << 'EOF'
+
+  (\(\
+  ( -.-)     dotfiles · stefan zweifel
+  o_(")(")
+
+EOF
+}
