@@ -23,8 +23,8 @@
     ~/.gitconfig: config/git/gitconfig
     ~/.gitattributes: config/git/gitattributes
     ~/.gitignore: config/git/gitignore
-    ~/.zshrc: zsh/zshrc.zsh
-    ~/.config/starship.toml: zsh/starship.toml
+    ~/.zshrc: config/zsh/zshrc.zsh
+    ~/.config/starship.toml: config/zsh/starship.toml
     ~/.config/zed/settings.json: config/zed/settings.json
     ~/.config/karabiner/karabiner.json: config/karabiner/karabiner.json
     ~/.tmux.conf: config/tmux/tmux.conf

@@ -13,6 +13,9 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias ls="eza"
 alias find="fd"
 
+alias hostfile="sudo vi /etc/hosts"
+alias sshconfig="vi ~/.ssh/config"
+
 # Paths
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
@@ -29,9 +32,8 @@ alias art='php artisan'
 alias mfs='php artisan migrate:fresh --seed'
 
 
-COMPOSER_BINARY_PATH="~/Library/Application\ Support/Herd/bin/composer"
-
 # Composer
+COMPOSER_BINARY_PATH="~/Library/Application\ Support/Herd/bin/composer"
 alias c="$COMPOSER_BINARY_PATH"
 alias ci="$COMPOSER_BINARY_PATH install"
 alias cr="$COMPOSER_BINARY_PATH require"
@@ -50,15 +52,12 @@ alias gm="git merge"
 alias gt="git trim --merged"
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias nah='git reset --hard;git clean -df'
+alias uncommit="git reset --soft HEAD~1"
 
 # PhpStorm
 alias phpstorm='open -a '~/Applications/PhpStorm.app' "`pwd`"'
 
 alias github='open -a "/Applications/GitHub Desktop.app" "`pwd`"'
-
-# Empty the Trash on all mounted volumes and the main HDD
-# Also, clear Apple’s System Logs to improve shell startup speed
-alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
 
 # Start Google Chrome Browser
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
