@@ -1,0 +1,102 @@
+#!/usr/bin/env bash
+#
+# Append locally-installed Homebrew packages that are missing from the Brewfile.
+#
+# Compares `brew leaves` and `brew list --cask` against the entries in
+# config/homebrew/Brewfile and appends any missing entries as a dated block.
+
+set -e
+
+# Colors
+BLUE='\033[0;34m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+NC='\033[0m'
+
+step() { echo -e "${BLUE}➜${NC} $1"; }
+success() { echo -e "${GREEN}✓${NC} $1"; }
+warn() { echo -e "${YELLOW}⚠${NC} $1"; }
+
+BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+BREWFILE="${BASEDIR}/config/homebrew/Brewfile"
+
+if [ ! -f "${BREWFILE}" ]; then
+    warn "Brewfile not found at ${BREWFILE}"
+    exit 1
+fi
+
+if ! command -v brew >/dev/null 2>&1; then
+    warn "brew is not installed — skipping sync"
+    exit 0
+fi
+
+step "Checking Brewfile against installed packages"
+
+# Extract names from Brewfile. Match: brew 'name' / brew "name" (same for cask).
+# For tap-prefixed entries like brew 'jordond/tap/jolt' we keep both the full
+# string and the basename so either form deduplicates correctly.
+listed_brews=$(
+    grep -E "^[[:space:]]*brew[[:space:]]+['\"]" "${BREWFILE}" \
+        | sed -E "s/^[[:space:]]*brew[[:space:]]+['\"]([^'\"]+)['\"].*$/\1/" \
+        | awk -F/ '{print $0; print $NF}' \
+        | sort -u
+)
+listed_casks=$(
+    grep -E "^[[:space:]]*cask[[:space:]]+['\"]" "${BREWFILE}" \
+        | sed -E "s/^[[:space:]]*cask[[:space:]]+['\"]([^'\"]+)['\"].*$/\1/" \
+        | awk -F/ '{print $0; print $NF}' \
+        | sort -u
+)
+
+installed_brews=$(brew leaves | sort -u)
+installed_casks=$(brew list --cask 2>/dev/null | sort -u || true)
+
+missing_brews=$(comm -23 <(echo "${installed_brews}") <(echo "${listed_brews}"))
+missing_casks=$(comm -23 <(echo "${installed_casks}") <(echo "${listed_casks}"))
+
+# Drop empty lines
+missing_brews=$(echo "${missing_brews}" | grep -v "^$" || true)
+missing_casks=$(echo "${missing_casks}" | grep -v "^$" || true)
+
+if [ -z "${missing_brews}" ] && [ -z "${missing_casks}" ]; then
+    success "Brewfile is up to date — nothing to sync"
+    exit 0
+fi
+
+today=$(date +%Y-%m-%d)
+
+# Ensure a blank line separates the new block from any prior content
+if [ -s "${BREWFILE}" ] && [ "$(tail -c 1 "${BREWFILE}")" != "" ]; then
+    echo "" >> "${BREWFILE}"
+fi
+
+{
+    echo ""
+    echo "# Added by brewfile-sync on ${today}"
+    if [ -n "${missing_brews}" ]; then
+        while IFS= read -r pkg; do
+            echo "brew '${pkg}'"
+        done <<< "${missing_brews}"
+    fi
+    if [ -n "${missing_casks}" ]; then
+        while IFS= read -r pkg; do
+            echo "cask '${pkg}'"
+        done <<< "${missing_casks}"
+    fi
+} >> "${BREWFILE}"
+
+count_brews=$([ -z "${missing_brews}" ] && echo 0 || echo "${missing_brews}" | wc -l | tr -d ' ')
+count_casks=$([ -z "${missing_casks}" ] && echo 0 || echo "${missing_casks}" | wc -l | tr -d ' ')
+
+success "Appended ${count_brews} brew(s) and ${count_casks} cask(s) to Brewfile"
+
+if [ -n "${missing_brews}" ]; then
+    echo ""
+    step "New brews:"
+    echo "${missing_brews}" | sed 's/^/  /'
+fi
+if [ -n "${missing_casks}" ]; then
+    echo ""
+    step "New casks:"
+    echo "${missing_casks}" | sed 's/^/  /'
+fi

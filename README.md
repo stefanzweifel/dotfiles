@@ -7,7 +7,7 @@ Installation is simple. Just copy and paste the following script into your termi
 ```
 git clone https://github.com/stefanzweifel/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
-./install
+bin/first-setup
 ```
 
 ## LICENSE
