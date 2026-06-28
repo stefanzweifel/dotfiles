@@ -25,21 +25,21 @@
     ~/.gitignore: git/gitignore
     ~/.zshrc: zsh/zshrc.zsh
     ~/.config/starship.toml: zsh/starship.toml
-    ~/.config/zed/settings.json: apps/zed/settings.json
+    ~/.config/zed/settings.json: config/zed/settings.json
     ~/.config/karabiner/karabiner.json: karabiner/karabiner.json
-    ~/.tmux.conf: apps/tmux/tmux.conf
+    ~/.tmux.conf: config/tmux/tmux.conf
     ~/.composer/composer.json: global-composer.json
-    ~/.raycast/scripts/: apps/raycast/scripts
-    ~/.claude/statusline.sh: apps/claude/statusline.sh
-    ~/.claude/settings.json: apps/claude/settings.json
-    ~/Library/Application Support/Rectangle/RectangleConfig.json: apps/rectangle/RectangleConfig.json
-    ~/Library/Application Support/com.mitchellh.ghostty/config: apps/ghostty/config
-    ~/Library/Application Support/Sublime Text/Packages/User/Themes: apps/sublime-text/themes
-    ~/Library/Application Support/Sublime Text/Packages/User/Snippets: apps/sublime-text/snippets
-    ~/Library/Application Support/Sublime Text/Packages/User/Preferences.sublime-settings: apps/sublime-text/user/Preferences.sublime-settings
-    ~/Library/Application Support/Sublime Text/Packages/User/Default (OSX).sublime-keymap: apps/sublime-text/user/Default (OSX).sublime-keymap
-    ~/Library/Application Support/Sublime Text/Packages/User/Default (OSX).sublime-mousemap: apps/sublime-text/user/Default (OSX).sublime-mousemap
-    ~/Library/Application Support/Sublime Text/Packages/User/Package Control.sublime-settings: apps/sublime-text/user/Package Control.sublime-settings
+    ~/.raycast/scripts/: config/raycast/scripts
+    ~/.claude/statusline.sh: config/claude/statusline.sh
+    ~/.claude/settings.json: config/claude/settings.json
+    ~/Library/Application Support/Rectangle/RectangleConfig.json: config/rectangle/RectangleConfig.json
+    ~/Library/Application Support/com.mitchellh.ghostty/config: config/ghostty/config
+    ~/Library/Application Support/Sublime Text/Packages/User/Themes: config/sublime-text/themes
+    ~/Library/Application Support/Sublime Text/Packages/User/Snippets: config/sublime-text/snippets
+    ~/Library/Application Support/Sublime Text/Packages/User/Preferences.sublime-settings: config/sublime-text/user/Preferences.sublime-settings
+    ~/Library/Application Support/Sublime Text/Packages/User/Default (OSX).sublime-keymap: config/sublime-text/user/Default (OSX).sublime-keymap
+    ~/Library/Application Support/Sublime Text/Packages/User/Default (OSX).sublime-mousemap: config/sublime-text/user/Default (OSX).sublime-mousemap
+    ~/Library/Application Support/Sublime Text/Packages/User/Package Control.sublime-settings: config/sublime-text/user/Package Control.sublime-settings
     ~/Library/KeyBindings/DefaultKeyBinding.dict: macOS/DefaultKeyBinding.dict
 
 - shell:
