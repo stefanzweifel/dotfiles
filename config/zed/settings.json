@@ -7,6 +7,13 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "use_system_window_tabs": true,
+  "cli_default_open_behavior": "new_window",
+  "agent_servers": {
+    "claude-acp": {
+      "type": "registry"
+    }
+  },
   "edit_predictions": {
     "mode": "eager",
   },
@@ -74,15 +81,15 @@
   "buffer_line_height": "comfortable",
   "base_keymap": "SublimeText",
   "icon_theme": {
-    "mode": "light",
+    "mode": "system",
     "light": "Zed (Default)",
     "dark": "Zed (Default)",
   },
   "ui_font_size": 16,
   "buffer_font_size": 16,
   "theme": {
-    "mode": "system",
-    "light": "One Light",
+    "mode": "light",
+    "light": "macOS Classic Light",
     "dark": "One Dark",
   },
 

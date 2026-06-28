@@ -1,12 +1,26 @@
-# Sets reasonable macOS defaults.
+#!/usr/bin/env bash
 #
-# Or, in other words, set shit how I like in macOS.
+# Sets reasonable macOS defaults.
 #
 # The original idea (and a couple settings) were grabbed from:
 #   https://github.com/mathiasbynens/dotfiles/blob/master/.macos
-#
-# Run ./set-defaults.sh and you'll be good to go.
 
+set -e
+
+BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+source "${BASEDIR}/bin/_helpers.sh"
+
+echo ""
+warn "This will write a number of macOS system defaults."
+echo ""
+read -p "Continue? (y/n) " -n 1 -r
+echo ""
+if [[ ! $REPLY =~ ^[Yy]$ ]]; then
+    echo "Aborted."
+    exit 0
+fi
+
+step "Applying macOS defaults"
 
 # Expand save panel by default
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
@@ -105,14 +119,8 @@ defaults write com.apple.SoftwareUpdate AutomaticDownload -int 1
 # Install System data files & security updates
 defaults write com.apple.SoftwareUpdate CriticalUpdateInstall -int 1
 
-###############################################################################
-# Tweetbot.app                                                                #
-###############################################################################
-
-# Bypass the annoyingly slow t.co URL shortener
-defaults write com.tapbots.TweetbotMac OpenURLsDirectly -bool true
-
-
 # Disable the floating sidebar appearance in NSSplitViewItem
 # Remove in macOS 27 - https://wien.rocks/@noheger/116730205905240466
 defaults write -g NSSplitViewItemSidebarDefaultsToFloatingAppearance -bool NO
+
+success "macOS defaults applied. Some changes may require a logout/restart."

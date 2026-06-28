@@ -20,25 +20,27 @@
 # - [/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)", 'Install Homebrew']
 
 - link:
-    ~/.gitconfig: git/gitconfig
-    ~/.gitattributes: git/gitattributes
-    ~/.gitignore: git/gitignore
-    ~/.zshrc: zsh/zshrc.zsh
-    ~/.config/starship.toml: zsh/starship.toml
-    ~/.config/zed/settings.json: apps/zed/settings.json
-    ~/.config/karabiner/karabiner.json: karabiner/karabiner.json
-    ~/.tmux.conf: tmux/tmux.conf
-    ~/.composer/composer.json: global-composer.json
-    ~/.raycast/scripts/: apps/raycast/scripts
-    ~/Library/Application Support/Rectangle/RectangleConfig.json: apps/rectangle/RectangleConfig.json
-    ~/Library/Application Support/com.mitchellh.ghostty/config: apps/ghostty/config
-    ~/Library/Application Support/Sublime Text/Packages/User/Themes: apps/sublime-text/themes
-    ~/Library/Application Support/Sublime Text/Packages/User/Snippets: apps/sublime-text/snippets
-    ~/Library/Application Support/Sublime Text/Packages/User/Preferences.sublime-settings: apps/sublime-text/user/Preferences.sublime-settings
-    ~/Library/Application Support/Sublime Text/Packages/User/Default (OSX).sublime-keymap: apps/sublime-text/user/Default (OSX).sublime-keymap
-    ~/Library/Application Support/Sublime Text/Packages/User/Default (OSX).sublime-mousemap: apps/sublime-text/user/Default (OSX).sublime-mousemap
-    ~/Library/Application Support/Sublime Text/Packages/User/Package Control.sublime-settings: apps/sublime-text/user/Package Control.sublime-settings
-    ~/Library/KeyBindings/DefaultKeyBinding.dict: macOS/DefaultKeyBinding.dict
+    ~/.gitconfig: config/git/gitconfig
+    ~/.gitattributes: config/git/gitattributes
+    ~/.gitignore: config/git/gitignore
+    ~/.zshrc: config/zsh/zshrc.zsh
+    ~/.config/starship.toml: config/starship/starship.toml
+    ~/.config/zed/settings.json: config/zed/settings.json
+    ~/.config/karabiner/karabiner.json: config/karabiner/karabiner.json
+    ~/.tmux.conf: config/tmux/tmux.conf
+    ~/.composer/composer.json: config/composer/global-composer.json
+    ~/.raycast/scripts/: config/raycast/scripts/
+    ~/.claude/statusline.sh: config/claude/statusline.sh
+    ~/.claude/settings.json: config/claude/settings.json
+    ~/Library/Application Support/Rectangle/RectangleConfig.json: config/rectangle/RectangleConfig.json
+    ~/Library/Application Support/com.mitchellh.ghostty/config: config/ghostty/config
+    ~/Library/Application Support/Sublime Text/Packages/User/Themes: config/sublime-text/themes
+    ~/Library/Application Support/Sublime Text/Packages/User/Snippets: config/sublime-text/snippets
+    ~/Library/Application Support/Sublime Text/Packages/User/Preferences.sublime-settings: config/sublime-text/user/Preferences.sublime-settings
+    ~/Library/Application Support/Sublime Text/Packages/User/Default (OSX).sublime-keymap: config/sublime-text/user/Default (OSX).sublime-keymap
+    ~/Library/Application Support/Sublime Text/Packages/User/Default (OSX).sublime-mousemap: config/sublime-text/user/Default (OSX).sublime-mousemap
+    ~/Library/Application Support/Sublime Text/Packages/User/Package Control.sublime-settings: config/sublime-text/user/Package Control.sublime-settings
+    ~/Library/KeyBindings/DefaultKeyBinding.dict: config/mac-os/DefaultKeyBinding.dict
 
 - shell:
     - [touch $HOME/.hushlogin]
@@ -49,4 +51,4 @@
   # - [git clone https://github.com/jessarcher/zsh-artisan.git ~/.oh-my-zsh/custom/plugins/artisan]
   # - [composer global install]
   # - [git config --global core.excludesfile ~/.gitignore]
-  # - [sh macOs/set-defaults.sh]
+  # - [bin/macos-defaults]

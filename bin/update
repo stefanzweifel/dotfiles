@@ -1,0 +1,68 @@
+#!/usr/bin/env bash
+#
+# Update dotfiles and tools
+
+set -e
+
+BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+source "${BASEDIR}/bin/_helpers.sh"
+
+PRIVATE_DIR="${HOME}/.dotfiles-private"
+
+step "Updating dotfiles"
+
+step "Pulling latest dotfiles"
+git -C "${BASEDIR}" pull origin main
+success "Public dotfiles updated"
+
+# Pull private dotfiles (best-effort)
+if [ -d "${PRIVATE_DIR}/.git" ]; then
+    step "Pulling private dotfiles"
+    if git -C "${PRIVATE_DIR}" pull; then
+        success "Private dotfiles updated"
+    else
+        warn "Failed to pull private dotfiles — continuing"
+    fi
+else
+    warn "No private dotfiles at ${PRIVATE_DIR} — skipping"
+fi
+
+# Re-run dotbot to pick up any new links
+step "Re-linking dotfiles (public)"
+"${BASEDIR}/bin/install"
+success "Public links applied"
+
+if [ -x "${PRIVATE_DIR}/bin/install" ]; then
+    step "Re-linking dotfiles (private)"
+    "${PRIVATE_DIR}/bin/install"
+    success "Private links applied"
+fi
+
+# Update Homebrew and packages
+step "Updating Homebrew packages"
+brew update
+brew upgrade
+brew bundle --file="${BASEDIR}/config/homebrew/Brewfile"
+brew cleanup
+success "Homebrew packages updated"
+
+# Keep Brewfile honest with whatever is installed locally
+step "Syncing Brewfile with installed packages"
+"${BASEDIR}/bin/brewfile-sync"
+
+# Update global npm packages
+step "Updating global npm packages"
+npm update -g
+success "npm packages updated"
+
+# Update global Composer packages
+step "Updating global Composer packages"
+composer global update
+success "Composer packages updated"
+
+# Reload shell config
+echo ""
+success "Update complete!"
+echo ""
+warn "Restart your terminal or run: exec zsh"
+echo ""
