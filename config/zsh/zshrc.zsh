@@ -36,6 +36,13 @@ for file in "$DOTFILES"/config/shell/*.zsh; do
 done
 unset file
 
+# Source private shell config files
+if [ -d "$HOME/.dotfiles-private/config/shell" ]; then
+  for f in "$HOME/.dotfiles-private/config/shell"/*.zsh; do
+    [ -f "$f" ] && source "$f"
+  done
+  unset f
+fi
 
 # fnm
 eval "$(fnm env --use-on-cd)"
