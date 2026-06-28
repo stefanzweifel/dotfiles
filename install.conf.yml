@@ -30,6 +30,8 @@
     ~/.tmux.conf: apps/tmux/tmux.conf
     ~/.composer/composer.json: global-composer.json
     ~/.raycast/scripts/: apps/raycast/scripts
+    ~/.claude/statusline.sh: apps/claude/statusline.sh
+    ~/.claude/settings.json: apps/claude/settings.json
     ~/Library/Application Support/Rectangle/RectangleConfig.json: apps/rectangle/RectangleConfig.json
     ~/Library/Application Support/com.mitchellh.ghostty/config: apps/ghostty/config
     ~/Library/Application Support/Sublime Text/Packages/User/Themes: apps/sublime-text/themes
