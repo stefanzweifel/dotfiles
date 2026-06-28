@@ -20,3 +20,15 @@ success "Submodule up to date"
 step "Linking dotfiles"
 "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" --plugin-dir dotbot-brew -c "${CONFIG}" "${@}"
 success "Dotfiles linked"
+
+step "Installing git-trim"
+GIT_TRIM_DIR="${HOME}/.local/share/git-trim"
+GIT_TRIM_BIN="${HOME}/.local/bin/git-trim"
+mkdir -p "${HOME}/.local/bin"
+if [ -d "${GIT_TRIM_DIR}/.git" ]; then
+    git -C "${GIT_TRIM_DIR}" pull --ff-only --quiet
+else
+    git clone --quiet https://github.com/jasonmccreary/git-trim.git "${GIT_TRIM_DIR}"
+fi
+ln -sf "${GIT_TRIM_DIR}/git-trim" "${GIT_TRIM_BIN}"
+success "git-trim installed at ${GIT_TRIM_BIN}"
