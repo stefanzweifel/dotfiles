@@ -7,6 +7,8 @@ set -e
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 source "${BASEDIR}/bin/_helpers.sh"
 
+dotfiles_header
+
 PRIVATE_DIR="${HOME}/.dotfiles-private"
 
 step "Updating dotfiles"

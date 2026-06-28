@@ -13,12 +13,6 @@
     - ~/Library/Application Support/Rectangle/
     - ~/Library/KeyBindings
 
-# - shell:
-# - [brew tap homebrew/bundle]
-# - [brew bundle]
-# TODO: Install Homebrew if it doesnt exist yet
-# - [/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)", 'Install Homebrew']
-
 - link:
     ~/.gitconfig: config/git/gitconfig
     ~/.gitattributes: config/git/gitattributes
@@ -29,9 +23,13 @@
     ~/.config/karabiner/karabiner.json: config/karabiner/karabiner.json
     ~/.tmux.conf: config/tmux/tmux.conf
     ~/.composer/composer.json: config/composer/global-composer.json
-    ~/.raycast/scripts/: config/raycast/scripts/
+    ~/.raycast/scripts: config/raycast/scripts
     ~/.claude/statusline.sh: config/claude/statusline.sh
     ~/.claude/settings.json: config/claude/settings.json
+    ~/.claude/skills: config/claude/skills
+    ~/.claude/agents: config/claude/agents
+    ~/.claude/commands: config/claude/commands
+    ~/.config/opencode/opencode.jsonc: config/opencode/opencode.jsonc
     ~/Library/Application Support/Rectangle/RectangleConfig.json: config/rectangle/RectangleConfig.json
     ~/Library/Application Support/com.mitchellh.ghostty/config: config/ghostty/config
     ~/Library/Application Support/Sublime Text/Packages/User/Themes: config/sublime-text/themes
@@ -45,10 +43,3 @@
 - shell:
     - [touch $HOME/.hushlogin]
     - [git submodule update --init --recursive]
-    - [
-        git clone https://github.com/jasonmccreary/git-trim.git $ZSH_CUSTOM/plugins/git-trim,
-      ]
-  # - [git clone https://github.com/jessarcher/zsh-artisan.git ~/.oh-my-zsh/custom/plugins/artisan]
-  # - [composer global install]
-  # - [git config --global core.excludesfile ~/.gitignore]
-  # - [bin/macos-defaults]

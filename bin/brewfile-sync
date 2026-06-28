@@ -10,6 +10,8 @@ set -e
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 source "${BASEDIR}/bin/_helpers.sh"
 
+dotfiles_header
+
 BREWFILE="${BASEDIR}/config/homebrew/Brewfile"
 
 if [ ! -f "${BREWFILE}" ]; then
