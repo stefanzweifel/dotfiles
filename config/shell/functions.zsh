@@ -85,3 +85,34 @@ npm() {
     command npm "$@"
   fi
 }
+
+function claude_to_agents() {
+    local agents="AGENTS.md"
+    local claude="CLAUDE.md"
+
+    # Both exist — could be two real files or symlink already set up
+    if [[ -e "$agents" && -e "$claude" ]]; then
+        if [[ -L "$claude" && "$(readlink "$claude")" == "$agents" ]]; then
+            echo "✓ Already set up: $claude → $agents"
+        else
+            echo "⚠ Warning: both $agents and $claude exist. Resolve manually."
+        fi
+        return
+    fi
+
+    # CLAUDE.md exists, AGENTS.md does not → rename and symlink
+    if [[ -e "$claude" && ! -e "$agents" ]]; then
+        mv "$claude" "$agents"
+        echo "Renamed $claude → $agents"
+    fi
+
+    # AGENTS.md exists (or was just created), symlink CLAUDE.md to it
+    if [[ -e "$agents" && ! -L "$claude" ]]; then
+        ln -s "$agents" "$claude"
+        echo "Linked $claude → $agents"
+        return
+    fi
+
+    # Neither exists
+    echo "⚠ No $agents or $claude found in $(pwd)"
+}

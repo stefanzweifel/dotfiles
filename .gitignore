@@ -1,9 +1,6 @@
 .DS_Store
 ._*
 .Trashes
-zsh/.zsh/histfile
-zsh/.zsh/cache
-
 
 *.sublime-project
 *.sublime-workspace
