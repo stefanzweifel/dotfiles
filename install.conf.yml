@@ -26,10 +26,10 @@
     ~/.zshrc: zsh/zshrc.zsh
     ~/.config/starship.toml: zsh/starship.toml
     ~/.config/zed/settings.json: config/zed/settings.json
-    ~/.config/karabiner/karabiner.json: karabiner/karabiner.json
+    ~/.config/karabiner/karabiner.json: config/karabiner/karabiner.json
     ~/.tmux.conf: config/tmux/tmux.conf
     ~/.composer/composer.json: global-composer.json
-    ~/.raycast/scripts/: config/raycast/scripts
+    ~/.raycast/scripts/: config/raycast/scripts/
     ~/.claude/statusline.sh: config/claude/statusline.sh
     ~/.claude/settings.json: config/claude/settings.json
     ~/Library/Application Support/Rectangle/RectangleConfig.json: config/rectangle/RectangleConfig.json
