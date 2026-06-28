@@ -105,14 +105,6 @@ defaults write com.apple.SoftwareUpdate AutomaticDownload -int 1
 # Install System data files & security updates
 defaults write com.apple.SoftwareUpdate CriticalUpdateInstall -int 1
 
-###############################################################################
-# Tweetbot.app                                                                #
-###############################################################################
-
-# Bypass the annoyingly slow t.co URL shortener
-defaults write com.tapbots.TweetbotMac OpenURLsDirectly -bool true
-
-
 # Disable the floating sidebar appearance in NSSplitViewItem
 # Remove in macOS 27 - https://wien.rocks/@noheger/116730205905240466
 defaults write -g NSSplitViewItemSidebarDefaultsToFloatingAppearance -bool NO

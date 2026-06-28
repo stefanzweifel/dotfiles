@@ -40,7 +40,7 @@
     ~/Library/Application Support/Sublime Text/Packages/User/Default (OSX).sublime-keymap: config/sublime-text/user/Default (OSX).sublime-keymap
     ~/Library/Application Support/Sublime Text/Packages/User/Default (OSX).sublime-mousemap: config/sublime-text/user/Default (OSX).sublime-mousemap
     ~/Library/Application Support/Sublime Text/Packages/User/Package Control.sublime-settings: config/sublime-text/user/Package Control.sublime-settings
-    ~/Library/KeyBindings/DefaultKeyBinding.dict: macOS/DefaultKeyBinding.dict
+    ~/Library/KeyBindings/DefaultKeyBinding.dict: config/mac-os/DefaultKeyBinding.dict
 
 - shell:
     - [touch $HOME/.hushlogin]
