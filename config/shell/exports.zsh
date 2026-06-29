@@ -28,3 +28,7 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 
 # Set vim as default editor
 export EDITOR=vim
+
+# Set theme used by bat/cat
+# See `bat --list-themes` for list of available themes
+export BAT_THEME="gruvbox-dark"
