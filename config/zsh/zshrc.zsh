@@ -55,3 +55,6 @@ eval "$(zoxide init zsh --cmd cd)"
 
 # zellij
 # eval "$(zellij setup --generate-auto-start zsh)"
+
+# Herd injected PHP 8.5 configuration.
+export HERD_PHP_85_INI_SCAN_DIR="/Users/stefanzweifel/Library/Application Support/Herd/config/php/85/"
