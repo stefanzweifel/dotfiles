@@ -34,6 +34,10 @@ eval "$(zoxide init zsh --cmd cd)"
 # zellij
 # eval "$(zellij setup --generate-auto-start zsh)"
 
+# zsh-patina - https://github.com/michel-kraemer/zsh-patina
+eval "$(/opt/homebrew/bin/zsh-patina activate)"
+
+
 # zsh-history-substring-search - type a substring, ↑/↓ cycles matching history entries
 source /opt/homebrew/share/zsh-history-substring-search/zsh-history-substring-search.zsh
 bindkey "^[[A" history-substring-search-up
