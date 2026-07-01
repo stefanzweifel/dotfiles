@@ -37,6 +37,27 @@ eval "$(zoxide init zsh --cmd cd)"
 # zsh-patina - https://github.com/michel-kraemer/zsh-patina
 eval "$(/opt/homebrew/bin/zsh-patina activate)"
 
+# fzf - Ctrl+R fuzzy history, Ctrl+T file picker, Alt+C cd into subdir
+source <(fzf --zsh)
+
+# zsh-completions - extra completion definitions (must be on FPATH before compinit)
+FPATH="/opt/homebrew/share/zsh-completions:$FPATH"
+
+# compinit builds the completion cache (~/.zcompdump). It normally re-scans
+# fpath and runs a security check on every startup, which is slow. The glob
+# qualifier (#qNmh-24) matches ~/.zcompdump only if it was modified in the last
+# 24 hours; when it's fresh we run `compinit -C` to skip the rescan/security
+# check, otherwise we do a full rebuild.
+autoload -Uz compinit
+if [[ -n ~/.zcompdump(#qNmh-24) ]]; then
+  compinit -C
+else
+  compinit
+fi
+
+
+# zsh-autosuggestions - greyed-out suggestion from history; → or End to accept
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # zsh-history-substring-search - type a substring, ↑/↓ cycles matching history entries
 source /opt/homebrew/share/zsh-history-substring-search/zsh-history-substring-search.zsh
