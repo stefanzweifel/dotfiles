@@ -51,6 +51,7 @@ cask 'affinity'
 cask 'caffeine'
 cask 'claude-code'
 cask 'codex'
+cask 'bruno'
 cask 'codex-app'
 cask 'conductor'
 cask 'fastmail'
@@ -84,7 +85,19 @@ cask 'zen'
 # cask 'transmit'
 
 # Install Mac App Store apps
-# mas 'iA Writer', id: 775737590
-# mas 'Icon Slate', id: 439697913
-# mas 'The Unarchiver', id: 425424353
-# mas 'Things', id: 904280696
+mas '1Password for Safari ', id: 1569813296
+mas 'Amphetamine', id:  937984704  Amphetamine
+mas 'Deliveries', id:  290986013
+mas 'Eagle for Safari', id: 1526651672
+mas 'Ivory', id: 6444602274
+mas 'Klack', id: 6446206067
+mas 'Numbers', id:  361304891
+mas 'N₁₀', id: 6446053304
+mas 'Obsidian Web Clipper ', id: 6720708363
+mas 'Pages', id:  361309726
+mas 'Reeder', id: 6475002485
+mas 'Reeder 2', id: 1529448980
+mas 'Things', id: 904280696
+mas 'WhatsApp', id:  310633997
+mas 'Xcode', id:  497799835
+mas 'iA Writer', id: 775737590
