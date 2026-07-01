@@ -41,18 +41,34 @@ listed_casks=$(
         | awk -F/ '{print $0; print $NF}' \
         | sort -u
 )
+# mas entries are pinned by App Store ID, e.g. `mas 'Things', id: 904280696`.
+listed_mas=$(
+    grep -E "^[[:space:]]*mas[[:space:]]+['\"]" "${BREWFILE}" \
+        | sed -E "s/^[[:space:]]*mas[[:space:]]+['\"][^'\"]+['\"][[:space:]]*,[[:space:]]*id:[[:space:]]*([0-9]+).*$/\1/" \
+        | sort -u
+)
 
 installed_brews=$(brew leaves | sort -u)
 installed_casks=$(brew list --cask 2>/dev/null | sort -u || true)
 
+# `mas list` emits: "<id>  <Name>  (<version>)" — split into "<id>|<Name>".
+if command -v mas >/dev/null 2>&1; then
+    installed_mas=$(mas list 2>/dev/null | sed -E 's/^([0-9]+)[[:space:]]+(.+)[[:space:]]+\([^)]+\)[[:space:]]*$/\1|\2/' | sort -u || true)
+else
+    installed_mas=""
+fi
+installed_mas_ids=$(echo "${installed_mas}" | awk -F'|' 'NF{print $1}' | sort -u)
+
 missing_brews=$(comm -23 <(echo "${installed_brews}") <(echo "${listed_brews}"))
 missing_casks=$(comm -23 <(echo "${installed_casks}") <(echo "${listed_casks}"))
+missing_mas_ids=$(comm -23 <(echo "${installed_mas_ids}") <(echo "${listed_mas}"))
 
 # Drop empty lines
 missing_brews=$(echo "${missing_brews}" | grep -v "^$" || true)
 missing_casks=$(echo "${missing_casks}" | grep -v "^$" || true)
+missing_mas_ids=$(echo "${missing_mas_ids}" | grep -v "^$" || true)
 
-if [ -z "${missing_brews}" ] && [ -z "${missing_casks}" ]; then
+if [ -z "${missing_brews}" ] && [ -z "${missing_casks}" ] && [ -z "${missing_mas_ids}" ]; then
     success "Brewfile is up to date — nothing to sync"
     exit 0
 fi
@@ -77,12 +93,19 @@ fi
             echo "cask '${pkg}'"
         done <<< "${missing_casks}"
     fi
+    if [ -n "${missing_mas_ids}" ]; then
+        while IFS= read -r id; do
+            name=$(echo "${installed_mas}" | awk -F'|' -v id="${id}" '$1==id {print $2; exit}')
+            echo "mas '${name}', id: ${id}"
+        done <<< "${missing_mas_ids}"
+    fi
 } >> "${BREWFILE}"
 
 count_brews=$([ -z "${missing_brews}" ] && echo 0 || echo "${missing_brews}" | wc -l | tr -d ' ')
 count_casks=$([ -z "${missing_casks}" ] && echo 0 || echo "${missing_casks}" | wc -l | tr -d ' ')
+count_mas=$([ -z "${missing_mas_ids}" ] && echo 0 || echo "${missing_mas_ids}" | wc -l | tr -d ' ')
 
-success "Appended ${count_brews} brew(s) and ${count_casks} cask(s) to Brewfile"
+success "Appended ${count_brews} brew(s), ${count_casks} cask(s), and ${count_mas} mas app(s) to Brewfile"
 
 if [ -n "${missing_brews}" ]; then
     echo ""
@@ -93,4 +116,12 @@ if [ -n "${missing_casks}" ]; then
     echo ""
     step "New casks:"
     echo "${missing_casks}" | sed 's/^/  /'
+fi
+if [ -n "${missing_mas_ids}" ]; then
+    echo ""
+    step "New mas apps:"
+    while IFS= read -r id; do
+        name=$(echo "${installed_mas}" | awk -F'|' -v id="${id}" '$1==id {print $2; exit}')
+        echo "  ${name} (${id})"
+    done <<< "${missing_mas_ids}"
 fi

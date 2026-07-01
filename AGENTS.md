@@ -11,7 +11,7 @@ Personal macOS dotfiles, managed by [Dotbot](https://github.com/anishathalye/dot
 - `bin/install` — Run Dotbot against `install.conf.yml`. Idempotent; safe to re-run after editing configs or the manifest. Initializes submodules first.
 - `bin/first-setup` — Bootstrap a new Mac: install Homebrew + Brewfile packages, clone the private dotfiles repo (only when `gh` reports user `stefanzweifel`), run dotbot for both repos, apply macOS defaults.
 - `bin/update` — Pull public + private dotfiles, re-run `bin/install`, then `brew update/upgrade`, re-apply the Brewfile, `brew cleanup`, run `bin/brewfile-sync`, `npm update -g`, `composer global update`.
-- `bin/brewfile-sync` — Diff `brew leaves` and `brew list --cask` against `config/homebrew/Brewfile` and append any missing entries as a dated block. Idempotent.
+- `bin/brewfile-sync` — Diff `brew leaves`, `brew list --cask`, and `mas list` against `config/homebrew/Brewfile` and append any missing entries as a dated block. Idempotent.
 - `bin/macos-defaults` — Apply macOS system defaults. Prompts before writing anything.
 
 ## Architecture

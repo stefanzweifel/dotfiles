@@ -48,12 +48,13 @@ Brings everything on the machine up to date:
 
 ### `bin/brewfile-sync`
 
-Keeps `config/homebrew/Brewfile` in sync with whatever is actually installed locally. Compares `brew leaves` (top-level formulae) and `brew list --cask` against the Brewfile and appends any missing entries as a dated block:
+Keeps `config/homebrew/Brewfile` in sync with whatever is actually installed locally. Compares `brew leaves` (top-level formulae), `brew list --cask`, and `mas list` (Mac App Store apps) against the Brewfile and appends any missing entries as a dated block:
 
 ```
 # Added by brewfile-sync on 2026-06-28
 brew 'pnpm'
 cask 'orbstack'
+mas 'Things', id: 904280696
 ```
 
 Idempotent — running twice in a row adds nothing the second time. The script tolerates tap-prefixed entries (e.g. `jordond/tap/jolt`) so they don't get double-added. Grouping (Dev / Apps / Fonts) is left to manual re-sorting when convenient. Called automatically by `bin/update`.
