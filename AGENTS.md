@@ -26,7 +26,7 @@ Personal macOS dotfiles, managed by [Dotbot](https://github.com/anishathalye/dot
 
 **Shell config is split:** `config/zsh/zshrc.zsh` is the entry point. It sources every `*.zsh` file in `config/shell/` (aliases, exports, functions, herd) automatically — drop a new `.zsh` file there and it gets loaded next shell. Theme is oh-my-zsh `lambda`, but Starship is initialized at the end and takes over the prompt.
 
-**Submodules:** `dotbot/` and `dotbot-brew/` are vendored. `bin/install` runs `git submodule update --init --recursive` first; if Dotbot looks broken, check the submodule.
+**Submodules:** `dotbot/` is vendored. `bin/install` runs `git submodule update --init --recursive` first; if Dotbot looks broken, check the submodule.
 
 **Private dotfiles:** `~/.dotfiles-private` is a separate, gitignored repo (`stefanzweifel/dotfiles-private`) cloned only on the personal account. `bin/first-setup` and `bin/update` pull and run its `bin/install` if present.
 

@@ -31,7 +31,7 @@ Bootstraps a fresh Mac end-to-end. Prompts for confirmation, then:
 
 ### `bin/install`
 
-Runs Dotbot against `install.conf.yml` — initializes the `dotbot/` and `dotbot-brew/` submodules first, then symlinks every entry under `link:` into the right destination. Idempotent; safe to re-run after editing any config or adding a new `link:` entry.
+Runs Dotbot against `install.conf.yml` — initializes the `dotbot/` submodule first, then symlinks every entry under `link:` into the right destination. Idempotent; safe to re-run after editing any config or adding a new `link:` entry.
 
 ### `bin/update`
 
