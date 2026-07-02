@@ -63,6 +63,19 @@ Idempotent — running twice in a row adds nothing the second time. The script t
 
 Applies a curated set of macOS system defaults: faster key-repeat, Finder tweaks, save/print panel expansion, Dock and Mission Control timings, automatic software-update checks, etc. Prompts for confirmation before writing anything. Some changes only take effect after logout/restart.
 
+## direnv
+
+Any machine set up with these dotfiles has [direnv](https://direnv.net) installed (via the Brewfile) and hooked into zsh (`config/zsh/zshrc.zsh`). This means per-directory environment loading works out of the box: `cd` into a project with an `.envrc` and its variables are loaded; `cd` out and they're unloaded.
+
+`.envrc.example` in this repo is a starter template. Copy it into any project to get going:
+
+```
+cp ~/.dotfiles/.envrc.example .envrc
+direnv allow            # trust the file — required after every edit
+```
+
+The template shows how to export a variable. Always add `.envrc` to the project's `.gitignore` so nothing leaks.
+
 ## Architecture
 
 **Adding or changing a config:**

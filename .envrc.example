@@ -1,0 +1,10 @@
+# .envrc.example
+#
+# Usage in a project:
+#   1. cp .envrc.example .envrc
+#   2. direnv allow            # trust the file (required after every edit)
+#   3. Add environment variables below
+#
+# Add `.envrc` to the project's .gitignore so nothing leaks.
+
+# export MY_VARIABLE="value"
