@@ -31,6 +31,9 @@ eval "$(starship init zsh)"
 # zoxide
 eval "$(zoxide init zsh --cmd cd)"
 
+# direnv - https://direnv.net
+eval "$(direnv hook zsh)"
+
 # zellij
 # eval "$(zellij setup --generate-auto-start zsh)"
 
