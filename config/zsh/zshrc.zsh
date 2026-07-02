@@ -40,8 +40,13 @@ eval "$(direnv hook zsh)"
 # zsh-patina - https://github.com/michel-kraemer/zsh-patina
 eval "$(/opt/homebrew/bin/zsh-patina activate)"
 
-# fzf - Ctrl+R fuzzy history, Ctrl+T file picker, Alt+C cd into subdir
+# fzf - Ctrl+T file picker, Alt+C cd into subdir (Ctrl+R history is owned by atuin below)
 source <(fzf --zsh)
+
+# atuin - https://atuin.sh
+# Loaded after fzf on purpose: fzf's integration binds Ctrl+R, and whichever
+# sources last wins, so atuin's init here reclaims Ctrl+R for its history search.
+eval "$(atuin init zsh)"
 
 # zsh-completions - extra completion definitions (must be on FPATH before compinit)
 FPATH="/opt/homebrew/share/zsh-completions:$FPATH"
@@ -61,11 +66,6 @@ fi
 
 # zsh-autosuggestions - greyed-out suggestion from history; → or End to accept
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-# zsh-history-substring-search - type a substring, ↑/↓ cycles matching history entries
-source /opt/homebrew/share/zsh-history-substring-search/zsh-history-substring-search.zsh
-bindkey "^[[A" history-substring-search-up
-bindkey "^[[B" history-substring-search-down
 
 # Herd injected PHP 8.5 configuration.
 export HERD_PHP_85_INI_SCAN_DIR="/Users/stefanzweifel/Library/Application Support/Herd/config/php/85/"
