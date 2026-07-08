@@ -88,7 +88,7 @@ cask 'zen'
 
 # Install Mac App Store apps
 mas '1Password for Safari ', id: 1569813296
-mas 'Amphetamine', id:  937984704  Amphetamine
+mas 'Amphetamine', id:  937984704
 mas 'Deliveries', id:  290986013
 mas 'Eagle for Safari', id: 1526651672
 mas 'Ivory', id: 6444602274
