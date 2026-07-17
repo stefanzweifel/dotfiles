@@ -26,6 +26,9 @@ export PATH="$HOME/.local/bin:$PATH"
 # Disable Homebrew auto updates
 export HOMEBREW_NO_AUTO_UPDATE=1
 
+# Disable Zoxide doctor
+export _ZO_DOCTOR=0
+
 # Set vim as default editor
 export EDITOR=vim
 
