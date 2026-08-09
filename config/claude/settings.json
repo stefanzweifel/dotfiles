@@ -56,6 +56,7 @@
       "mcp__chrome-devtools__*"
     ]
   },
+  "model": "opus[1m]",
   "hooks": {
     "Notification": [
       {
@@ -214,10 +215,18 @@
     "context7@claude-plugins-official": true,
     "frontend-design@claude-plugins-official": true,
     "github@claude-plugins-official": true,
-    "superpowers@claude-plugins-official": true
+    "superpowers@claude-plugins-official": true,
+    "sentry@claude-plugins-official": true
   },
   "effortLevel": "high",
   "theme": "dark",
   "skipAutoPermissionPrompt": true,
-  "model": "opus[1m]"
+  "extraKnownMarketplaces": {
+    "agricidaniel-claude-seo": {
+      "source": {
+        "source": "github",
+        "repo": "AgriciDaniel/claude-seo"
+      }
+    }
+  }
 }
