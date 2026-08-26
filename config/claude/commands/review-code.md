@@ -9,7 +9,7 @@ Review the code I just changed. Do NOT touch unrelated WIP files in the working 
 For any changed PHP files, run these three reviews **in parallel** (one message, three agent calls):
 
 1. **`laravel-simplifier` agent** — simplify and refine PHP/Laravel code.
-2. **`general-purpose` agent** invoking the `php-guidelines-from-spatie` skill — check Spatie PHP guidelines compliance.
+<!--2. **`general-purpose` agent** invoking the `php-guidelines-from-spatie` skill — check Spatie PHP guidelines compliance.-->
 3. **`general-purpose` agent** invoking the `laravel-best-practices` skill — check Laravel best practices (routing, db-performance, architecture, etc.).
 
 ## JS/TS changes
