@@ -228,6 +228,5 @@
     }
   },
   "effortLevel": "high",
-  "theme": "dark",
-  "skipAutoPermissionPrompt": true
+  "theme": "dark"
 }
