@@ -1,3 +1,4 @@
+brew '514-labs/tap/dnsglobe'
 brew 'atuin'
 brew 'bat'
 brew 'blueutil'
@@ -7,6 +8,7 @@ brew 'composer'
 brew 'direnv'
 brew 'dnscontrol'
 brew 'doctl'
+brew 'ejoffe/tap/spr'
 brew 'eza'
 brew 'fastfetch'
 brew 'fd'
@@ -42,7 +44,9 @@ brew 'switchaudio-osx'
 brew 'tldr'
 brew 'tree'
 brew 'wakeonlan'
+brew 'wget'
 brew 'whisper-cpp'
+brew 'yq'
 brew 'yt-dlp'
 brew 'zellij'
 brew 'zizmor'
@@ -51,6 +55,7 @@ brew 'zsh'
 brew 'zsh-autosuggestions'
 brew 'zsh-completions'
 cask '1password-cli'
+cask 'aerospace'
 cask 'affinity'
 cask 'bruno'
 cask 'bruno'
@@ -59,6 +64,7 @@ cask 'claude-code'
 cask 'codex'
 cask 'codex-app'
 cask 'conductor'
+cask 'dropshare'
 cask 'fastmail'
 cask 'fastmate'
 cask 'figma'
@@ -67,8 +73,12 @@ cask 'font-iosevka'
 cask 'font-jetbrains-mono'
 cask 'font-monaspace'
 cask 'ghostty'
+cask 'github-copilot-app'
 cask 'hiddenbar'
+cask 'iina'
 cask 'keycastr'
+cask 'microsoft-outlook'
+cask 'ngrok'
 cask 'orbstack'
 cask 'telegram'
 cask 'utm'
@@ -90,6 +100,7 @@ cask 'zen'
 mas '1Password for Safari ', id: 1569813296
 mas 'Amphetamine', id:  937984704
 mas 'Deliveries', id:  290986013
+mas 'Developer', id:  640199958
 mas 'Eagle for Safari', id: 1526651672
 mas 'Ivory', id: 6444602274
 mas 'Klack', id: 6446206067
@@ -97,8 +108,8 @@ mas 'Numbers', id:  361304891
 mas 'N₁₀', id: 6446053304
 mas 'Obsidian Web Clipper ', id: 6720708363
 mas 'Pages', id:  361309726
-mas 'Reeder', id: 6475002485
 mas 'Reeder 2', id: 1529448980
+mas 'Reeder', id: 6475002485
 mas 'Things', id: 904280696
 mas 'WhatsApp', id:  310633997
 mas 'Xcode', id:  497799835
