@@ -33,6 +33,8 @@
     ~/.config/opencode/opencode.jsonc: config/opencode/opencode.jsonc
     ~/Library/Application Support/Rectangle/RectangleConfig.json: config/rectangle/RectangleConfig.json
     ~/Library/Application Support/com.mitchellh.ghostty/config: config/ghostty/config
+    ~/.config/ghostty/config: config/ghostty/config
+    ~/.config/ghostty/themes: config/ghostty/themes
     ~/Library/Application Support/Sublime Text/Packages/User/Themes: config/sublime-text/themes
     ~/Library/Application Support/Sublime Text/Packages/User/Snippets: config/sublime-text/snippets
     ~/Library/Application Support/Sublime Text/Packages/User/Preferences.sublime-settings: config/sublime-text/user/Preferences.sublime-settings
