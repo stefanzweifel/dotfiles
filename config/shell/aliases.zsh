@@ -76,3 +76,7 @@ alias borg:backup="sh $HOME/bin/borg-backup-scripts/backup.sh"
 alias borg:list="sh $HOME/bin/borg-backup-scripts/list.sh"
 alias borg:check="sh $HOME/bin/borg-backup-scripts/check.sh"
 alias borg:export="sh $HOME/bin/borg-backup-scripts/export.sh"
+
+# Claude
+alias claude-personal="CLAUDE_CONFIG_DIR=~/.claude-personal-account claude"
+alias claude-work="CLAUDE_CONFIG_DIR=~/.claude claude"

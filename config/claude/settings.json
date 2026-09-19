@@ -208,7 +208,7 @@
   },
   "statusLine": {
     "type": "command",
-    "command": "~/.claude/statusline.sh"
+    "command": "~/.dotfiles/config/claude/statusline.sh"
   },
   "enabledPlugins": {
     "code-review@claude-plugins-official": true,
@@ -217,13 +217,20 @@
     "github@claude-plugins-official": true,
     "superpowers@claude-plugins-official": true,
     "sentry@claude-plugins-official": true,
-    "claude-seo@agricidaniel-claude-seo": true
+    "claude-seo@agricidaniel-claude-seo": true,
+    "typesafe@typesafe-ai": true
   },
   "extraKnownMarketplaces": {
     "agricidaniel-claude-seo": {
       "source": {
         "source": "github",
         "repo": "AgriciDaniel/claude-seo"
+      }
+    },
+    "typesafe-ai": {
+      "source": {
+        "source": "github",
+        "repo": "typesafe-ai/skills"
       }
     }
   },
