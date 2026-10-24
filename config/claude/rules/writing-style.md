@@ -25,6 +25,29 @@ Write plainly. State the thing and move on. This applies everywhere text is prod
 
 **Closing summary lines that restate what was just said.** End when the content ends.
 
+**Announcing what you are about to say instead of saying it.** These sentences carry no
+information and are the clearest tell that a machine wrote the text. Cut them and start with the
+content.
+
+- No: "That has consequences worth stating plainly." / "Two things follow:" / "A few points are
+  worth calling out here."
+- Yes: go straight into the list or the next sentence.
+
+**Abstract framing nouns in headings and topic sentences.** Name the thing the reader has to do
+or avoid, not the category it belongs to.
+
+- No: "The trust model you are signing up for" / "Key considerations around X"
+- Yes: "Before you restore" / "Whoever can write to your backup disk controls your next restore"
+
+**Consultant vocabulary.** "blast radius", "surface area", "in other words", "it's worth noting",
+"practical steps", "at a high level", "leverage" as a verb. Use the ordinary word.
+
+- No: "What you can control is the blast radius."
+- Yes: "You can still limit the damage."
+
+Contractions are fine in prose aimed at users (READMEs, SECURITY.md, docs). Writing every
+"doesn't" as "does not" reads stiff.
+
 ## What to keep
 
 This is about register, not length. Detail, caveats, trade-offs, exact numbers, file paths and reasoning all stay. Cut the ornament, not the substance. A long plain explanation is better than a short ornate one.
