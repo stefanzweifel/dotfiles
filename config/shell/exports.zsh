@@ -35,3 +35,13 @@ export EDITOR=vim
 # Set theme used by bat/cat
 # See `bat --list-themes` for list of available themes
 export BAT_THEME="gruvbox-dark"
+
+# Point ssh-add and other SSH_AUTH_SOCK-aware tools at the 1Password agent.
+# ~/.ssh/config already sets IdentityAgent for `ssh` itself, but tools that
+# don't parse ssh_config (ssh-add, some editors, CI helpers) need this.
+# Skipped inside SSH sessions so a forwarded agent keeps working.
+if [[ -z "$SSH_CONNECTION" ]]; then
+  _op_agent_sock="$HOME/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
+  [[ -S "$_op_agent_sock" ]] && export SSH_AUTH_SOCK="$_op_agent_sock"
+  unset _op_agent_sock
+fi
