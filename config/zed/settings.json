@@ -11,8 +11,8 @@
   "cli_default_open_behavior": "new_window",
   "agent_servers": {
     "claude-acp": {
-      "type": "registry"
-    }
+      "type": "registry",
+    },
   },
   "edit_predictions": {
     "mode": "eager",
@@ -67,9 +67,9 @@
     "button": false,
   },
   "project_panel": {
+    "folder_indicator": "icon",
     "hide_hidden": false,
     "hide_root": false,
-    "folder_icons": true,
     "file_icons": true,
     "entry_spacing": "comfortable",
     "hide_gitignore": false,
@@ -93,7 +93,7 @@
     "dark": "One Dark",
   },
 
-  "format_on_save": "on",
+  "format_on_save": "off",
   "languages": {
     "PHP": {
       "formatter": {
