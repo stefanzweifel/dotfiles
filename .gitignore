@@ -7,3 +7,7 @@
 *.sqlite-journal
 
 .envrc
+
+# Written by Claude Desktop skill sync
+config/claude/skills/synced/
+config/claude/skills/.trash/
