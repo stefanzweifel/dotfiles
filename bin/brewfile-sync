@@ -51,9 +51,10 @@ listed_mas=$(
 installed_brews=$(brew leaves | sort -u)
 installed_casks=$(brew list --cask 2>/dev/null | sort -u || true)
 
-# `mas list` emits: "<id>  <Name>  (<version>)" — split into "<id>|<Name>".
+# `mas list` emits: "<id>  <Name>  (<version>)", right-aligned IDs get leading
+# spaces and names are padded with spaces. Split into "<id>|<Name>".
 if command -v mas >/dev/null 2>&1; then
-    installed_mas=$(mas list 2>/dev/null | sed -E 's/^([0-9]+)[[:space:]]+(.+)[[:space:]]+\([^)]+\)[[:space:]]*$/\1|\2/' | sort -u || true)
+    installed_mas=$(mas list 2>/dev/null | sed -E 's/^[[:space:]]*([0-9]+)[[:space:]]+(.*[^[:space:]])[[:space:]]+\([^)]+\)[[:space:]]*$/\1|\2/' | sort -u || true)
 else
     installed_mas=""
 fi
