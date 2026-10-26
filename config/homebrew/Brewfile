@@ -1,4 +1,6 @@
 brew '514-labs/tap/dnsglobe'
+brew 'actionlint'
+brew 'ampcode/tap/ampcode'
 brew 'atuin'
 brew 'bat'
 brew 'blueutil'
@@ -33,10 +35,13 @@ brew 'ollama'
 brew 'opencode'
 brew 'opentofu'
 brew 'php'
+brew 'pie'
 brew 'pinact'
+brew 'pkgconf'
 brew 'pnpm'
 brew 'prettyping'
 brew 'ranger'
+brew 'redis'
 brew 'rsync'
 brew 'sbcl'
 brew 'starship'
@@ -64,6 +69,7 @@ cask 'claude-code'
 cask 'codex'
 cask 'codex-app'
 cask 'conductor'
+cask 'curseforge'
 cask 'dropshare'
 cask 'fastmail'
 cask 'fastmate'
@@ -80,8 +86,11 @@ cask 'keycastr'
 cask 'microsoft-outlook'
 cask 'ngrok'
 cask 'orbstack'
+cask 'realvnc-connect-viewer'
 cask 'telegram'
+cask 'textream'
 cask 'utm'
+cask 'vlc'
 cask 'vnc-viewer'
 cask 'zen'
 
@@ -97,20 +106,24 @@ cask 'zen'
 # cask 'transmit'
 
 # Install Mac App Store apps
-mas '1Password for Safari ', id: 1569813296
-mas 'Amphetamine', id:  937984704
-mas 'Deliveries', id:  290986013
-mas 'Developer', id:  640199958
+mas '1Password for Safari', id: 1569813296
+mas 'Amphetamine', id: 937984704
+mas 'Deliveries', id: 290986013
+mas 'Developer', id: 640199958
 mas 'Eagle for Safari', id: 1526651672
+mas 'Foodnoms', id: 1479461686
 mas 'Ivory', id: 6444602274
+mas 'Keynote', id: 361285480
 mas 'Klack', id: 6446206067
-mas 'Numbers', id:  361304891
+mas 'Microsoft Outlook', id: 985367838
+mas 'Numbers', id: 361304891
 mas 'N₁₀', id: 6446053304
-mas 'Obsidian Web Clipper ', id: 6720708363
-mas 'Pages', id:  361309726
+mas 'Obsidian Web Clipper', id: 6720708363
+mas 'Pages', id: 361309726
 mas 'Reeder 2', id: 1529448980
 mas 'Reeder', id: 6475002485
+mas 'Tag Editor 2', id: 984278082
 mas 'Things', id: 904280696
-mas 'WhatsApp', id:  310633997
-mas 'Xcode', id:  497799835
+mas 'WhatsApp', id: 310633997
+mas 'Xcode', id: 497799835
 mas 'iA Writer', id: 775737590
