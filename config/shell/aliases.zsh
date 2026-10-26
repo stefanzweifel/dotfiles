@@ -23,6 +23,7 @@ alias dv="cd ~/Developer"
 alias sites="cd ~/Developer"
 alias icloud="cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/"
 alias dotfiles="cd $DOTFILES"
+alias obsidian="cd /Users/stefanzweifel/Library/Mobile Documents/iCloud~md~obsidian/Documents/Notes"
 
 # PHP
 alias pserve="php -S localhost:"
