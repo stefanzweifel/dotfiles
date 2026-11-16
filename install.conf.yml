@@ -49,6 +49,7 @@
 
     ~/.config/aerospace/aerospace.toml: config/aerospace/aerospace.toml
     ~/.config/opencode/opencode.jsonc: config/opencode/opencode.jsonc
+    ~/.config/rex/init.lua: config/rex/init.lua
     ~/Library/Application Support/Rectangle/RectangleConfig.json: config/rectangle/RectangleConfig.json
     ~/Library/Application Support/com.mitchellh.ghostty/config: config/ghostty/config
     ~/.config/ghostty/config: config/ghostty/config
