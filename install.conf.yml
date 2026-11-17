@@ -23,7 +23,6 @@
     ~/.config/starship.toml: config/starship/starship.toml
     ~/.config/zed/settings.json: config/zed/settings.json
     ~/.config/karabiner/karabiner.json: config/karabiner/karabiner.json
-    ~/.tmux.conf: config/tmux/tmux.conf
     ~/.composer/composer.json: config/composer/global-composer.json
     ~/.raycast/scripts: config/raycast/scripts
 
