@@ -66,3 +66,6 @@ source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Herd injected PHP 8.5 configuration.
 export HERD_PHP_85_INI_SCAN_DIR="/Users/stefanzweifel/Library/Application Support/Herd/config/php/85/"
+
+# Herd injected PHP 8.6 configuration.
+export HERD_PHP_86_INI_SCAN_DIR="/Users/stefanzweifel/Library/Application Support/Herd/config/php/86"
