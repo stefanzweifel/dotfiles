@@ -34,9 +34,6 @@ eval "$(zoxide init zsh --cmd cd)"
 # direnv - https://direnv.net
 eval "$(direnv hook zsh)"
 
-# zellij
-# eval "$(zellij setup --generate-auto-start zsh)"
-
 # zsh-patina - https://github.com/michel-kraemer/zsh-patina
 eval "$(/opt/homebrew/bin/zsh-patina activate)"
 

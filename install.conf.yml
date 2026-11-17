@@ -23,7 +23,6 @@
     ~/.config/starship.toml: config/starship/starship.toml
     ~/.config/zed/settings.json: config/zed/settings.json
     ~/.config/karabiner/karabiner.json: config/karabiner/karabiner.json
-    ~/.tmux.conf: config/tmux/tmux.conf
     ~/.composer/composer.json: config/composer/global-composer.json
     ~/.raycast/scripts: config/raycast/scripts
 
@@ -51,9 +50,6 @@
     ~/.config/opencode/opencode.jsonc: config/opencode/opencode.jsonc
     ~/.config/rex/init.lua: config/rex/init.lua
     ~/Library/Application Support/Rectangle/RectangleConfig.json: config/rectangle/RectangleConfig.json
-    ~/Library/Application Support/com.mitchellh.ghostty/config: config/ghostty/config
-    ~/.config/ghostty/config: config/ghostty/config
-    ~/.config/ghostty/themes: config/ghostty/themes
     ~/Library/Application Support/Sublime Text/Packages/User/Themes: config/sublime-text/themes
     ~/Library/Application Support/Sublime Text/Packages/User/Snippets: config/sublime-text/snippets
     ~/Library/Application Support/Sublime Text/Packages/User/Preferences.sublime-settings: config/sublime-text/user/Preferences.sublime-settings
